@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /games/sax/
-published: false
+show_in_nav = false
 ---
 
 # [Games](../) > Syobon Action X
