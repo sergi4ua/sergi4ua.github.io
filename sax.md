@@ -2,6 +2,7 @@
 layout: page
 permalink: /games/sax/
 ---
+
 # [Games](../) > Syobon Action X
 
 ![SAX Logo]({{ "/img/sax/logo.png" | absolute_url }})
