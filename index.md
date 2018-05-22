@@ -6,7 +6,7 @@ layout: default
 
 **Games:**
 
-[Syobon Action X](./sax.html)
+[Syobon Action X](./games/sax.html)
 
 ### Blog:
 
