@@ -2,7 +2,8 @@
 title: Some Syobon Action X screenshots
 layout: post
 date:   2018-05-22 16:25:51 +0300
-tag syobon action x screenshots gameplay editor
+author: Sergi4UA
+description: Some Syobon Action X screenshots
 ---
 Here are some screenshots taken from the game in it's current state.
 

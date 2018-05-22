@@ -26,6 +26,7 @@ github_username:  sergi4ua
 markdown: kramdown
 theme: minima
 plugins:
+  - jekyll-seo-tag
   - jekyll-feed
 
 # Exclude from processing.
