@@ -4,7 +4,7 @@ layout: default
 
 # [Games](../) > Syobon Action X
 
-![SAX Logo]({{ "/img/sax/logo.png" | absolute_url }})
+![SAX Logo]({{ "./img/sax/logo.png" | absolute_url }})
 
 Syobon Action X is a fan sequel, created by Sergi4UA in 2018 (original Syobon Action was created by Chiku). 
 
