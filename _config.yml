@@ -2,3 +2,9 @@ theme: jekyll-theme-hacker
 title: Sergi4UA's Blog
 description: Games'n'Blog
 show_downloads: false
+author: Sergi4UA
+url: sergi4ua.github.io
+webmaster_verifications:
+  google: M5lMmCuzmM9oOoeiUJNWTHCe3iMDwBZGEnLtj8YjoTw
+plugins:
+  - jekyll-seo-tag
