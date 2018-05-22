@@ -5,6 +5,6 @@ show_downloads: false
 author: Sergi4UA
 url: sergi4ua.github.io
 webmaster_verifications:
-  google: M5lMmCuzmM9oOoeiUJNWTHCe3iMDwBZGEnLtj8YjoTw
+  google: MeT4zIGmwwM3862vUI4MyGBw3GRk0KJFLRlHbMup12s
 plugins:
   - jekyll-seo-tag
