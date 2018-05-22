@@ -8,3 +8,4 @@ webmaster_verifications:
   google: MeT4zIGmwwM3862vUI4MyGBw3GRk0KJFLRlHbMup12s
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
