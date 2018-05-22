@@ -4,8 +4,10 @@ layout: default
 
 # Sergi4UA's Blog
 
-**Games: [Syobon Action X](./sax.html)**
+**Games: 
 
-### Blog:**
+[Syobon Action X](./sax.html)**
+
+### Blog:
 
 No entries.
