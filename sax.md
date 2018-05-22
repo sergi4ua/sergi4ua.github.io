@@ -1,7 +1,5 @@
 ---
-layout: page
-title: Syobon Action X
-permalink: /games/sax/
+layout: default
 ---
 
 # [Games](../) > Syobon Action X
