@@ -8,6 +8,8 @@ description: Games'n'Stuff
 
 [**Games**](./games)
 
+Welcome to Sergi4UA's Blog! Here you will find games that were created by me and more stuff, like tutorials, screenshots, videos, etc.
+
 ### Blog:
 
 23.05.2018 14:44 [**Syobon Action X 0.1.4 released!**](./post1.html)
