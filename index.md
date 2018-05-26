@@ -12,6 +12,8 @@ Welcome to Sergi4UA's Blog! Here you will find games that were created by me and
 
 ### Blog:
 
+26.05.2018 17:44 [**Syobon Action X 0.2.1 released!**](./post3.html)
+
 25.05.2018 13:34 [**Syobon Action X 0.2 released!**](./post2.html)
 
 23.05.2018 14:44 [**Syobon Action X 0.1.4 released!**](./post1.html)
