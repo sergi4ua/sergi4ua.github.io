@@ -16,6 +16,8 @@ Welcome to Sergi4UA's Blog! Here you will find games that were created by me and
 
 25.05.2018 13:34 [**Syobon Action X 0.2 released!**](./post2.html)
 
+24.05.2018 **John Peter Bain** will not be forgotten.
+
 23.05.2018 14:44 [**Syobon Action X 0.1.4 released!**](./post1.html)
 
 22.05.2018 22:35 [**Syobon Action X on GameJolt!**](./post0.html)
