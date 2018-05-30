@@ -11,6 +11,7 @@ This new update adds the following:
 - Added new hazard
 - Fixed editor bugs
 - Added coin counter
+
 ![](https://i.gjcdn.net/data/fireside/posts/5/28/371278/media/screenshot-vxgqjvek.png)
 
 [< Go Back](https://sergi4ua.github.io)
