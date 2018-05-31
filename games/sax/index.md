@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Syobon Action X
+description: Syobon Action X Game Page
 ---
 
 # [Games](../) > Syobon Action X
