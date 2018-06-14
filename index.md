@@ -11,6 +11,8 @@ description: Games'n'Stuff
 Welcome to Sergi4UA's Blog! Here you will find games that were created by me and more stuff, like tutorials, screenshots, videos, etc.
 
 ### Blog:
+14.06.2018 18:00 [**Syobon Action X 0.3 Level 1 Gameplay**](./post7.html)
+
 06.06.2018 13:00 [**Some 0.3 screenshots**](./post6.html)
 
 31.05.2018 16:13 [**Syobon Action X 0.2.3 released!**](./post5.html)
