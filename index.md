@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Sergi4UA's Blog
-description: Games'n'Stuff
+title: Sergi4UA Blog
+description: Games'n'Blog
 ---
 
-# Sergi4UA's Blog
+# Sergi4UA Blog
 
 [**Games**](./games)
 
-Welcome to Sergi4UA's Blog! Here you will find games that were created by me and more stuff, like tutorials, screenshots, videos, etc.
+Welcome to Sergi4UA Blog! Here you will find games that were created by me and more stuff, like tutorials, screenshots, videos, etc.
 
 ### Blog:
 14.06.2018 18:00 [**Syobon Action X 0.3 Level 1 Gameplay**](./post7.html)
