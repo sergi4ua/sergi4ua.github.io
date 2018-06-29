@@ -15,3 +15,5 @@ This page was last updated on: 29.06.2018 11:52
 | Deus Ex 1 | Official SDK for Deus Ex 1 | [**Download**](https://sergi4ua.github.io/cellar/DeusExSDK1112f.exe) |
 | Quake/HL | WAD (Texture) editor for GoldSrc/Quake 1 engine | [**Download**](https://sergi4ua.github.io/cellar/wally_155b.exe) |
 | Any | OllyDbg: the Debugger and Disassembler | [**Link**](http://ollydbg.de/) |
+| HL/Quake III | JackHammer, first commercial level editor (freeware version available) | [**Link**](http://jack.hlfx.ru/en/main.html/) |
+ 
