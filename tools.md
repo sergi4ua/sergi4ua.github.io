@@ -9,7 +9,7 @@ This page includes various modding tools for games, such as Level Editors, SDKs,
 
 This page was last updated on: 29.06.2018 16:15
 
-Files hosted on **sergi4ua.github.io** : 3; external links: 6; mirrors: 0
+Files hosted on **sergi4ua.github.io** : 4; external links: 7; mirrors: 0
 
 | Game | Description | Download |
 | --- | --- | --- |
@@ -23,6 +23,6 @@ Files hosted on **sergi4ua.github.io** : 3; external links: 6; mirrors: 0
 | Q3/Q4/HL | GtkRadiant. Use 1.4.0 or 1.5.0 for old games. | [**Link**](http://icculus.org/gtkradiant) |
 | Any | RAD Video Tools. Used to view SMK/BIK files. | [**Link**](http://www.radgametools.com/bnkdown.htm) |
 | HL/CS 1.6 | Valve Hammer Editor 3.4. The level editor for GoldSrc. | [**Download**](https://sergi4ua.github.io/cellar/hammer_v34.exe) |
-
+| SMBX | PGE Editor. Best editor for SMBX by Wohlstand. | [**Link**](http://wohlsoft.ru/PGE/#links) |
 
 [< Go Back](https://sergi4ua.github.io)
