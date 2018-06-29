@@ -5,6 +5,8 @@ description: Various game modding tools
 ---
 # Grab your tools!
 
+[< Go Back](https://sergi4ua.github.io)
+
 This page includes various modding tools for games, such as Level Editors, SDKs, Texture Editors etc. Some of these (like DunEdit for Diablo 1) are extremely rare.
 
 This page was last updated on: 29.06.2018 16:15
