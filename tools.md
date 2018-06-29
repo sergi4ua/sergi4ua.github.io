@@ -25,4 +25,11 @@ Files hosted on **sergi4ua.github.io** : 4; external links: 7; mirrors: 0
 | HL/CS 1.6 | Valve Hammer Editor 3.4. The level editor for GoldSrc. | [**Download**](https://sergi4ua.github.io/cellar/hammer_v34.exe) |
 | SMBX | PGE Editor. Best editor for SMBX by Wohlstand. | [**Link**](http://wohlsoft.ru/PGE/#links) |
 
+Lost files:
+
+This list includes files that cannot be found by normal means. If you have these files, please [e-mail me](./contact.html).
+
+| Game | Description | Further  information
+None found.
+
 [< Go Back](https://sergi4ua.github.io)
