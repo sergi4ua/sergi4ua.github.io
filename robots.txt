@@ -1,1 +1,4 @@
+User-agent: *
+Disallow: contact.html
+
 Sitemap: https://sergi4ua.github.io/sitemap.xml
