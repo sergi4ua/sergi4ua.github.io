@@ -4,4 +4,4 @@ Disallow: /contact.html
 User-agent: Googlebot-Image
 Disallow: /img/
 
-Sitemap: https://sergi4ua.github.io/sitemap.xml
+Sitemap: https://sergi4ua.pp.ua/sitemap.xml
