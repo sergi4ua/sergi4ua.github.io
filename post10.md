@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Continue?
-description: Tools tab
+description: Continue development of Syobon Action X?
 ---
 
 # Continue?
@@ -20,5 +20,6 @@ All because of you, guys :)
 {% endraw %}
 
 Stay tuned! :)
+P.S: Level portal/forum may come sometime in the future.
 
 [< Go Back](https://sergi4ua.github.io)
