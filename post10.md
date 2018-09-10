@@ -14,8 +14,9 @@ All because of you, guys :)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XBfS7jDDMFc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 {% endraw %}
 
+
 {% raw %}
-<iframe width="320" height="240" src="https://www.youtube.com/embed/CiM60eXz2PA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CiM60eXz2PA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 {% endraw %}
 
 Stay tuned! :)
