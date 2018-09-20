@@ -39,10 +39,10 @@
     </code>
     </div>
     <h5>Taken from <a href="https://wiki.winehq.org/Ubuntu">https://wiki.winehq.org/Ubuntu</a></h5>
-    <p>The commands above should install Wine Stable 3.0 on your system. Be warned, that you may need to tweak these commands if you're using Linux Mint.<br>
-    After that's done, you must legally obtain the Diablo CD. Insert it in your CD-ROM drive and copy <b>DIABDAT.MPQ</b> from it.
-    When you copied DIABDAT.MPQ, download Infernity: <a href="https://github.com/qndel/Infernity/blob/master/Infernity.zip">https://github.com/qndel/Infernity/blob/master/Infernity.zip</a><br>
-        When Infernity finished downloading, you can now start Autorun.exe:</p>
+    <p>These commands should install Wine Stable 3.0 on your system. Be warned, that you may need to tweak these commands if you're using Linux Mint.<br>
+    After that's done, you must legally obtain the Diablo CD. Insert it in your CD-ROM drive and copy the <b>DIABDAT.MPQ</b> file from the CD to XYZ directory.
+    After you have the DIABDAT.MPQ copied to XYZ, download Infernity: <a href="https://github.com/qndel/Infernity/blob/master/Infernity.zip">https://github.com/qndel/Infernity/blob/master/Infernity.zip</a><br>
+        Once you have the Infernity downloaded, you can now start Autorun.exe:</p>
     <div class="box">
         <code>
             cd /media/cdrom<br>
@@ -58,7 +58,7 @@
             sudo apt-get install winetricks
         </code>
     </div>
-    <p>Winetricks have all the stuff you need. Launch winetricks and install the folowing components:</p>
+    <p>Winetricks has all the stuff you need. Launch winetricks and install the following components:</p>
     <div class="box">
         <code>
             d3d9<br>
@@ -84,15 +84,15 @@
     </div>
     Set it to use virtual desktop. Set the virtual desktop's resolution to 1280x960<br>
     <br>You also need to force it to use Qndel's modified version of ddraw.dll wrapper. Second tab > ddraw.dll > YES/OK<br>
-    Now have your fingers crossed, launch Infernity.exe:
+    Now keep your fingers crossed, launch Infernity.exe:
     <div class="box">
         <code>
             wine Infernity.exe
         </code>
     </div>
-    <br>You of course need to be in Diablo's directory for that command to work :) You also don't need the Diablo CD inserted in your drive.<br>
+    <br>Of course you have to be in Diablo's directory for that command to work :). Also, note that you also don't need the Diablo CD inserted in your drive to play any more.<br>
     It should either launch or crash.<br>
-    If it launches, you will be greated with a black screen. That's normal, use your memory to navigate it :P OR this:<br>
+    If it launches, you will be greeted with a black screen. That's normal, use your memory to navigate it :P OR this:<br>
     <div class="box">
         Single Player<br>
         Single Player > Your Chars and New Game OR instant switch New Game > Load Game or New Game OR/AND select your class > LoadScreen > GAME<br>
@@ -101,13 +101,13 @@
         Show Credits<br>
         Exit Game<br>
     </div>
-    <p>When you are in the game, press ~ or Scroll Lock to bring up DirectDraw Wrapper settings. Try to set it to your NATIVE resolution in fullscreen with vsync off.<br>If it errors out, try deleting ddraw_config and setting slighty higher virtual desktop res.</p>
+    <p>When you are in the game, press ~ or Scroll Lock to bring up DirectDraw Wrapper settings. Try to set it to your NATIVE resolution in fullscreen with vsync off.<br>If you get an error/exception, try deleting ddraw_config and setting slighty higher virtual desktop res.</p>
     Remember, Diablo was never meant to run on Linux, so you may expect A LOT of problems. If the game doesn't launch (can't init Direct3D9 device, etc), then
     try switching virtual desktop res, re-installing DirectX, etc.<br>
     Thanks for reading! :) If you encounter any problems, contact me at:
     <a href="https://sergi4ua.github.io/contact.html">https://sergi4ua.github.io/contact.html</a>
     <footer>
-        <center><h5>This tutorial was written by Sergi4UA, edited by RadTang and is in Public Domain.<br>The authors of Wine, your linux distro, Infernity, and this site, take no responsibilty over your actions. Anything you do is at your own risk!<br>Diablo(R) - Copyright (C) 1996 Blizzard Entertainment, Inc. All rights reserved. Diablo and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.<br>This software is in no way associated with or endorsed by Blizzard Entertainment(R).</h5></center>
+        <center><h5>This tutorial was written by Sergi4UA, edited by RadTang, neube and is in Public Domain.<br>The authors of Wine, your linux distro, Infernity, and this site, take no responsibilty over your actions. Anything you do is at your own risk!<br>Diablo(R) - Copyright (C) 1996 Blizzard Entertainment, Inc. All rights reserved. Diablo and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.<br>This software is in no way associated with or endorsed by Blizzard Entertainment(R).</h5></center>
     </footer>
 </body>
 </html>
