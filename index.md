@@ -6,7 +6,7 @@ description: Games'n'Blog
 
 # Sergi4UA Blog
 
-[**Games**](./games) [**Tools**](./tools.html) [**Contact**](./contact.html)
+[**Games**](./games) [**Mods**](./mods) [**Tools**](./tools.html) [**Contact**](./contact.html)
 
 Welcome to Sergi4UA Blog! Here you will find games that were created by me and more stuff, like tutorials, screenshots, videos, etc.
 
