@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <title>ssErgiy's Archive</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        #title {
+            background-color: red;
+            width: 100%;
+            height: 30px;
+        }
+        
+        #titleText {
+            font-family: Arial;
+            color: white;
+            font-size: 16;
+            top: -2px;
+            margin: 0 auto;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 30px;
+        }
+        
+        #videos {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+        #video {
+            width: 450px;
+            height: 360px;
+        }
+        #description {
+            color: white;
+            font-family: Arial;
+        }
+        #newsEntry {
+            color: white;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <center><p id="titleText">ssErgiy's Archive</p></center>
+    </div>
+    <div id="description">
+        <p>Welcome to ssErgiy's Archive! Here you can find OSTs, various gaming videos, very old stuff (like trailers) and great original content.</p>Help grow ssErgiy's Archive by subscribing: 
+        <script src="https://apis.google.com/js/platform.js"></script>
+        <div class="g-ytsubscribe" data-channel="SerheySmaida" data-layout="default" data-theme="dark" data-count="default"></div>
+        <p><b>CHANNEL NEWS:</b></p>
+        <div id="newsEntry"></div>
+    </div>
+    <div id=videos></div>
+    <script src="script.js"></script>
+</body>
+</html>
