@@ -1,6 +1,6 @@
 CHANNEL_NEWS = new Array(10);
 
-CHANNEL_NEWS[0] = "<p><b>02.03.2019 ssErgiyArchive webpage is live :)</b></p><p><br>I'm currently looking for ways to make some original content, because OSTs... well they will not get me anywhere.</p>";
+CHANNEL_NEWS[0] = "<p><b>02.03.2019 ssErgiyArchive webpage is live :)</b></p><p>I'm currently looking for ways to make some original content, because OSTs... well they will not get me anywhere.</p>";
 
 for(let i = 0; i < CHANNEL_NEWS.length; i++) 
 {
