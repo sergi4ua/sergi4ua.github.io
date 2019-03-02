@@ -36,11 +36,11 @@ function showVideoList(username, writediv, maxnumbervideos, apikey) {
             var videodescription = videos[i].snippet.description;
             var videodate = videos[i].snippet.publishedAt; 
             var videothumbnail = videos[i].snippet.thumbnails.high.url;
-            document.getElementById(writediv).innerHTML += "<div id='video'>"+"<a href='https://youtube.com/watch?v="+videoid+"'><img src='" + videothumbnail + "'></a></div>"
+            document.getElementById(writediv).innerHTML += "<div id='video'>"+"<a href='https://youtube.com/watch?v="+videoid+"'><img src='" + videothumbnail + "'></a><br>"+videotitle+"</div>"
         }
     }
   //  catch (ex) {
   //      alert(ex.message);
   //  }
 
-showVideoList("SerheySmaida", "videos", 25, "AIzaSyAyDXKZLc3mRY5vcrxXZPQN-LcdYW-qVaM");
+showVideoList("SerheySmaida", "videos", 27, "AIzaSyAyDXKZLc3mRY5vcrxXZPQN-LcdYW-qVaM");
