@@ -11,6 +11,8 @@ description: Games'n'Blog
 Welcome to Sergi4UA Blog! Here you will find games that were created by me and more stuff, like tutorials, screenshots, videos, etc.
 
 ### Blog:
+10.03.2019 14:18 [**Syobon Action 0.4 is coming...**](./post12.html)
+
 17.10.2018 14:42 [**Syobon Action 0.4 is coming...**](./post11.html)
 
 10.09.2018 10:51 [**Continue?**](./post10.html)
