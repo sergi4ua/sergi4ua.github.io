@@ -1,0 +1,153 @@
+#Tchernobog version 0.1.3
+- Displaying min/max values next to set/unique item stats while holding shift.
+Max values are colored green and min values red.
+If stat is equal to maximum value, the whole line will be colored green, if minimum, red.
+#Tchernobog version 0.1.2f
+
+- 0.1.2e fixed staves but broke telekinesis/heal other spells. Now everything works as intended
+
+#Tchernobog version 0.1.2e
+- Fixed staff of heal other/telekinesis not losing charges
+- Unique/set items can drop again if you already have all unique/set items of that base item
+- Fixed a typo in main menu
+
+#Tchernobog version 0.1.2d
+- Blazing/volcanic/sparking/charged/freezing/glacial/brilliant/radiant recipes fixed.
+
+#Tchernobog version 0.1.2c
+- Character sheet displaying individual Magic Find in town and total in dungeon
+
+#Tchernobog version 0.1.2b
+- Fixed one of probably many poisoned water supply errors
+
+#Tchernobog version 0.1.2a
+- Fixed Pepin crashing the game when opening the shop window
+
+#Tchernobog version 0.1.2
+- Fixed magic find.
+https://docs.google.com/spreadsheets/d/1UTDA_ynwVyeNZyHJBPhviucI7JDbP6Ix6kGeF0Aw6yQ/edit#gid=34252121
+- This is a chart that shows how it increases chance to obtain unique/set/rare/magic items.
+
+- Magic find has 50% chance to trigger when an item drops.
+- This is how group magic find is calculated:
+- Magic find of players on the dungeon level where the item dropped gets sorted in descending order.
+- Total MF value starts with being 0.
+- Highest magic find gets added to it, then second highest/2, third highest/3 and so on.
+- This prevents people from getting absurdly high MF values while being in a group while still being a gain
+- during playing with other people.
+
+- Fixed barbarians whrilwind attack interval
+- Reduced amount of hit points boss monsters gain each difficulty level
+- Rogue's mana cost of skills has been reduced
+- Warrior's mana cost of skills has been reduced
+- Assassin's mana cost of skills has been reduced
+- Rogue's bow attack damage calculation has been restored to pre 0.1.0 version
+
+#Tchernobog version 0.1.1
+- Internal changes
+
+#Tchernobog version 0.1.0
+- Fixed bug that caused weapon to disapear
+- Fixed bug that proevent secondary weaponset from being affected by repair all and recharge all npc services
+- Fixed crash related to golem or other minion death
+- Fixed game freeze that could occur on multiple reasons
+- Fixed bug that caused player to apear at top of the map when loading level
+- Fixed potential combat related crash 
+- Fixed spell visual effects disapearing too early
+- Fixed monster animation desynchronization
+- Fixed monster AI to be act better on higher resolutions
+- Fixed bug that prevented to correctly consume spell charges and scrolls
+- Fixed bug that prevented affixes on random unique monsters
+- Fixed spell level glitch related to shirnes
+- Fixed whrilwind skill bugs
+- Fixed player and trade stash sizes and crash
+- Fixed GUI message box glitch while using NPC services
+- Fixed functional key skill bind crash
+- Fixed elixirs duration displayed in tooltip
+- Fixed grammar in several item names
+- Fixed long sword and claymore order problems
+- Fixed magic and cold damage bonuses from set items
+- Fixed errors related to random unique monster names and AI
+- Fixed bug that caused revived monsters revived by necromancers to be hostile towards player
+- Fixed bug that caused killed revived monsters to remain on minimap
+- Fixed diabolic shrine glitches that could spawn monster with undefined behaviour
+- Fixed bug that caused rogue's multiple shot arrows to be placed too close to each other
+- Fixed the dark lord death animation issues
+- Fixed traps to properly effect players and monsters
+- Fixed Thaumaturgic shrine to not respawn objects other then chests
+- Fixed lightning damage per character level bonus on unique items
+- Fixed wrong gold stack icon being selected while picking up pile
+- Fixed bug related to billing for repair, recharge and identify shop operations
+- Fixed statistic calculations for champion monsters
+- Fixed Assassins Narcosis skill to not reset The Dark Lord and similary scripted monsters
+- Fixed object mouse on hover selection range in town
+- Fixed bug that allowed The skeleton king to use corpse explosion on normal difficulty
+- Fixed bug that caused visited parts of map to disapear after reentering zone
+- Fixed bug that caused warrior, rogue and assassin skill to be free
+- Fixed glitch that caused player using melee and ranged skills to spam "OOM" sound
+- Fixed bug that blocked hot keyed skill swap while holding mouse button
+- Fixed map events desynchronization
+- Fixed bug that caused summoned monsters to be killed by some of the special monsters
+- Improved bonuses of barbarian, warrior and assassin classes from strength and dexterity attributes
+- Barbarian physical strength and endurance are now greatly increased at cost of being unable to use spells that consume mana
+- Warrior's charge is now level 24 skill
+- Warrior's shield wall is now level 32 skill
+- Necromancer's blood ritual is now level 16 skill and it's bonuses has been toned down
+- Necromancer's corpse explosion is now level 24 skill
+- Necromancer's revive is now level 32 skill
+- Adjusted necromancer minions balance
+- Golem, Zombie and Skeleton summons will now start with better resistances
+- Monster repulse effects from enchancements now have short cooldown
+- Players will now enter town with full health and mana
+- Removed feature that allowed to cast repair, recharge and identify spells when clicking inside inventory
+- Enabled Torment difficulty level
+- Summonable and minion monsters are now only selectable when appropriate spell is selected
+- Changed the flow of Butcher related quests
+- Adjusted offset of Hammer icon cursor used while repairing
+- Regular unique monsters may only have one affix
+- Restored function of CTRL key
+- Heal other cannot be used to heal caster player anymore
+- Guardian spell now properly benefits from it's level rather then firebolt
+- Modified resistances and immunities of monsters and bosses
+- Monster immunity should be easier to remove with target resistances reducing items [125% cap]
+- Reduced number of required materials for lower level recipies
+- Adjusted monster spawn locations in Terrors Domain level
+- The Dark Lord has been slightly toned down but gained mechanic that will disintegrate players using run away tactics
+- Character saves are now protected from file write system failures. 
+
+#Tchernobog version 0.095
+- Optimised game CPU usage
+
+#Tchernobog version 0.093
+- Fixed interface related crashes near NPCs
+- Fixed bug that allowed character to reach negative mana levels
+- Fixed glitch with Sorceror and Necromancer spells to consume resources. Other classes skills should remain free.
+- Fixed bug that locked tile player was standing on while map unlocking event happened
+- Fixed Barbarian's skill Whrilwind to properly open doors
+
+#Tchernobog version 0.092
+- Fixed scenario that could corrupt save file
+- Fixed bug that would sometimes result in player being alive with 0% hp
+- Fixed crash that occured during salvaging
+- Fixed bug that prevented salvage to produce materials other then oils
+- Possessed champion monsters are now slightly weaker
+- Increased exp rewards for COOP
+- Fixed bug that prevented exceptional items from dropping on difficulties past normal
+- Fixed glitch that allowed to use consumable items from other packs then inventory and belt
+- Sorceror and Necromancer now both start with fixed amount of charges on staves
+
+#Tchernobog version 0.091
+This version contains some hotfixes that allows smoother gameplay while quests are not yet implemented.
+- Enabled full resolution support (untested :D)
+- SnotSpil at level 4 cathedral will now attack after attempt to interact unlocking level 4
+- GharBad The Weak will now attack after attempt to interact
+- Infested Cellar is now accessible
+- Zhar The Mad will now attack after attempt to interact 
+- Fixed some of the stairs and portal entry walks
+- Blood pedestal in valor quest will progress on each click
+- Forest Edge is now accessible
+- Tunnels are now accessible 
+- Room of war is now accessible
+- Lazarus unholy altar is now accessible
+- Terror's domain is now accessible
+- Player can now enter Nightmare and Hell difficulties at 20 and 30 levels
