@@ -1,3 +1,10 @@
+#Tchernobog version 0.1.3c
+- Internal code cleanups
+- Renamed: Archanid Mesh -> Arachnid Mesh, Vizierei Wisdom -> Vizjerei Wisdom, Greyscull set -> Greyskull, "addonational" -> "additional" in experience shrine.
+- Elemental damage on melee/ranged weapons can now crit.
+- Upgraded discord online list (Shows number of players in game / difficulty / player name / class / level)
+- DPS on character sheet now shows correct values. (Thanks to adding crit to elemental damage)
+
 #Tchernobog version 0.1.3b
 - Raise Zombie's base life span increased from 16 seconds to 60 seconds
 - Zombies now follow you through rooms and levels
