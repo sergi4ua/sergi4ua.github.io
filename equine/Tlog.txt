@@ -1,3 +1,10 @@
+#Tchernobog version 0.1.4a
+- Added the ability to change displayed names/colors to loot filters
+- Minor fix for hidden shrine
+- Moved loot filter files to /lootFilter folder
+- Added 1 second cooldown between LUA messages to prevent spamming and locking the game
+- Renamed rejuvanation -> rejuvenation
+
 #Tchernobog version 0.1.4
 - lootFilter.lua - ability to decide which loot gets shown - press V to disable loot filter, press V again to enable it.
 - Loot filter is enabled by default but contains 0 filters. Info how to add custom filters and enable the default ones is available in lootFilter.lua
