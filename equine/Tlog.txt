@@ -1,3 +1,8 @@
+#Tchernobog 0.1.4c
+- Fixed a bug with golem highlighting corpses
+- Minions are always visible (ignoring line of sight)
+- Fixed a bug with lowering monster levels for 1 player
+
 #Tchernobog version 0.1.4b
 - Renamed espandon to espadon (Apparently espandon is an item in diablo 2, but the real life sword was called espadon, so I'll go with that)
 - Fixed long swords and claymores upgrading into wrong item types (As a side effect of this fix, all existing espadons will turn into battle swords and battle swords into espadons)
