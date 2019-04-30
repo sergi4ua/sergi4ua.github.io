@@ -1,3 +1,44 @@
+#Tchernobog version 0.1.4b
+- Renamed espandon to espadon (Apparently espandon is an item in diablo 2, but the real life sword was called espadon, so I'll go with that)
+- Fixed long swords and claymores upgrading into wrong item types (As a side effect of this fix, all existing espadons will turn into battle swords and battle swords into espadons)
+- Fixed blocking arrows and spells (Didn't block any damage before)
+- Fixed displaying incorrect magic find values on player list before a player loaded in game
+- Shortened class names in player list to prevent mute/hostile buttons from covering magic find
+- Added tier and recommended class to recipe names
+- Added 5 new recipes - qlvls 86,88,90,92,94.
+- Number of players increases monster levels (and therefore the max qlvl of items they can drop) - every additional player increases the level by 5%.
+- Fix for cutscenes freezing the game - if you are one of the few people that get that bug, ask the host to turn the movies off.
+- Trang-Oul set renamed to Trag'Oul
+- Corpse explosion removes corpses
+- Whenever necromancer equips a skill that uses corpses, corpses on screen will get highlighted
+- Only highlights corpses that your current skill can use
+- Highlighting friendly minions
+- Trag'Oul's helm now gives hit points instead of mana
+- Reduced monster hp gain in multiplayer from 200% per player to 120%
+- Increased bonus items in multiplayer from 0.1 per player to 0.33 per player
+- Ability to turn highlighting minions on or off in the settings
+- Raise Zombie changed:
+- Spell base duration increased to 75 seconds (it was 60)
+- Zombies max quantity raised to 15 [as it was in Belzebub]
+- Zombies gain extra damage via character's strength
+- Zombies gain extra to hit via character's dexterity
+- Zombies gain extra armor class via character's dexterity
+- Revive skill design changed:
+- Revived max quantity raised to 15 [as it was in Belzebub]
+- Revived gain extra damage bonus via character's strength
+- Revived gain extra to hit bonus via character's dexterity
+- Revived are now full minions and follow you through the levels
+- Revived Normal monsters are revived permanently
+- Revived Champion monsters remain timed
+- Revived Champion monsters duration is affected by both character level and character's vitality
+- Revived target scan redesigned so that they won't wander the whole level in search of target but rather stay with you.
+- Raise Skeleton changed:
+- Skeletons max quantity raised to 15 [as it was in Belzebub]
+- Skeletons now gain extra min-max damage via character's strength
+- Skeletons now gain extra Armor Class and To Hit via character's dexterity
+- Necromancer Zombies, Skeletons and Revived will no longer teleport to you when you cast phasing and teleport. They will, however, warp to you when they are too far.
+- Revived monsters gain resistance penetration - 1 resistance per 10 magic.
+
 #Tchernobog version 0.1.4a
 - Added the ability to change displayed names/colors to loot filters
 - Minor fix for hidden shrine
