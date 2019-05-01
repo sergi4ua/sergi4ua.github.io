@@ -1,3 +1,8 @@
+#Tchernobog 0.1.4d
+- Monster level was showing wrong values before - fixed
+- Reduced monster hp gain in multiplayer from 200% per player to 120% - this wasn't working - fixed
+- Fixed crash with necromancers leaving the game
+
 #Tchernobog 0.1.4c
 - Fixed a bug with golem highlighting corpses
 - Minions are always visible (ignoring line of sight)
