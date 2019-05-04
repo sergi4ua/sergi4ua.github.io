@@ -1,3 +1,9 @@
+#Tchernobog 0.1.5b
+- Unfreeze on death
+- Insanity gets removed on death
+- Unfreeze on changing levels
+- Improving crash logs
+
 #Tchernobog 0.1.5a
 - Fixed showing uptime on online list
 - Games considered inactive will be marked with "*" on the list (happens if a game doesn't answer in 30 seconds)
