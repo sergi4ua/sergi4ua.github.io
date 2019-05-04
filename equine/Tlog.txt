@@ -1,3 +1,9 @@
+#Tchernobog 0.1.5a
+- Fixed showing uptime on online list
+- Games considered inactive will be marked with "*" on the list (happens if a game doesn't answer in 30 seconds)
+- Hopefully fixed a random crash while joining games
+- Additional recipe info should be displayed on recipes too, not only in crafting menu.
+
 #Tchernobog 0.1.5
 - 32bit/Windows XP support
 - Online game list - shows active games in ZeroTier Tchernobog network.
