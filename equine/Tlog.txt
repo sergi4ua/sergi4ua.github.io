@@ -1,3 +1,8 @@
+#Tchernobog 0.1.5
+- 32bit/Windows XP support
+- Online game list - shows active games in ZeroTier Tchernobog network.
+- Generating crash logs - Whenever the game crashes, TCHERNOBOGCRASHLOG-<version name>.dmp file will be created in tchernobog folder. Send it to Qndel!
+
 #Tchernobog 0.1.4d
 - Monster level was showing wrong values before - fixed
 - Reduced monster hp gain in multiplayer from 200% per player to 120% - this wasn't working - fixed
