@@ -1,3 +1,19 @@
+#Tchernobog 0.1.5d
+- Disabled exe optimizations - this increases exe size to ~5mb and it might run a bit slower than before - optimizations will be turned on again when known crashes get fixed
+- Added option to disable highlighting corpses for necromancer
+- Highlighting corpses and minions settings aren't saved in the character like other settings. They always reset to true after game restart. Anything else would result in corrupting existing characters.
+- Almost fully fixed revived scavengers attacking empty tile (still needs some work)
+- Minions that belong to other players are also displayed ignoring line of sight.
+- Players can see games from all versions on online list. However you can only connect to the same version as yours.
+- Inactive games are marked with "*" from the left side. Games with a version that doesn't match with yours will be marked with "*" from the right side.
+- Examples:       
+	*<IP> = inactive game       
+	*<IP>* - inactive game that didn't match your version
+	<IP>* - an active game that doesn't match your version
+	<IP> - an active game that matches your version
+- Fixing online list in game after changing Tchernobog's ZeroTier network.
+- Some crashes will generate CRITICAL_ERROR_CONTACT_QNDEL.txt file. You know what to do with it.
+
 #Tchernobog 0.1.5c
 - Fixed a crash caused by pasting pictures/other weird data into chat
 - Bigger crash logs (200~mb), please compress with zip or winrar and upload to some website (For example: https://uploadfiles.io/) and send to Qndel!
