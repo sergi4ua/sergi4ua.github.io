@@ -1,3 +1,11 @@
+#Tchernobog 0.1.5e
+- Dead revived were sometimes highlighted in green - fixed
+- Summoned minions have different leash distances depending on dungeon type
+- Item outline color matches the label color
+- Outline colors have been made less transparent
+- Option to disable highlighting outlines of all items while seeing all labels (holding alt or pressed ctrl)
+- Added missing tier/class description to Harbinger's Ring recipe.
+
 #Tchernobog 0.1.5d
 - Disabled exe optimizations - this increases exe size to ~5mb and it might run a bit slower than before - optimizations will be turned on again when known crashes get fixed
 - Added option to disable highlighting corpses for necromancer
