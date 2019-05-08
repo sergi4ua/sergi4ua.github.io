@@ -1,3 +1,16 @@
+#Tchernobog 0.1.5f
+- Can't join your own games anymore.
+- Added missing tier/class description to "Warrior's weapon" recipe
+- New boss modifier - "Hoarder" - randomly chooses 1 out of 4 loot types for his loot - rings/books/weapons/armors. If books are chosen, he has increased chance to drop recipes.
+- New boss modifier - "Sage" - killing it grants all players bonus 50% experience for 5 minutes (Experience shrine effect)
+- New boss modifier - "Highborn" - increased level by 20%
+- "Greedy" monsters will have a green halo
+- "Sage" monsters will have a light-blue halo
+- "Hoarder" monsters will have an orange halo
+- "Highborn" monsters will have a yellow halo
+- Added new unique monsters - be the first one to find them!
+- Greedy affix works as behemoth + mastery combined in terms of monster power (Be afraid!)
+
 #Tchernobog 0.1.5e
 - Dead revived were sometimes highlighted in green - fixed
 - Summoned minions have different leash distances depending on dungeon type
