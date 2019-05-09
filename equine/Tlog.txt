@@ -1,3 +1,15 @@
+#Tchernobog 0.1.6
+- Floating numbers
+- Fixed some crashes in rendering
+- Revived Gargoyles now properly follow the owner
+- Revived Gargoyles don't flee anymore when injured
+- Revived Gargoyles do not enter stone form anymore
+- Revived Gargoyles no longer play "exit stone form" animation when acquiring their first target
+- Raise Zombie skill description updated
+- Raise Skeleton skill description updated
+- Revive skill description updated
+- Added an option to turn floating numbers on/off (off by default)
+
 #Tchernobog 0.1.5f
 - Can't join your own games anymore.
 - Added missing tier/class description to "Warrior's weapon" recipe
