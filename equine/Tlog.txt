@@ -1,3 +1,6 @@
+#Tchernobog 0.1.6a
+- Critical hotfix for characters getting corrupted in 0.1.6!
+
 #Tchernobog 0.1.6
 - Floating numbers
 - Fixed some crashes in rendering
