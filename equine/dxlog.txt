@@ -1,0 +1,14 @@
+0.4.0:
+Fixed flickering mouse in caves
+32bit ARM build (Raspberry Pi)
+32bit FreeBSD build
+32bit Haiku support (see HaikuDepot)
+Included font for rendering credits and progress screen
+Upscaling can be disabled in diablo.ini
+Direct file access implemented (mods don't won't need to pack their files in an MPQ)
+Music and speech memory leaks fixed
+Known issues:
+Sounds fads too much over distance when the volume is lowered
+Error dialogs not implemented in main UI
+Delete hero not implemented
+Screenshots are always saved to ./screen00.PCX
