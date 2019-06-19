@@ -1,0 +1,1339 @@
+The Hell finally updated in EQUINE, enjoy :P
+
+	v1.235, (2019-05-05)
+
++	Fixed connectivity issue for multiplayer: version was wrong,
+	Note: these days Tunngle is no longer functioning (they closed it), so use Hamachi + IPX Wrapper (you  can google these easily);
++	Modified sme recent uniques;
+
+=====================================================
+
+	v1.149g, (23:05 27.01.2013), Patch
+
++	Monster information panel's resists display line replaced with monster type description line;
++	Slightly buffed Butcher for Horror mode;
++	Bonespan nerfed;
++	Obsolete hotkey information (Q - questbook, B - spellbook, S - speedbook) no longer  displayed;
++	Added another unique based on gladiator's helmet;
++	When automap is active, chests will be highlighted;
+
+
+	v1.149h, (20:42 28.01.2013), Patch
+
++	Fixed a bug that caused Hell music play in MP Catacombs;
++	Fixed Necromorb AI missile type (was broken);
+
+
+	v1.149m, (23:50 01.02.2013), Patch
+
++	Monsters no longer leave shadows in coop if killed by more than one player;
++	Monster multidrop (duped) in coop fixed (hopefully);
++	Death tolls are now shown in values;
++	Character passive melee damage resistance modified to:
+	Gladiator: [ 20 + ( Rnd[baseVIT/8] + 36) ]%,
+	Paladin: [ 15 + ( Rnd[baseVIT/8] + 36) ]%,
+	Monk: [ 13 + (CLVL/16) + ( Rnd[baseVIT/8] + 36) ]%;
++	Cain's dialogue menu is given color support for unique and set items;
++	An attempt made [by Yarik] to fix hit sounds in PvP Ranged (magic). Not sure how it worked out;
++	A weird rune functionality programmatic fix [by Yarik] that should prevent potential memory corruption (yeah, there's little that I understand about it, too);
+
+
+	v1.149n, (13:25 04.02.2013), Patch
+
++	Removed 'Increased Fury duration' check from PvM Ranged to prevent it from interfering with Gargoyle stoning state (this _probably_ resulted in their squatting sometimes);
+
+
+	v1.149p, (16:32 11.02.2013), Patch
+
++	Fixed a bug that allowed lifestealing in PvP through utilizing ILS items;
++	[Desert Dragon]: added support for Windows 8,
+	Note: under Windows 8, set TH.exe file settings to "run in Win98 compatibility mode" and "use 640x480 resolution",
+	Note: if you're running Win8, try with these file settings and without them, to test it, and report to me. I'd like to know how it works (I can't test myslef because of running Win7);
+
+
+	v1.149q, (21:04 12.02.2013), Patch
+
++	Minor town sector 1 architecture adjustments and fixes;
++	[Desert Dragon]: win8 support fixed,
+	Note: under Windows 8, set TH.exe file settings to "run in Win95 compatibility mode" and "use 640x480 resolution",
+
+
+	v1.149u, (13:19 15.02.2013), Full Release
+
++	Dregbez room has 2x more doors now, Pinky/Ceromorth - 1,5x more;
++	Combination of sharp + blunt produced no effect of increased damage vs undead/demons with these effects active on player, now fixed,
+	Note: mixed style dual wielders will benefit from this;
++	PvM Melee crit chances revised for character classes:
+	Paldn:	10+(CLVL/4)% for 250% dmg,
+	Scout:	(CLVL/2)% for 200% dmg,
+	Mage:	(CLVL/2)% for 200% dmg,
+	Monk:	(CLVL/2)% for 300% dmg,
+	Assa:	6+(CLVL/4)% for 500% dmg,
+	Gladr:	10+(CLVL/2)% for 200% dmg;
++	Additional check added to monster stun formula. Excluding stun-immune monsters, damaging a monster for { ( ( monster_baseHP * 1,5 ) + monster_currentHP ) / 8 } of its maximum life (or stronger) stuns it now,
+	Note: this requires damaging monster for 31% of its maximum HP when its current HP is at its full, and damaging it for about 21% when its current HP is at 22%,
+	Note: in other words, to stun a monster that has 1000 of 1000 HP, you need to deal 310 damage, and to stun it when it has 220 of 1000 HP will take "only" 210 damage,
+	Note: minimum is 18%, but you won't see that as it will kill the monster anyway ^_^,
+	Note: yes, it does make killing monsters more pleasant, and yes, it does make the game a little easier;
++	Readme files updated;
++	Hoop of Magma redesigned;
+
+
+	v1.150, (22:02 20.02.2013), Full Release
+
++	Revised some base item values;
++	Prefix 'Rotting' now gives ILS and is renamed to 'Draining';
++	Prefix 'Crafted' now sets item durability to [200-250] instead of adding [101-200]% to its base durability (still, I'd like to replace it with something better);
++	There will no longer be scroll chunks scattered through Crypt levels 21-23 as this now is a part of 'Horazon's Demons' quest;
++	Fixed a bug that made Magic Rock morph into a mundane item (usually, mana potion) some 5 secondds after being picked up (or dropped from its table?);
++	Revised values for resist all prefix series, to make them more attractive early on;
++	Abyss levels will now have shrines (currently: cauldrons, when I'm in a mood for drawing some guts that might look like shrine, I'll do that): 0-1 on Horror, 0-2 on Purgatory and 0-3 on Doom;
+
+
+	v1.150a, (2:15 23.02.2013), Patch
+
++	Fixed Blood Legion's resists for MP, didn't work because of flawed coding;
++	Dread effect now works in PvM Ranged (affects arrows & magic against monsters);
++	Monsters with resistance to anything couldn't be stunned in PvM Ranged. Cancelled that (but gotta watch if any consequences arrive unexpectedly);
++	Same done in MvM Ranged;
++	Affixes of bonus damage to undead and demons now work in PvM Ranged (affects... you guessed it!);
++	Fixed chain activation for situations where Golem hits a monster;
++	Restored Uber Diablo's minions bosses on multiDoom, they weren't present there due to my coding error;
+
+
+	v1.150b, (1:21 01.03.2013), Full Release
+
++	Increased hidden's stun threshold;
++	Revised some unique item stats;
++	Fixed a glitched tile of a house north of Adria's;
+
+
+	v1.150c, (19:24 01.03.2013), Patch
+
++	Monster type display corrected;
++	Fireblast and Arcane star/nova no longer push back enemies;
+
+
+	v1.150e, (17:28 06.03.2013), Patch
+
++	PvM Ranged criticals changed for Scout class from ((CLVL/4)+1)% for 500% to ((CLVL/8)+7)% for 300%;
++	Uber Diablo KB resistance for SP mode set to 95%;
++	Various finetunings;
+
+
+	v1.150f, (12:49 07.03.2013), Patch
+
++	[Yarik] Fixed blackscreen bug when joining a game (but testing required to make sure that it is really fixed);
+
+
+	v1.150g, (19:02 10.03.2013), Patch
+
++	Adjusted some unique item stats;
++	Assassin MvP Melee passive damage resistance made similar to that of Monk's ( [ 13 + (CLVL/16) + ( Rnd[baseVIT/8] + 36) ]% );
++	Relict of Apocalypse removed;
+
+
+	v1.150h, (22:51 18.03.2013), Patch
+
++	Fixed a glitched tile in the house behind Farnham (will be available with the next full release);
++	Fixed DEX and VIT modifiers on Gladiator's Horns (to make the set be equippable as a whole with the crossbow);
+
+
+	v1.153, (17:17 14.04.2013), Full Release
+
++	Fixed VIT modifier on Gladiator's Burn (now should be enough, at last!);
++	Bonus damage vs demons\undead no longer works in PvM Ranged;
++	MvP Melee autohit values adjusted again:
+	Paladin: 20%,
+	Scout: 20%,
+	Mage: 30%,
+	Monk: 18%,
+	Assassin: 12%,
+	Gladiator: 20%;
++	Izual is given 14/15 chance of KB resistance;
++	Izual does +300% with Inferno;
++	Gillian will give XP for completing Izual quest: 50k on Horror, 500k on Purgatory and 2000k on Doom;
++	Izual given damage resistance:
+	melee: 62,5%,
+	arrows: 75%,
+	magic: 87,5%;
++	Balors are given damage resistance to arrows in multiplayer mode: 50% on dlvl-23 and 75% on dlvl-24;
++	Skullwings now use secondary fire, like Hellwings. And AI subtype reduced to 4;
++	Character elemental resistances are reduced in the Valley of Despair by:
+	horror: 30%,
+	purgatory: 40%,
+	doom: 50%;
++	Izual's Inferno range is increased;
++	Changed Valley palette to blackish;
++	Removed greeting speech from Emperor Morgoth;
++	Revised AC values on Mage armor line;
++	Izual will deal heavy lightning damage on hit now:
+	horror: 80-120,
+	purgatory: 140-200,
+	doom: 220-300;
++	Izual drops 3 items;
++	Used special music for the Valley: music pack updated to version 6.0;
++	Created new quest: "The Fallen Angel";
++	System of cooldowns implemented for nova type spells, it also affects Apocalypse. Relicts will trigger cooldowns also. Runes - do NOT;
++	The following spells aren't allowed to be cast on Izual's level: Arcane/Fire/Lightning/Holy Nova, Fire/Ligthning Ring/Wall, Apocalypse, Hellfire;
++	Monk's attack speed with bows decreased by 1 frame;
++	[Yarik] Fixed a bug related to item morphing;
++	Uber Diablo: resist to KB in SP raised to 29/30. Izual's reist to KB raised to 20/21;
++	Monster DAh is given 6/7 KB resistance (in SP), ability to damage mana on hit (-25% to player's current mana on hit) and won't retreat;
++	Fixed a faulty jump in monster mana damage routine;
++	Updated Music Pack to version 6.1;
++	Added v6.1 music support to quest levels 14 and 15;
++	Removed 2 monsters (closest to entry) from Infested Cellar doom variation 2 map;
++	List of forbidden spells for quest levels 14 and 15: all fire type and teleportation type spells, hellfire, apoc, infravision;
++	Oblivion Knight base stats slightly boosted;
++	Added degeneration of life and mana o quest levels 14 and 15. Unlike in Andariel's domain, it doesn't depend on character stats here and is static (level 15 drains stronger though):
+	life on q_level 14:
+		horror:		-4,
+		purgatory: 	-12,
+		doom:		-28,
+	life on q_level 15:
+		horror:		-8,
+		purgatory:	-20,
+		doom:		-40,
+	mana on q_level 14:
+		horror:		-2,
+		purgatory: 	-8,
+		doom:		-16,
+	mana on q_level 15:
+		horror:		-4,
+		purgatory:	-12,
+		doom:		-20,
++	Fixed 'Lose all regeneraton' flag effect: now it will just not allow positive regeneration, and degeneration will not be cancelled;
++	Attacks and castings are slowed by 0.10 seconds on quest level 14, and by 0.20 seconds on quest level 15;
++	Fixed a bug in special boss placing code (was flawed after having added Izual);
++	Quest levels 14 and 15 also will penalize DFE, AC and accuracy;
++	Chain Activation radius modified to 3 (used to be 5), and, when alone in the game, Scout has CA radius of 2 and Assassin's CA radius is 1;
+
+
+	v1.153a, (20:54 14.04.2013), Full Release
+
++	Fixed a critical error in spell casting limitations function, which led to gamecrash;
+
+
+	v1.153c, (23:44 14.04.2013), Full Release
+
++	Fixed portal activation in quest area #11;
++	Minor map changes in Passage of Fire;
+
+
+	v1.153d, (19:49 21.04.2013), Full Release
+
++	[Yarik] Fixed a bug that sometimes made dropped uniques morph into others (based on the same uID);
+
+
+	v1.154, (20:49 22.04.2013), Full Release
+
++	Fixed a bug that allowed double casting before cooldown timer started;
++	Cooldowns are set to 5 sec in SP mode;
++	Gold drops are no longer increased in Hell (and Crypt?) location by 12,5%;
++	Gold drops in MP are now increased depending on amount of players in game:
+	1 player:  +000%,
+	2 players: +050%,
+	3 players: +100%,
+	4 players: +150%;
++	Uber D's room that was made by Sierra is replaced by ours. Big room, opened by the lever, opened 4 sides. With several warpers inside, and 10 bloodied hidden on MP Doom,
+	Note: 2 bloodied hidden bosses from MP Doom are still there;
++	[Yarik] Fixed a bug that muted game sound when killing Uber D on SP Horror and loading game while he's still in his death throes and cinematics aren't yet triggered,
+	Note: same bug that was fixed in Diablo v1.07. But since HF v1.01 was based on Diablo v1.04.... here you go;
++	Modified Night Rogue unique;
+
+
+	v1.154a, (22:57 26.04.2013), Patch
+
++	One of two Balthazar bosses renamed to Jaldabaoth;
++	[Yarik] Fixed a latent bug that didn't reveal itself until now. Uber D no longer casts Ring of Fire (replaced with Firebolt) and lightning effect replaced with the one that lightning demons use;
+
+
+	v1.155, (15:36 29.04.2013), Patch
+
++	Character passive melee damage resistance modified to:
+	Paladin:	[ 19 + ( Rnd[baseVIT/8] + 36) ]%,
+	Gladiator:	[ 20 + ( Rnd[baseVIT/8] + 36) ]%,
+	Mage/Scout:	[ 10 + ( Rnd[baseVIT/8] + 36) ]%,
+	Monk:		[ 11 + (CLVL/16) + ( Rnd[baseVIT/8] + 36) ]%,
+	Assassin:	[ 17 + (CLVL/16) + ( Rnd[baseVIT/8] + 36) ]%;
++	Fixed a bug that set off cooldowns for all players when a nova was cast by any player in the game;
++	Version 1.155 made incompatible with all previous versions. This will make people that use older versions unable to connect to games played on v1.155;
++	Fixed original HF bug: rings of fire/lightning will henceforth correctly cancel each other when cast in MP (with other players in game);
+
+
+	v1.156, (13:42 03.05.2013), Patch
+
++	Character passive melee damage resistance wasn't functioning as intended. Fixed that, and modified to:
+	Paladin:	{Rnd[24+(baseVIT/8)]+25}%,
+	Scout:		{Rnd[24+(baseVIT/8)]+5}%,
+	Mage:		{Rnd[24+(baseVIT/8)]+5}%,
+	Monk:		{Rnd[24+(baseVIT/8)]+12+(CLVL/8)}%,
+	Assassin:	{Rnd[24+(baseVIT/8)]+11+(CLVL/4)}%,
+	Gladiator:	{Rnd[24+(baseVIT/8)]+18}%;
+
+
+	v1.156a, (14:23 05.05.2013), Patch
+
++	Chaosbringer and Dreamlyre are given more serious penalties;
++	Fixed a bug that occasionally led to crash when loading one of the "Lost Treasure" levels;
++	Replaced wrong grate tile in Glacial Caverns (nothing serious);
+
+
+	v1.156b, (19:56 06.05.2013), Patch
+
++	Slightly nerfed Civerb's Icon;
++	Added 2 new items on uID#55;
+
+
+	v1.156c, (13:07 07.05.2013), Patch
+
++	Relict of Apocalypse restored (it's ok to use it with cooldowns);
++	Tons and tons of unique item adjustments to those based on items of clvl 49 and greater;
+
+
+	v1.157, (00:14 08.05.2013), Patch
+
++	[Yarik] Fixed old HF bug that didn't allow players see other players in game casting non-pointer spells like Elemental;
++	[Yarik] Fixed old HF bug that didn't allow players see other players in game casting nova spells from relicts;
++	[Yarik] Fixed no cooldown for Apocalypse;
++	Hellfire renamed to Force Wave;
++	Force Wave is given new animation, and damage formula is set to (CLVL/4)+1+Rnd[5];
+
+
+	v1.157a, (18:22 09.05.2013), Patch
+
++	Assigned images to unique items #777 and #778;
++	Fixed version number display;
+
+
+	v1.157c, (15:39 16.05.2013), Full Release
+
++	Restored original sounds for cap in inventory and flipping cap;
++	Gladiator sweep attack chance is 20% now when using sharp(s) or blunt(s);
++	Underworld Spine penalties lowered;
+
+
+	v1.157e, (14:54 17.05.2013), Patch
+
++	Added 3 new uniques on uID#38;
++	Modified image for Linked Plate;
++	Nerfed the Mangler;
++	Crossbow is given new unique image;
++	Modified Arkaine's Valor versions for Purgatory and Doom;
+
+
+	v1.157f, (18:05, 19.05.2013), Patch
+
++	Gladiator maximum sweep attack chance with sword(s) and/or blunt(s) is set to 40%;
+
+
+	v1.157g, (17:39 20.05.2013), Patch
+
++	Added 3 new uniques on uID#5;
++	Revised more uniques;
+
+
+	v1.157h, (12:19 23.05.2013), Patch
+
++	Stygian Guard cost increased a bit;
++	Fixed (nerfed) Butcher's and Leoric's drops for SP Horror mode (where they are gimped). Previously, Warlord's and Gharbad's drops were limited due to a bug;
+
+
+	v1.158, (22:38 28.05.2013), Full Release
+
++	Cooldowns for nova spells set to 20 seconds for MP (-10) and 10 seconds for SP (+5);
++	Great revision to 'Horazon's Demons' quest: architecture changes, monster relocation/adding;
++	Added 6 new uniques on uID#47;
+
+
+	v1.158a, (11:00 29.05.2013), Patch
+
++	Fixed nova cooldowns, now their timings are intact;
+
+
+	v1.158b, (17:36 01.06.2013), Patch
+
++	Major spell manacost adjustments;
++	[Yarik] Fixed a bug with Izual's no distance check for secondary lightning hits (could hit player that is far away with remaining hits after killing their Golem);
+
+
+	v1.158c, (1:59 04.06.2013), Full Release
+
++	Player footstep sounds now vary according to area type;
+
+
+	v1.158d, (10:55 05.06.2013), Patch
+
++	Changed footstep sound for Catacombs;
++	Other insignificant changes;
+
+
+	v1.160, (1:06 13.06.2013), Full Release
+
++	Passage of Fire: modified level layout;
++	Chain Activation's prevention of greeting sound play from special bosses & monsters now rectified;
++	Fury effects are modified for Scout class: triple shot, +clvl/4 DFE, -clvl THC, -clvl AC;
++	DFE caps of -25 in SP Horror and -50 in SP Purgatory are removed (because DFE code now accounts for everything automatically);
++	Zealots do more damage now (raised minimum damage by 60);
++	New quest added: Island of the Sunless Sea;
++	Fixed some scripts for Pepin concerning 'Worms' quest. Shouldn't interfere with 'Mushroom' quest now;
+
+
+	v1.161, (13:43 17.06.2013), Patch
+
++	Added support for 2nd music file;
++	Fixed game freeze upon touching Slain Hero with Scout class on Doom mode;
++	Various tunings and data adjustments;
+
+
+	v1.162, (18.06.2013), Full Release
+
++	Fixed Leoric activation sound;
++	Activated speech for Izual;
++	Andariel is given an activation speech;
+
+
+	v1.163, (2013-06-20), Full Release
+
++	Fixed angel statue placement (used to be placed on all cave and abyss levels);
++	Lots of changes in uniques;
+
+
+	v1.164, (2013-06-23), Full Release
+
++	Corrections to Arkaine's Valor stat displays;
++	Fixed some architectural issues on Worm quest level variations;
+
+
+	v1.165, (2013-06-28), Full Release
+
++	Slightly modified Celestial set stats;
++	Modified Morbid Sight;
++	Added special animation for monsters when hit: blood/guts, metal chunks or bones (depending on monster animation type):
+	Note: this works for critical and fatal blows, and doesn't work for magical attacks (these have enough effects already);
++	Modified Passage of Fire, again;
+
+
+	v1.165a, (2013-06-29), Patch
+
++	Modified requirements for all helmets;
++	Corrected Morbid Sight;
+
+
+	v1.166, (2013-07-02), Patch
+
++	Similar to SP quest zones, saving game/using portal/entering stairs in SP mode is not allowed anymore if there are monsters nearby (activated);
+
+
+	v1.167, (2013-07-04), Full Release
+
++	Randomly triggered activation sounds given to the following types of monsters:
+	Clasp,
+	Goatmace/Goatbow/Goatlord,
+	Flesh,
+	Zombie,
+	Reaper,
+	ImpBrute,
+	Scavenger,
+	Snake,
+	Antworm,
+	Mega;
++	Certain quest bosses no longer turn off savegame feature when in dialogue mode (Lachdanan, Gharbad, Snotspill, Zhar the Mad);
++	Added a dozen of uniques on uID#88;
+
+
+	v1.168, (2013-07-07), Full Release
+
++	Better version differentiation;
++	Improved some boss names;
++	Better pictures for some unique items;
+
+
+	v1.169, (2013-07-24), Full Release
+
++	Characters now give speech when picking up golden elixir;
++	Sturdy prefix buffed: [15-35] >> [21-35];
++	Bloodsplash and fatal bloodsplash animation chances modified from 30% and 10% to 24% and 8% respectively;
++	Monster greeting sound chances set to ~16%;
++	Revised some uniques;
++	"Vise" function activated for MP;
++	In MP now menu of "New game" and "Exit" are available always;
+
+
+	v1.170, (2013-07-28), Full Release
+
++	Revised dlvl [1-6] boss names;
++	Created 6 more alternative dungeons for Halls of Anguish level;
+
+
+	v1.171, (2013-07-31), Full Release
+
++	Added 1 more dungeon variation for Halls of Anguish (total of 8 now);
++	Vise deactivated for MP;
++	New game and Exit manus are deactivated again in MP (accessible only when in town);
++	Several minor base item stat adjustments;
+
+
+	v1.172, (2013-08-04), Full Release
+
++	Nerfed uniques based on uID#B6h;
++	Lash of Doomsday: repair cost increased, and greater resistance penalty;
++	Added 7 more uniques on uID#17h;
++	Doomsayer: lesser STR penalty;
++	Siege Ally renamed to Silent Mooon and completely changed (Karifa's idea);
++	Death Song redesigned completely;
++	Revised uniques based on uID#177;
++	Revised Coat of Levitation, Dragonwing, Doomslinger;
++	Cooldown timing set to 8 sec for SP and 15 sec for MP;
++	Adjusted stats on uID#1Ah items;
++	Ballista: damage nerf;
++	Modified and adjusted lots of unique item data;
++	Newest DB of Kozel uploaded here: http://thehellmod.ucoz.ru/Kozel/Kozel_info_v1.172.rar
+
+
+	v1.173, (2013-08-06), Full Release
+
++	Poisoned Water Supply: changed music theme for this level;
++	Modified Horror mode Leoric tomb to have less chests;
++	Microadjustments in unique item stats;
++	Added 10 more uniques on uID#7Ch;
+
+
+	v1.175, (2013-08-13), Full Release
+
++	Totally revised uniques based on base items 0 through 398;
++	Made lots of corrections to item drop restrictions on doom mode (from monsters): now monsters will not drop low level items, this will result in better drops overall;
++	Newest Kozel DB here: http://thehellmod.ucoz.ru/Kozel/Kozel_info_v1.175.rar
+
+
+	v1.175a, (2013-08-14), Full Release
+
++	Prefix #52 Guiding (+[31-35] to accuracy) changed to Hungry (2% lifestealing);
++	Prefix Guiding (+[31-35] to accuracy) is given accuracy variation compensation (+[26-35]),
+	Note: care taken to not cuase affix morphing, but some jewelry with ex-Guiding effect will morph into Hungry effect (2% life steal);
++	Newest Kozel DB here: http://thehellmod.ucoz.ru/Kozel/Kozel_info_v1.175a.rar
+
+
+	v1.175b, (2013-08-23), Full Release
+
++	Wirt item affix generation rules changed: CLVL*2 >> CLVL+5;
++	Updated Wirm level architecture on Doom mode;
++	Changed Flamberge base damage;
+
+
+	v1.176, (2013-08-25), Full Release
+
++	Added info in the upper right corner that notifies about 'Vise' lockdown (similar  to cooldown info) and Fury activation flag;
++	Restored forced DFE limits on Horror and Purgatory of SP mode (-25/-50);
++	Fixed a bug that morphed Magic Rock into a mana potion at times;
+
+
+	v1.176a, (2013-08-29), Full Release
+
++	Added XP bar at the bottom of info panel;
+
+
+	v1.176b, (2013-09-01), Full Release
+
++	Fixed a bug that allowed to see and shoot through the entrance in the church levels;
+
+
+	v1.176c, (2013-09-24), Full Release
+
++	Fixed a bug that caused gamecrash on rare occasions with experience loss (thx to Grunelf for reporting);
+
+
+	v1.176d, (2013-10-07), Full Release
+
++	Made attempt to rectify clvl check bug on books (report if not fixed!);
++	Updated code for two shrines that increased armor and damage. Now they give boost to ac and base damage according to difficulty mode:
+	Horror: AC 3, damage 5,
+	Purgatory: AC 9, damage 15,
+	Doom: AC 15, damage 25,
+	Note: they also show info in the upper right corner when active,
+	Note: boost is cancelled upon quitting dlvl;
+
+
+	v1.176e, (2013-10-10), Patch
+
++	Fixed clvl check on books for readability;
+
+
+	v1.176f, (2013-10-22), Patch
+
++	Celia placed closer to portals (so that lazy players won't miss her quest unknowingly);
+
+
+	v1.177, (2013-11-12), Full Release
+
+	WARNING!!!
+	THIS VERSION INTRODUCES NEW QUEST 'FLESHDOOM' BUT THIS QUEST ISN'T FINISHED
+	I DON'T RECOMMEND PLAYING IT OR EVEN SPEAKING TO TREMAIN
+	IDEAS CONCERNING THIS QUEST ARE WELCOME THOUGH
+
++	Some base items are renamed;
++	Na-Krul drops 5 items now;
++	Passage of Fire, Lazarus Lair, Horazon and Fleshdoom quest levels play new music now,
+	Note: download it here >>> http://www.moddb.com/mods/diablo-the-hell/downloads/music-expansion-v70-part-2
+-		Wrote speech *texts* for Tremain, Adria, Cain, Gillian, Farnham, Griswold, 
++	Fixed sound for Gillian's speech about Ogden's Sign and Chamber of Bone quests;
++	Various minor undocumented changes;
+
+
+	v1.177a, (2013-11-22), Patch
+
++	Deactivated Fleshdoom quest to prevent bugs associated with it;
+
+
+	v1.178, (2013-12-08), Full Release
+
++	Light hammer (the one Paladin starts with) damage set to [2-12];
++	Fixed Ogden speech about Lost treasure;
++	Adjusted some unique item stats;
++	Several hidden changes;
+
+
+	v1.178a, (2013-12-22), Patch
+
++	[Kozel] Fixed XP bar so that it would display right for CLVL 38+ ;
+
+
+	v1.179, (2013-12-26), Full Release
+
++	Nothing documented;
+
+
+	v1.180, (2013-12-27), Full Release
+
++	Modified and renamed some base items;
++	Monster and boss damage modifiers for purgatory and doom modes are modified to:
+	Purgatory monsters: +[75-120],
+	Doom monsters: primary attacks receive +[158-188], secondary attacks receive +[188-188],
+	Purgatory bosses: +[95-125],
+	Doom bosses: +[193-193],
+	Note: +[x-y] means increase in minimum and maximum damage. For example, if a boss on horror has damage [53-61], then its damage will be modified for purgatory to [(53+95)-(61+125)] which is [148-186];
+
+
+	v1.181, (2014-01-02), Full Release
+
++	A sgnificant flaw rectified in the difficulty-bound monster parameter adjustment code;
++	Monster and boss damage modifiers for purgatory and doom modes are modified to:
+	Purgatory monsters: +[67-100],
+	Doom monsters: primary attacks receive +[167-183],
+	Purgatory bosses: +[90-131],
+	Doom bosses: +[193-193];
+
+
+	v1.182, (2014-02-10), Full Release
+
++	'Dodging' prefix for jewelry (qlvl 48) replaced with 'Vampiric' (steal 2% mana);
+
+
+	v1.183, (2014-02-12), Full Release
+
++	Butcher now drops 2 items;
++	Fleshdoom quest written a little further and excluded from quest seleection (to avoid from appearing in game);
+
+
+	v1.183a, (2014-02-26), Patch
+
++	Bosses with Zombie AI had their behavior changed (to avoid situations when minions alert their long lost boss that is on the outskirts of the map);
+
+
+	v1.183c, (2014-04-14), Patch
+
++	More code written for Tremain;
++	Gladiator now auto-equips 2nd weapon when picking up from floor (with inventory closed);
+
+
+	v1.183d, (2014-04-22), Patch
+
++	Fixed Griswold's refusal to repair items with insufficient durability loss;
+
+
+	v1.183g, (2014-04-30), Patch
+
++	Added 6 new unique items;
+
+
+	v1.183h, (2014-05-03), Patch
+
++	[fix] Oils of Repair are allowed to drop in multiplayer mode now;
+
+
+	v1.184, (2014-05-06), Patch
+
++	Assigned new images to uniques on uID#BBh;
++	Plague Eaters' 2nd attack is faster now;
++	Added a new monster (DDh) and corresponding bosses;
+
+
+	v1.184a, (2014-05-13), Patch
+
++	Warlord of Blood is made stronger on Horror (SP);
+
+
+	v1.184b, (2014-06-01), Patch
+
++	Added blood animation support for monster#221;
+
+
+	v1.184c, (2014-07-17), Patch
+
++	[Yarik] Fixed Sunless Sea Island's portal code bug that caused crashes occasionally;
+
+
+	v1.185, (2014-07-21), Patch
+
++	Fury effects are modified for Scout class: triple shot, +(clvl/4) DFE, -clvl THC, -(clvl/2) AC;
++	Assassin critical hit formula in PvM Melee changed: {[(clvl/4)+6]/100} chance to roll +400% damage >> {[(clvl/4)+5]/100} chance to roll +300%;
+
+
+	v1.186, (2014-07-25), Patch
+
++	Adjusted stats on STR-line base armors;
+
+
+	v1.186 update, (2014-08-07), Full Release
+
++	[LeGioN] updated assasin gfx (ahs);
+
+
+	v1.186 update 2, (2014-08-10), Full Release
+
++	[LeGioN] updated assasin gfx (ahs);
+
+
+	v1.187, (2014-08-17), Full Release
+
++	Added 1 new unique item on uID11h;
++	Some TRN adjustments;
+
+
+	v1.190, (2014-09-15), Full Release
+
++	Modified Mountain of Doom;
++	Altered oil stat display;
++	Modified assortment at Griswold and Wirt so that no item requirement will exceed a player's corresponding basic attribute by more than (clvl/2)+15;
++	Fixed bought item morphing that could be caused by base item qlvl change (now qlvl of all non-staff/relict/book/rune base items can be changed with no hazard of potential morphing);
++	Celia no longer makes appearance in MP mode;
++	Fixed fire/lightning wall/ring double manacost;
++	Fixed the code errors of fire/lite walls/rings (came from vanilla);
++	Fire/lightning walls/rings now have single effect. This works as previously, but leaves more room for extra sprites;
++	Fixed some bugs regarding elemental arrow positioning when hitting objects/target (this will make elemental arrows deal more damage);
++	Fixed some bugs in acid puddle positioning (now appears exactly under character when hit). Plus some optimization regarding acid code;
++	Boss minions now show 'minion' next to their name to alert player of their presence earlier;
++	Bosses now drop additional loot: healing pot and mana pot on Horror, full healing and full mana on Purgatory, 2 full holy water pots on Doom;
++	Bosses drop gold now, according to the following formula: (DLVL*50) + Rnd[101]. For Purgatory mode the amount is increased by 1200, for Doom - by 2400;
++	Special/quest bosses drop even more gold;
++	Cauldrons can be generated in caves now;
+
+
+	v1.190a, (2014-09-16), Patch
+
++	Fixed white item morphing. This occured to whites bought from Griz;
++	Fixed appearance of Mordessa;
+
+
+	v1.191, (2014-09-16), Patch
+
++	Fixed boss crash in MP;
++	Oil availability is taken under control;
++	Other small fixes;
+
+
+	v1.192, (2014-09-18), Patch
+
++	Introducing first version of champions: berserker (+damage), fanatic (+accuracy) and defender (+HP). To be updated in future versions;
+
+
+	v1.193, (2014-09-22), Patch
+
++	Simultaneous usage of lightning and fire damage in melee used to not work: fixed;
++	Belial's Word revised;
++	Acid puddles no more accu,ulate on one tile, this frees up a lot of sprites during battle with spitters and gets players rid of erroneously high damage from acid;
++	Acid puddle damage rebalanced by the new formula: (dlvl/4) + (diff*5), where diff is 0 for horror, 1 for prg, and 2 for doom;
++	Since extra fire and lightning damage are now much more powreful, all uniques and affixes are revised;
+
+
+	v1.193a, (2014-09-23), Patch
+
++	Acid puddle damage is lowered and is now (dlvl/8)+(diff*2);
++	Lightning from monsters made "lighter" and deals ((Rnd[mAC]+1)*16)+(mAC/4) damage now;
+
+
+	v1.193b, (2014-09-26), Patch
+
++	Boss gold drop formula altered: (DLVL*20) + Rnd[101]. For Purgatory mode the amount is increased by 280, for Doom - by 520;
+
+
+	v1.194, (2014-10-16), Patch
+
++	Weapon switch feature added (finally, huh?). Activated by pressing 'V' (version is not displayed by pressing V now - see version # in main menu),
+	Note: it doesn't work while your character is attacking, you need to stop attacking and switch, then continue swinging,
+	Note: we did some tests and it *seems* to work fine (with more spruce-ups to follow in future versions) but play at your own risk with this feature. I'd suggest backing up your characters, just to be sure,
+	Note: thanks to the 3 guys who made donations, your investments made this arrive quicker;
+
+
+	v1.195, (2014-10-18), Patch
+
++	Weapon switch fixed now (hopefully) (let me know if anything goes wrong there!);
++	Weapon swith doesn't work but when you're standing still;
++	When dialogue windows are open, weapon switch doesn't work (including MP talk window);
+
+
+	v1.196, (2014-10-25), Full Release
+
++	Added inventory buttons for weapon swap;
++	Allowed swapping weapons when walking;
++	Swapping weapons when standing/walking no longer interrupts animation;
++	Made this version not see other games in MP where older versions are used;
+
+
+	v1.196a, (2014-10-26), Patch
+
++	Griswold will now correctly show and repair items placed in secondary hand slots;
+
+
+	v1.196b, (2014-10-28), Patch
+
++	Additional hand slot support added to Cain (can detect and ID items there now);
+
+
+	v1.197, (2014-12-01), Full Release
+
++	Monsters with no immunities used to show 'no magic resistance' on info panel, now they will show 'no immunity';
++	Berserker and fanatic type of champions now have a +100% HP boost;
++	Lots of fire\lite damage scenarios redesigned in unique item data (nerfing mostly, because of the elemental damage fix in one of the previous versions);
++	Added unique items on Pole-axe, Naginata, Chain mail and Brigandine;
++	Mage now starts with wand of mana (8 charges) instead of wand of holy bolts;
++	Mage now starts with 3 active spells: holybolt, firebolt and chargedbolt (all of SLVL 1);
++	Adding 'window mode' subfolder to the mod pack. There you'll find a tool (DLL file) to run the mod in window mode. Use, if you want, at your own risk (docs included);
++	Completely revised sets for all classes. I believe, now they'll be more useful, yet less handy when not complete;
++	Fleshdoom quest excluded from quest selection and deactivated again (need more time for development);
+
+
+	v1.197a, (2014-12-02), Patch
+
++	Fixed the bug from original game where one item couldn't have fire and lightning damage effect. This fixes Shockfire problem;
+
+
+	v1.198, (2015-03-06), Patch
+
++	Some small adjustments and typo corrections;
+
+
+	v1.198a, (2015-05-18), Patch
+
++	Deactivated Fleshdoom quest. It remains unfinished;
+
+
+	v1.199, (2015-07-03), Full Release
+
++	Adjusted many unique item properties;
+
+
+	v1.199a, (2015-08-03), Full Release
+
++	Fixed a crash on MP horror dlvl-5 loading;
+
+
+	v1.200, (2015-08-19), Patch
+
++	MAG penalty set to -70 on Joker's Beak (now it's possible to actually wear the full set);
++	Cooldown timing set to 5 sec for SP and 10 sec for MP;
++	MvP Melee: Assassin autohit set to 14% (was: 12%);
++	Melee damage resistance for gladiator class set to {Rnd[(bVIT/8)+36]+5+25}%, which (at clvl 50 and bVIT 240) gives [30-95]% resistance (was: {Rnd[(bVIT/8)+36]+5+13}%);
+
+
+	v1.201, (2015-09-01), Full Release
+
++	Altered some unique item images;
++	Heavy axe: new picture;
++	Secutor Straps: improved picture;
++	Rune blade: improved picture;
++	Grief: stats rebalanced;
++	Light bow: changed picture;
++	Nail Feeder: new picture;
++	Fire Screamer: new picture;
++	Siege Bow: new picture;
++	Blight Mirror: new picture;
++	More picture updates;
+
+
+	v1.202, (2015-09-21), Full Release
+
++	Revised base axe damage values;
++	Corrected Angel names;
++	Improved some item images;
++	Revised some uniques;
+
+
+	v1.203, (2015-09-27), Full Release
+
++	Fixed Gillian gossip;
++	Upgraded some item pictures;
+
+
+	v1.204, (2015-09-30), Full Release
+
++	Improved some item pics and added a dozen of new ones;
+
+
+	v1.205, (2015-10-05), Full Release
+
++	Fixed item duping from inventory body items (a very rare bug). Thanks to Aaron Caissie for reporting;
++	More item image updates;
+
+
+	v1.205a, (2015-11-25), Full Release
+
++	Changed Guardian helm image;
+
+
+	v1.205c, (2016-04-14), Patch
+
++	Increased stat boosts for amulets of cat/bull;
++	Improved Joker's Beak;
+
+
+	v1.205d, (2016-06-24), Patch
+
++	[DD] fixed meta menu issues with [enter] key;
++	Altered stats on Secutor Straps and Peasant Straps;
+
+
+	v1.205e, (2016-10-03), Patch
+
++	Fixed MakeChampions routine potential memory leak;
++	Decreased monster gold drop chances:
+	Horr: -36%,
+	Purg: -53%,
+	Doom: -68%;
++	Fixed mouse click glitches in meta menu;
++	Added potion submenu in stash;
+
+
+	v1.205g, (19:50 17.11.2016), Patch
+
++	[DD] Chain activation fix;
++	Knife of Heresy: name corrected;
++	Removed Harlequin's Crest for good;
++	Added some new uniques on Skull cap;
+-	[DD] Attmept #1 made to fix issue with items disappearing in MP coop games (I need feedback on how it works),
+	Note: be careful though, it might make the game unstable or buggy, let me know if there are any oddities regarding items in coop games;
+
+
+	v1.205h, (23:18 20.11.2016), Patch
+
++	Jaws of Dragonsouls: fixed armor value;
++	Skullhold: armor penalty lowered, a lot;
++	MP item disappear fix undone;
+
+
+	v1.205k, (13:11 22.11.2016), Patch
+
++	Reworked a lot of uniques;
++	Added more uniques;
+
+
+	v1.205m, (21:22 26.11.2016), Patch
+
++	Added more uniques;
+
+
+	v1.205n, (18:40 02.12.2016), Patch
+
++	[DD] Fixed newly updated stash file, could potentially lead to memory corruption;
+
+
+	v1.205p, (3:56 03.12.2016), Patch
+
++	Adapted Belix' patch to TH: monster net kill fix,
+	Note: should prevent monster multiple death/drop when killed by 2+ players in coop;
++	Updated some item pix;
++	Several unique item stat adjustments;
+
+
+	v1.205q, (1:28 06.12.2016), Patch
+
++	Fulfilling my promise to alex33rom: altered Infernal set;
++	Added more uniques on Greatplate;
+
+
+	v1.206, (2:45 13.12.2016), Full Release
+
++	Altered some crypt palettes, added new one (#245);
++	Greatly improved stat reward from Gillian for killing Andariel:
+	+2 stat points on Horror,
+	+8 stat points on Purgatory,
+	+20 stat points on Doom;
++	Changed default palette for Horror Tristram in SP;
++	Corrupt Order is now of beast type;
++	Improved colors for Gargoyles and Death Wings;
++	Improved colors for dlvl 4-5 winged skellies;
++	More unique item adjustments;
++	Added a batch file to make Windows 10 users able to play,
+	Note: if you're on Windows 10, use Win10.bat to start the game;
+
+
+	v1.207, (2:07 23.12.2016), Full Release
+
++	Changed character stun formula to Rnd[CLVL+7]+(baseVIT/8)+(CLVL/2)-2;
++	Uber Xorene and Zealots now belong to beast type;
++	Holybolt damage formula changed,
+	Note: now it's ((CLVL*(Rnd[cMAG]+(SLVL*10)))/30)+10+Rnd[CLVL*10],
+	Note: for Paladin formula is ((CLVL*(Rnd[cMAG]+(SLVL*10)))/15)+10+Rnd[CLVL*10];
++	Many unique monsters are given new names;
++	Poisoned water supply: horror map modified;
+
+
+	v1.208, (5:07 13.01.2017), Full Release
+
++	Fixed the bug with Lazarus in MP that made him go back to inactive mode after you leave the dungeon and return,
+	Note: this is Diablo 1.07 bugfix port to TH by DD;
++	Ddraw patch is integrated with the mod now (by default). As before, readme for it is in 'Window Mode' folder,
+	Note: some people lack the mana to RTFM, they run into trouble and complain about it,
+	Note: so I made ddraw patch present by default, runs in fullscreen at 640x480, winres is 800x600,
+	Note: display options are configured in ddraw_settings.ini;
++	Updated some unique item stats;
+
+
+	v1.209, (13:35 28.01.2017), Full Release
+
+		WARNING! IF GAME DOESN'T START, TRY DELETING 'DDRAW.DLL' FROM MOD FOLDER
+
++	[DD] Belix' monster net kill fix undone (broke MP stability, froze monster occasionally, whole level);
++	[DD] Fix written to correct original game light apply source, which could lead to memory leak,
+	Note: this is believed to be the source of infamous catacomb level morphing bug,
+	Note: report all oddities concerning this level morphing issue;
++	Unique item tweaks;
++	Scout fury functionality revision. Now effects are as follows:
+	triple shot,
+	+2*CLVL to damage,
+	-CLVL to AC,
+	-CLVL to accuracy,
+	+CLVL/4 to DFE;
+
+
+	v1.210, (20:32 12.02.2017), Full Release
+
++	Baranar's Maul: price upped to 228k and AP(3) replaced with -(72 to 74)% resist magic effect,
+	Note: I'm aware this was a popular weapon but it gave item stat power of 4,5(!) whereas it can't be over 2;
++	Stormbringer: AC penalty made worse for the same reason;
++	Stormbite, Blazing Wrath: ditto;
++	AC values revised on base shields;
++	Bastard Sword based uniques adjusted as well;
++	Same for Great Flail, Huge Axe, Katana;
++	Healing spell: bonus for Gladiator class raised from 1.000 to 1.625;
+
+
+	v1.211, (15:24 20.02.2017), Full Release
+
++	[DD] Net item fix #1,
+	Note: this could fix items disappearing in coop games (from the floor);
+
+
+	v1.212, (12:59 04.03.2017), Full Release
+
++	Adjusted uniques on Precision Bow, Sorceror Plate;
+
+
+	v1.213, (18:12 07.03.2017), Full Release
+
++	Net item fix #1 cancelled due to unforseen bugs (during repairs at Griswold),
+	Note: also it seems that it caused town flloor gold wipeouts;
+
+
+	v1.214, (1:30 11.03.2017), Full Release
+
++	Net item fix #2 applied: DD swore this will not cause bugs with item disappears from town floor, but be careful;
++	Introduced weapon slow mechanics on some axes and (especially) crossbows,
+	Note: this is experimental,
+	Note: weapon damage is adjusted accordingly (more or less);
+
+
+	v1.215, (19:04 13.03.2017), Full Release
+
++	Slow weapon damage rating increased a lot (DPS-wise set to roughly 150% damage);
++	[DD] PvM Ranged: adjusted damage cap to allow crossbows deal full damage;
+
+
+	v1.215a, (21:08 14.03.2017), Full Release
+
++	Golem HP status is displayed in the upper right corner now (if auto-map is active);
+
+
+	v1.216, (21:27 17.03.2017)
+
++	Modified some uniques;
++	Improved slow weapons yet again  (average DPS is now 250% of what it used to be),
+	Note: onscreen damage might be lower but the actual DPS is ~66% higher;
++	Gladiator line crossbows are made significantly faster;
+
+
+	v1.217, (18:00 10.08.2017)
+
++	All slow axe parameters returned to previous settings (slow axes  don't feel right after all);
++	Heavy crossbow damage and speed modified. Speed increased to 50%,
+	Note: Yes, I totally think that slow crossbows still deserve to live;
++	Infernal Scourger fireball damage tripled;
++	MvP Melee: Character damage resistance modified to:
+	Paladin:	{Rnd[36+(bVIT/8)]+5+25}%,
+	Scout:		{Rnd[36+(bVIT/8)]+5}%,
+	Mage:		{Rnd[36+(bVIT/8)]+5}%,
+	Monk:		{Rnd[36+(bVIT/8)]+5+11+(CLVL/8)}%,
+	Assassin:	{Rnd[36+(bVIT/8)]+5+7+(CLVL/4)}%,
+	Gladiator:	{Rnd[36+(bVIT/8)]+5+20}%;
+
+
+	v1.218, (1:26 21.08.2017)
+
++	Added another unique ring (I'm really trying to fill in all the niche uniques here),
+	Note: high level (62+) Nether Coil rings will morph into the new one;
++	Updated a lot of uniques (better fitting pictures, stats, new names);
++	Added a very powerful Mage-specific unique shield, findable only on early Purgatory/Doom levels;
+
+
+	v1.219, (0:01 27.08.2017)
+
++	Changed Horror SP town palette to greenish. Now Horror is green, Purgatory is yellow, and Doom is dark;
++	Mage mana regeneration speed bonus increased to +2;
++	Monk is given mana regeneration bonus: +2;
++	Monk is given life regeneration bonus: +2;
++	Arkaine's Valor armors are improved. Sort of;
++	Characters with cVIT below 16 regenerate 0,33 HP per second with {(cVIT*4)+15}% chance,
+	Note: this also fixes previous issues with this regeneration code skipping DLVL and class checks,
+	Note: Mage class will regenerate like this at ~33% speed now,
+	Note: 'no regeneration' and '+100% life regeneration' effects now work properly for characters with cVIT below 16;
++	Added one extra life regeneration rule for cVIT 16-31 players:
+	if (cVIT-16)*4 is higher than Rnd[80]+1 check, then regeneration is +2 instead of +1,
+	Note: this will give 0% chance for +2 regen at cVIT 16 and 75% chance for +2 at cVIT 31;
++	Added one extra life regeneration rule for cVIT 32-47 players:
+	if (cVIT-32)*4 is higher than Rnd[80]+1 check, then regeneration is +3 instead of +2;
++	Added one extra life regeneration rule for cVIT 48-63 players:
+	if (cVIT-48)*4 is higher than Rnd[80]+1 check, then regeneration is +4 instead of +3;
++	Added one extra life regeneration rule for cVIT 64-79 players:
+	if (cVIT-64)*4 is higher than Rnd[80]+1 check, then regeneration is +5 instead of +4,
+	Note: life regeneration with cVIT above 79 will be functioning as before;
++	Characters with cMAG below 16 regenerate 1 sub-manapoint per game frame, if cMAG is higher or equal to Rnd[22],
+	Note: 1 sub-manapoint is 1/64 of a manapoint, and there are 20 game frames in a second;
++	Added one extra mana regeneration rule for cMAG 16-31 players:
+	if (cMAG-16) is higher than Rnd[22] check, then regeneration is +2 instead of +1,
+	Note: this will give 0% chance for +2 regen at cMAG 16 and ~75% chance for +2 at cMAG 31;
++	Added one extra mana regeneration rule for cMAG 32-47 players:
+	if (cMAG-32) is higher than Rnd[22] check, then regeneration is +3 instead of +2;
++	Added one extra mana regeneration rule for cMAG 48-63 players:
+	if (cMAG-48) is higher than Rnd[22] check, then regeneration is +4 instead of +3;
++	Added one extra mana regeneration rule for cMAG 64-79 players:
+	if (cMAG-64) is higher than Rnd[22] check, then regeneration is +5 instead of +4;
++	Improved Anvil of Fury quest rewards, all 18 of them;
+
+
+	v1.220, (16:52 11.09.2017)
+
++	Fixed Monk speech upon touching Slain Hero;
++	Added 5 more uniques on uID#12h;
++	Created modified TRN files for Monk and Gladiator;
++	[DD] Applied new TRN colors on Monk and Gladiator;
++	[DD] Assassin: applied proper TRN colors to light animations,
+	Note: Assassin now should look darker than Scout at all times;
+
+
+	v1.221, (18:54 13.09.2017)
+
++	MvP Melee: Monk damage resistance modified to {Rnd[36+(bVIT/8)]+5+11+(CLVL/4)}%,
+	Note: this will effectively make Monks sturdier in melee fights as they go up in levels;
++	Recolored SP Gharbad to BSDB color scheme to make him look like he used to in original game;
++	Made SP Gharbad a little tougher and faster;
++	Added another Blood Stone bosspack on dlvl-8;
+
+
+	v1.222, (19:21 22.09.2017)
+
++	Modified two Halls of Anguish level variations;
++	Some of those unique monsters are given more fitting names;
++	Character XP values revised. Now it will take longer in 30's, and even longer in 40's,
+	Note: received dozens of complaints over these years that XP grows faster than the stats. Well, not anymore;
++	[DD] Fixed XP values to unsigned dword to prevent overflow;
++	Veil of Steel line helmets revised (improved a little);
+
+
+	v1.223, (12:23 05.10.2017)
+
++	Added 4 more Poisoned Water Supply level variations for Horror mode;
++	Added 4 more Chamber of Bone level variations for Horror mode;
++	Weapon swap buttons can no longer be pressed with items;
++	Improved balancing of some unique items;
++	Raised VIT requirement on Battle Plate: 85 >> 115;
++	Added dozens of new item pictures to the pool;
++	Some items are given new pictures;
+
+
+	v1.224, (17:30 02.11.2017)
+
++	Added some tombstones on graveyard near the church,
++	Added 1 more unique item;
++	Improved level color palette for Fleshdoom levels;
++	Created Guide for the mod, it will be included in the mod package,
+	Note: online version available here: http://thehellmod.ucoz.ru/Downloads/Diablo_TheHell_Guide.pdf
++	Fleshdoom quest level limitations:
+	1. + 100/150/200 % to XP,
+	2. - 10/15/20 to AC on Horror, - 25/30/35 on Purgatory, - 40/45/50 on Doom,
+	3. - 40/50/60 % to Fire resistance on Horror, - 70/80/90 on Purg., - 100/110/120 on Doom,
+	4. + 3/6/9 to DFE on Horror, +10/13/16 on Purg., +17/21/25 on Doom,
+	5. - 15/20/25 % to accuracy on Horror, - 30/35/40 on Purg., - 45/50/55 on Doom,
+	6. - 0/10/20% light radius,
+	7. (for Pal & Glad) - 10 to Strength on Horr, - 20 on Purg, -30 on Doom, Mage is handicapped with MAG stat, Scout/Asa/Monk - DEX,
+	8. -2 SLVL for Mage class,
+	9. Teleport, Phasing - forbidden to cast (to all classes);
++	Fixed XP getting stuck after 2,000,000,000;
++	When XP reaches its absolute maximum, it will be displayed in gold;
++	Armor- and weapon racks are allowed on quest levels 17-19 outside of special rooms [z223_08];
++	FD flag fix (dlvl 14 morph fix) [z223_11];
++	[DD] Rebuilt StashTH.dll and fixed an old bug made by Ulmo;
++	Nerfed Griswold's Crusher and Griswold's Tool;
++	Added and applied more unique item pictures;
++	Adjusted stat balance on some unique items;
++	Fixed Monk speeches upon picking up the cursed blade, swapped Mage speeches [z223_17];
++	Fixed some more bugs in Fleshdoom quest;
++	Final boss of FD quest was given 4x drop;
+
+
+	v1.225, (0:08 02.12.2017)
+
++	Fleshblight pack is now also using Deathspit AI;
++	[DD] Fixed XP bar which showed too long progress bar,
+	Note: happened if the difference between current XP and next levelup value was more than long int;
++	Online guide upgraded to v1.001;
++	Set special magic level for some bosses (to further improve loot quality in quest levels):
+	Lich King: 60,
+	Mordessa: 59,
+	Wielder of Shadowfang: 60;
++	Adjusted some battle parameters for certain bosses:
+	Snotspill: accuracy +20,
+	Warlord of Blood: +40 accuracy and +20 armor on purgatory, +45 accuracy +20 armor on doom (Horror was taken care of long ago)
+	Goreskin the Striker: accuracy +20,
+	Malantor: accuracy +40,
+	Veliur the Bashing Fist: accuracy +25,
+	Baal: accuracy +20,
+	Belial the Disembowler: accuracy +15,
+	Tahu the Dangerous: armor +20, accuracy +25 (at last this poor fellow will live up to his name, haha)
+	Warlord of Blood (MP level 15): armor +15, accuracy +15,
+	Shadowclaw: accuracy +15, armor +5,
+	Thundercharge: accuracy +40,
+	Magnat: accuracy +15,
+	Lionsteel: armor +25,
+	Black Marquis: armor +20, accuracy +30,
+	Arcturus: accuracy +25, armor +15;
++	Brought some GUI elements closer to the classic atmosphere look;
++	Ghost Warriors, Curse Bearers and Blood Spectres (basically, all knight types) receive armor protection in melee,
+	Note: it works just like DFE, giving a damage threshold that a character must overcome,
+	Note: if characters don't deal them enough damage, they will take zero damage,
+	Note: this will turn them into a unique type of enemy, with armor that is hard to pierce, but vulnerable to magic damage type,
+	Note: some bosses will still be triple immune and have typical 50% damage resist that all bosses have. Beware;
++	Ghost Warrior: DFE in melee set to 60 on Horror, 220 on Purgatory, 450 on Doom;
++	Curse Bearer: DFE in melee set to 70 on Horror, 250 on Purgatory, 500 on Doom;
++	Blood Spectre: DFE in melee set to 100 on Horror, 325 on Purgatory, 600 on Doom;
++	+1 boss drops (Jaldabaoth, Centaliane, Spiritmurk);
++	Ghost Warriors, Curse Bearers and Blood Spectres (basically, all knight types) receive armor protection against arrows,
+	Note: it works just like DFE in melee;
++	Ghost Warrior: DFE against arrows set to 50 on Horror, 200 on Purgatory, 400 on Doom;
++	Curse Bearer: DFE against arrows set to 60 on Horror, 225 on Purgatory, 425 on Doom;
++	Blood Spectre: DFE against arrows set to 80 on Horror, 275 on Purgatory, 500 on Doom;
++	Adjusted damage for affixes that give fire/lightning damage on melee weapons;
++	Picture updates for some base and unique items (won't get into detail - too many);
++	Adjusted damage for affixes that give fire/lightning damage on (x)bows;
++	Adjusted fire and damage on unique items (all 800+ of them, I need a vacation),
+	Note: at last though, elemental damage on weapons has been balanced more or less properly;
++	Wise Drops prevented Mages from finding Joker's Folly in SP. Fixed by adding a copy of it on Griffin shield;
++	[DD] Character main stat reductions in Fleshdoom quest are cancelled;
++	Viribus was changed to fix the balance issues with this item;
++	Inscribed epitaphs on some tombstones near the church;
++	Andariel Throne is given new level loading screen;
++	City of the Damned is given an improved version of loading screen;
++	Mordessa now drops 10 items;
+
+
+	v1.226, (2018-01-01)
+
++	Skull Cap is stripped of uID. Uniques based on it will morph into random magic items;
++	Kabuto Helmet no longer duplicates Horned Barbute uID and was given uID that previously belonged to Skull Cap,
+	Note: it was a wrong decision to create that crazy of uniques on such a low base item;
++	New logo screen for Chamber of Bone;
++	New logo screen for Frozen Loch;
++	New logo screen for Poisoned Water Supply;
++	New logo screen for Leoric's Tomb;
++	Various unique item adjustments;
++	New logo screen for Infested Cellar;
++	Red Serpent and Witch Wail: switched uIDs;
++	One of the players advised me to increase Diablo's drop by 1 item, I thought it was a good idea :) So, Diablo drops +1 item now;
++	Did some music work with the guy from this page: www.myspace.com/membraneous.cortex ;
+
+
+	v1.227, (2018-02-01)
+
++	Some item picture improvements/replacements;
++	Electro Cute drops 1 more item;
+
+
+	v1.228, (2018-03-01)
+
++	Added some new unique items;
++	Some item pictures were improved;
+
+
+	v1.229, (2018-04-01)
+
++	Shift-clicking potions from inventory to belt no longer causes player to attack;
++	Randomization of quest unique items is allowed now: randomized stats on all quest uniques,
+	Note: Anvil of Fury and Celia's Toy quest uniques remain not randomized (for now);
++	Some insignificant image quality improvements for some items;
++	Changed some uniques a little, added a new unique ring;
++	Paladin is given support for individual TRN colors, by armor look (lite/med/heavy);
+
+
+	v1.230, (2018-05-01)
+
++	Hellforge level: fixed the cheese of narrow entry passage;
++	Updated storm.dll, this should fix certain compatibility issues,
+	Note: it's possible you will be able to fire her up on Windows 10;
++	Some changes in 3 recently added end-tier unique items;
+
+
+	v1.231, (2018-06-01)
+
++	Ring Mail requirements changed: STR 122 -> 115, DEX 63 -> 0, VIT 90 -> 85;
++	Dungeon area accessibility changed:
+	Purgatory Catacombs: clvl 25,
+	Purgatory Caves: clvl 27,
+	Purgatory Hell: clvl 29,
+	Purgatory Abyss: clvl 31,
+	Purgatory Crypt: clvl 33,
+	Doom Catacombs: clvl 35,
+	Doom Caves: clvl 37,
+	Doom Hell: clvl 38,
+	Doom Abyss: clvl 39,
+	Doom Crypt: clvl 40;
++	Decreased AC on Wanderer Cloak (30-55 -> 25-35), Embossed Leather (60-70 -> 40-50);
++	Decreased minimal AC on Field Mail (85 -> 65);
++	Steeltouch, Kloox and Darkhoof received functioning immunities and resistances (didn't have them cause I forgot to assign this);
+
+
+	v1.232, (2018-08-01)
+
++	According to 35 patron goal reach, Lich King is given 10 items drop and spectral elixir drop, if game mode is Purgatory or Doom;
++	Character XP chart modified again to provide faster leveling from somewhere around level 35,
+	Note: when you update, kill a monster and get some experience, for XP bar to update;
+
+
+	v1.233, (2018-11-01)
+
++	Tal-Rasha's Duress gives less +SLVL. Done to fix Golem damage value overflow (SLVL 56 glitches out, can't be allowed to get that high);
++	Fixed all remaining boss resistance holes;
+
+
+	v1.234, (2019-02-06)
+
++	According to 50 patron goal reach, Andariel is given 10 items drop (and spectral elixir drop, if game mode is Purgatory or Doom);
