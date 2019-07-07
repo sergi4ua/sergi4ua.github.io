@@ -1,3 +1,9 @@
+#Tchernobog 0.1.6c
+- Disabled trading - it could cause crashes or even corrupt character!
+- Added keeping all backups of characters - if something goes wrong, you always have a copy!
+- Added displaying a timer on online list - now you know when the list is going to refresh.
+- Added displaying "*EMPTY*" if the list is empty. Yes, it works, it's just empty
+
 #Tchernobog 0.1.6b
 - Internal code cleanups - memory leaks
 - Added displaying "ZeroTier detected :)" message below IP if ZeroTier IP is available.
