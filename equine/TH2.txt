@@ -1,0 +1,2070 @@
+Changes log for Diablo: The Hell 2 mod
+..updated downwards (newest changes down below)..
+
+This log is best viewed in fullscreen, with resolutions of 1600x900 or higher (I use 1920x1080 when writing this)
+Latest version of the mod available only on the main website: 	www.patreon.com/thmod
+Youtube: 	https://www.youtube.com/user/MordorTheModmaker
+Facebook: 	https://www.facebook.com/diablothehell/
+Twitch: 		https://www.twitch.tv/mordor_th
+
+Mod development started 2017-12-22
+
+To support TH2 mod development, consider becoming a supporter:
+https://www.patreon.com/bePatron?c=956322
+
+Contact email: diablothehell@gmail.com
+
+=================================================================================================
+
+	The log:
+
+	Previous changes:
+
++	Support for higher resolutions, widescreens, window mode and framerates;
++	Support for modern operating systems;
++	Auto-pickup of gold;
++	Adjustable options in config.ini (in game directory). More info in ReadMe;
++	More base items and modified old items (right now it's based on TH1 but that will evolve);
++	Various technical improvements and bugfixes (many bugs still do exist though including those unrevealed);
++	..more features will be listed later...
+
+
+	v0.1967 (19:07 23.01.2018)
+
++	Updated credits info, support info, some other small things;
++	Renamed Galahad to Blackjack (dig the message?);
+
+
+	v0.1973 (1:35 27.01.2018)
+
++	All base weapons received randomized damage and durability;
+
+
+	v0.1975 (21:51 27.01.2018)
+
++	Randomized durability generation on all armor type items;
++	Added randomize of damage on bucklers;
+
+
+	v0.1991 (18:56 02.02.2018)
+
++	Randomizing glove durability and requirements complete;
++	Randomizing bow durability and requirements complete;
++	Randomizing boots durability and requirements complete;
++	Refixed duping bug hopefully;
++	Shrine names obscured;
++	Fixed wrong player animation display in coop;
++	Expanded elemental list to cold and poison;
++	Game crash must create a log in fame folder now: Th2CrashDump.dmp,
+	(if game crashes, zip it to rar archive and send it to my email);
+
+
+	v0.2029 (3:28 14.02.2018)
+
++	Base character damage adjusted to compliment twohanded weapons, now these weapons increase damage a lot,
+	new conditionas are as follows:
+	if a character has 2h weapon equipped and the type of the weapon is sharp or blunt,then base damage formula is:
+	Gladiator: (clvl * (cSTR+cVIT) / 55) + 2,
+	Monk:  (CLVL * (cSTR + cVIT) / 60) + 4 (same damage with axes),
+	Paladin: (clvl * (cSTR+cVIT) / 45 ) + 5;
++	Monk attacks adjacent targets when using poleaxe weapons;
++	Experimental feature: when jog is on, running is allowed when in dungeon and not in battle,
+	Note: this works even in quest areas,
+	Note: this can be turned off/on in config.ini (set runindungeon on/off);
+
+
+	v0.2054 (1:46 26.02.2018)
+
++	Shield was losing durability according to old Diablo 1 rules: fixed;
++	Potion shift-clicking fixed: character no longer begins attacking during this;
++	Pressing ALT highlights items on the ground;
++	Some known bugs fixed;
++	Added a lot of new base items (subclass-specific items don't work properly, they are being merely prepared);
+
+
+	v0.2089 (7:31 11.03.2018)
+
++	Finished adding sharp type items. All the old sharp weapon data is updated as well;
++	Finished adding randomization on base items (dur, danage, requirements). Only some shields remain;
++	Some bugfixes;
++	Some new affixes are added (they are certain to be bugged for now, feedback is welcome);
+
+
+	v0.2124 (7:57 25.03.2018)
+
++	Adding more base items, expanding on the exisiting ones;
++	Improving affixes: adding new, removing obsolete, etc.;
++	Minimap added. Tab one more time and the map will be made smaller. Hit + or - to toggle between big/small modes;
++	Various items are highlighted with different colors on map;
++	Pressing ALT now shows item names that are on the floor,
+	Note: clicking on the name of an item will make the hero approach it and pick it up;
++	Quest uniques now can have randomized values (stats to be modified later);
++	Pressing SHIFT+TAB while minimap is on, will auto-adjust its position to northwest corner of the screen;
++	Default monster blue item drop chance set to 5% (unique: 1%), boss unique item chance set to 10%;
++	Added magic find affixes,
+	Note: MF percentage increases monster magic item find chance in direct percentage,
+	Note: if total MF is +100% then chance to find blue item from monster is 10% multipled by 2 (resulting in 20%),
+	Note: unique item find chance for monsters and  bosses is quartered (25% in strength),
+	Note: for ex., if total MF on a character is +200% then chance to find unique from a boss is 10% multipled by 1,5 (resulting in 15%);
++	Map blend in/out implemented. Adjust with Shift+/Shift-,
+	Note: it's on by default. In case of display bugs, set 'set mapblend on' line in config to off;
+
+
+	v0.2153 (21:53 10.04.2018)
+
++	Rare items are introduced as a possible drop from bosses,
+	Note: this item type is fucntional but not really ready - yes, there will be morphing next time;
++	Items show info in floating pop-up windows now. To turn off set in config 'set infotip' to off;
++	TONS of base items are updated. But finally, they are brought to what I might name finalized state;
++	Adjusted some affixes;
++	Various other things done about development, just a usual chore, nothing in particular;
+
+
+	v0.2185 (21:30 24.04.2018)
+
++	Some fixes to rare item display and functioning;
++	Base monster rare item drop chance reduced: 1% -> 0.1% ;
++	Stat limits raised: stat 750 -> 1000, and HP & mana 2000 -> 5000 ;
++	Rare items now generate only non-flag affixes;
++	Rare items generate now 1 negative affix (to remain within item power 2 range, for balance' sake);
++	Critical damage affixes updated;
++	Other fixes or reported bugs and general work with base items;
+
+
+	v0.2234 (15:03 10.05.2018)
+
++	Relocated character rebound damage to a table, warriors and fighters have Reflect that does criticals now;
++	Rare items no longer generated with negative affixes;
++	Rare items now use a different affix table which allows to have 4 positive affixes without breaking balance;
++	ARD removed from magic item affix table and no longer needed, ARD defense works by default;
++	Sorted out affixes for magic and rare items, adjusted balancing, prices, levels and values for them all;
++	Affix of '+XP gain' works now after affix of '+% XP gain';
++	Rare items now use pink color;
++	Griswold gives item restock of premiums at 0 + CLVL*6 price;
++	Characters show floating XP and damage (received) numbers. Can be turned off in config (showfloatingtext);
++	Floating number trajectories changed and randomized;
++	Added HP regenerated/healed as floating numbers (displayed in blue);
++	Double manacost for spells fixed (hopefully);
++	Fixed critical damage affix randomize bug (randomization of values wasn't working);
++	Added options to control regeneration floating number thresholds,
+	Note: adjust numbers for these lines in config: set floatingHPRegenThreshold #, set floatingManaRegenThreshold #,
+	Note: this will adjust how strong regeneration must be for you to see it happening,
+	Note: works by hiding the regeneration of given strength an below. For ex., 2 for mana will only show regen of +3 and higher;
+
+
+	v0.2381 (22:37 24.05.2018), "Strangers in the Night"
+
++	Builds now will have code names, just like rock band albums. For better distinction and for fun. This one is after Sinatra's song;
++	Affixes of flat +XP values are randomized now (will show +X-Y to XP instead of +X to XP);
++	Crossbows show 'slow damage' in Griswold's and Wirt's shop menu;
++	When items reach 1 current durability, they will give floating warnings each time max durability goes down, it's optional and adjusted in config;
++	Message log added in MP mode. Hit '0' to bring it up. Close by left clicking outside the window or pressing 'back';
++	Character base resistances changed. Used to be all bVIT/16, now fire is bSTR/10, lightning bDEX/10, magic bMAG/10 (acid and cold unsupported yet);
++	XP floats are originated at the source of the XP (i.e. monster coordinates);
++	Life and mana orbs have text values on them if left clicked, adjustable in config;
++	Damage done to monsters now shown in new bloodgold color (set showFloatingDamage on/off);
++	Some visual UI improvements;
++	Inventory size is noe 7x10 (was 4x10);
++	Updated and rearranged config file, added descriptions to options;
++	Inroducing Nightmare mode. Non-stop action until you die. Features:
+	Note: basically, it's caved in Ironman in one go. Can't use stash, go up in levels, only have one go,
+	Note: game can't be saved and characterfile is instantly deleted when you leave game. This is purely automatic,
+	Note: when you die, you can only choose ABANDON GAME option, which deletes your character,
+	Note: activate by naming your character NM_#your name# (for ex., NM_myrogue),
+	Note: TP relicts/books/shrines - don't work (TP shrine gives two random elixirs instead! No, it won't drop spectral ;D ),
+	Note: but to sweeten the deal, magic find is  set to +100% at the start, bosses always frop 2 ID relix,
+	Note: bosses drop repair oil, which gets better as you go deeper (tier 1 til dlvl-5, tier 2 til dlvl-9, 3 til 17, and 4 after),
+	Note: also, firearrow trap damage is reduced by 75%;
++	Meta menu post image freezes fixed where possible;
++	Added feature to highlight Golem always, made optional, see config visual features;
++	Introducing Ironman mode. Mode is played according to these rules: http://freshmeat85.bplaced.net/Files/IronMan.htm ,
+	Note: activate by naming your character IM_#your name#;
++	In Ironman mode players see how many monsters and objects are left on current dlvl;
++	Ironman level clear gives horn sign to notify that proceeding down is allowed;
++	In Ironman mode dying leaves only MURDER HERO option available, which deletes your character. If you die, you die for good;
++	Changed colors of spinning pentagrams (orng -> red), menu skulls (red -> beige) and level-up buttons (orng -> red);
++	Revised Magic Rock quest rewards;
++	Added config option to control floating indicators of damage recieved by monsters (MonsterReceivedDamageThreshold);
++	Ironman mode save/load limitations updated,
+	Note: player can SAVE & QUIT if last dungeon area level is cleared (dlvls 4/8/12/16/20/24),
+	Note: in SP save game and load game are disabled, in MP new game and quit options are disabled until save point is reached;
++	Buying at vendors will save selected slot number after buying, instead of going back to position one;
++	Fighters start with axe now (instead of two clubs);
++	Multiplayer chatlog spruced up;
++	MP: buying full healing potions from Pepin will no longer result in them morphing into healing potions or relicts;
++	Introducing Hardcore mode: death is permanent and the only option if you died is to murder hero,
+	Note: fire arrow trap damage has been reduced by 75% for this game mode to avoid suddent deaths,
+	Note: to create a hardcore character, name them HC_#your name# ;
++	Joining MP games will now show info on the game mode, difficulty, character name, clvl and class;
++	Inability to join a game in MP will bring up a window with explanation (like, can't join a Nightmare game with Normal character);
++	Wrote code support for fast casting and activated affix series of faster cast speeds, this will cause magic item morphing;
++	Monster HP bars show monsters in color according to their rank (white/blue/gold);
++	Added new prefixes that increase character resistance to melee attack damage from monsters;
++	Character melee damage resistance formula revised (shown in percentage):
+	minimum resistance: CLVL / 8 + bVIT / 16 + 1,
+	maximum resistance: CLVL / 3 + bVIT / 8 + 5,
+	Note: Monks have +2 to min and +3 to max, Rogues have +3 to min and +5 to max on top of that;
++	Added support (and affixes) for summoned minions: +HPs, +% HPs, +ToHit, +AC, +%AC (deactived tho), +%damage, +damage,
+	Note: right now  these improve Golem simply because there are no other summoned minions;
++	Under HP bars, monsters will show squares colored in the style of their immunities:
+	fire - orange, lightning - beige, magic - crimson, curse - white, acid - yellow, cold is.. not supported yet;
++	Another fix to gold generating as rare item;
++	FFS so much is being done that I can't really remember what was added to report it here, anyway, monster HP bar is updated;
++	Added a lot of new affix types, added many of these to magic and rare item tables. There will be morphing, yay! ;
++	Upgraded character sheet window to show more of that useful stuff;
++	Character sheet window made bigger (just like inventory) and now has additional info slots:
+	critical hit chance,
+	critical hit damage,
+	life regeneration speed,
+	mana regeneration speed,
+	magic item find chances,
+	etc.;
++	Added affixes of holy arrows (gave it its own sound effect and holy-looking arrow look, and explode effect animation);
++	Added affixes of bonus accuracy, +damage, +%damage against various monster types (undead, demon, beast);
++	Removed some old affixes that are obsolete now (well, actually it's possible they will be used on unique items, not often),
+	Note: and a little reminder here. Affix is a general name. Stuff before item is prefix, after - suffix;
++	Updated monster HP bar with imunities to the left under the bar, and vulnerabilities to the right (could be improved later);
++	Added new type of arrows: arcane;
++	Added new type of arrows: acid (they do over time damage to monsters and their HP bar goes white when it happens);
++	Sweep damage formula is changed to ( 25 + CLVL/2 )%;
++	Fighters now deal sweep damage when dual wielding and using melee 2handed weapons, Monks sweep with axes and staves;
++	Updated Main menu and Support looks;
++	Fighters can block in melee with all melee 2H weapons now,
+	Note: max block chance is still 35% though, might need a raise in future to about 45-65% since it's only 2 frames;
++	Recolored Bile Demons and their bosses. Changes are not drastic but I had to recolor them from scratch to make them look better;
++	Revised resistances and immunities on all base and unique monsters;
++	Adjusted immunity and vulnerability markers under monster HP bar;
++	Monsters hit with acid will have their HP bar turn beige, also their outline will change color;
++	Updated Credits text;
++	Finished filling up all of new character sheet slots;
++	Character KB resistance formula changed to: ( bSTR/5 + 45 )%, and is displayed in character info window now;
++	Special game mode added: Overtime. Gives a player something like 60 seconds to score a kill, otherwise player is killed,
+	Note: to create an overtime character, name them OT_#your name# ;
+
+
+	v0.2383 (16:23 25.05.2018), hotfix
+
++	Emergency fix: throwing potions made unequippable because they caused game crashes and all sorts of trouble;
+
+
+	v0.3000 (8:25 11.06.2018), "Ring of Fire"
+
++	This one's after Johny Cash's song;
++	In IM and NM modes oils now drop from bosses according to these new rules:
+	dlvl 1: tier 1,
+	dlvls 2-3: tier 2,
+	dlvls 4-5: tier 3,
+	dlvls 6-8: tier 4,
+	dlvls 9-12: tier 5,
+	dlvls 13+: tier 6;
++	Fixed Fighter blocking: now they actually do block with twohanders and don't with bare hands;
++	ALT highlight works correctly with Griswold shop open;
++	Nightmare fixes: elixir giver shrine no longer drops gold, spiritual shrine replace with elixir giver effect;
++	XP floats show correct info, now they process MP XP limitations as well;
++	Monster HP bar displays champion monster info now;
++	Spell cooldown info is shown on the right;
++	Upgraded some affixes of critical series, added some more;
++	MP XP gain cap removed;
++	Upgraded a lot of affix data;
++	Added Walock grimoire list;
++	Changed looks of some jewelry;
++	Added system of Perks. They will be assigned to characters retroactively;
+	Note: formula is CLVL-1 perks for character (e.g., if you are level 17, you get 16 perk points),
+	Note: yes, they do make the mod easier. No, I will not increase difficulty to compensate for that. Yes, I think that's ok;
++	Perk window is opened by [P] hotkey now. Added a button near mana orb, which is used to open perk window,
+	Note: it replaces Friendly Fire switch in MP mode, but since it wasn't used really, I decided it's alright for now,
+	Note: if need be, FF switch will be restored;
++	Rebalanced all perks again. Now they make more sense and provide excellent balance;
++	Automap is no longer drawn over perk window;
++	Item damage indicators no longer drawn over perk cross;
++	Revisions made to all quest uniques (fixing, adjusting);
++	Renamed some unique monsters;
++	Added 2 lines of unique items: rings and amulets;
++	Fighter class is now renamed to Savage (finally);
++	Fixed all perk related code;
++	Fixed character save/load code;
++	Fixed Warlord of Blood speech interruptibility;
++	Fixed Tremain's absence in town;
++	Fixed City of the Damned level loading palette;
++	Items show info in tooltips always, old way is turned off completely. Config option removed as well;
++	Fixed Slain Hero gamecrash (at least, it's supposed to be fixed);
++	Armor type items now can add DFE and damage resistance as base parameters;
++	All items of armor type were assigned individual DFE/AC/DR attributes;
++	Adjusted magic affixes and rare affixes to compensate;
+
+
+	v0.3001 (5:33 12.06.2018), hotfix
+
++	Fixed unidentified items not updating DFE/DR on character;
++	Fixed white items showing red text;
+
+
+	v0.4000 (19:26 24.06.2018), "It's so easy"
+
++	This one's after Willy DeVille (suggested songs didn't beat this one, closest was Alleria and his "Dead Can Dance - Opium");
++	Affix segregation introduced: afixes are now of battle/magic/combo type. Same with base items. This will create a better affix distribution. This applies to rare items as well;
++	Regeneration of life and mana rules were modified. Now it's +1 per each 20 current points of MAG/VIT, and randomizers are turned off,
+	Note: this means there will be no more jumping values in character sheet;
++	Some minor GUI improvements;
++	Fixed PvP ranged battle. Wasn't functional;
++	Fixed stash item corruption bug which was discovered after v0.3000 public release,
+	Note: sorry about that, if your stash file was corrupted, you will have to delete it, it won't be a subject to repair,
+	Note: on the bright side, it's fortunate it didn't happen after v1.00 release. That's why we have testing builds;
++	Added subclass and specialization selection in meta menu (when creating new character),
+	Note: there used to be 6 classes, now there are 29,
+	Note: of course, they don't really feel different right now, it will take time;
++	Changed intro main menu music theme (you'll have to upgrade to music packs v8 if it's mute);
++	Items now have full support for class/subclass/specialization requirements;
++	Character level requirement support added for base items;
++	In SP items that cannot be worn by class restrictions do not drop, and do not sell,
+	Note: this will dramatically reduce the type of items you get thus increasing percentage of useful ones as well,
+	Note: in MP you will still get a lot of items, as before, and this could get changed in next builds, we'll see;
++	Game mode is no longer selected by giving character a certain name, it is now chosen during character creation;
++	Champions now give +50% experience points;
++	Magic find is now +100% for Ironman mode;
++	Overtime mode removed and not supported anymore;
++	Setup is available in multiplayer modes of Ironman and Nightmare;
++	Generation of Town Portal relicts/books/staves is now forbidden in Ironman and Nightmare modes;
++	In IM/NM modes, if it's SP mode and current player is of Mage type, bosses drop magic books with 33% chance, instead of a magic item;
++	Item class requirement displayed in red if class doesn't match;
++	In SP Ironman or Nightmare mode portal to Lazarus level is now opened by right-clicking Lazarus staff;
++	In multiplayer extra game modes are not checked for connectivity, this will be taken care of somewhat later;
+
+
+	v0.4005 (15:10 25.06.2018)
+
++	Expanded affix segregation: now there will be no weapons of sharp type that add damage against undead, and no blunts with damage against beasts;
++	Added a more powerful affix of '+all stats' type: of 'the elders' (generated only on amulets);
++	Adjusted all other affixes completely, all over again. Excluded undesirable generations and combinations, revised numbers, rearranged among item types;
+
+
+	v0.4100 (10:23 11.07.2018)
+
++	Segregation of affixes expanded to "understand" difference between 1H/2H sharps/blunts;
++	Armor racks no longer allow for incompatible class drops;
++	PvM Ranged combat code is improved. Preparations made for improvements. Frozen for now;
++	Created a line of 6 new unique items (based on Sash);
++	Improved quality of some base item pictures;
++	Lots of affix optimization works;
++	Fleshdoom quest level 3 was modified to get rid of entry point cheese (as in TH1);
+
+
+	v0.5000 (21:37 24.07.2018), "Switch Twitch"
+
++	Named after Fluke;
++	Loot segregation taken one step further: players will now find less item types they cannot use (or can't use effectively);
++	Greatly revised item availability by subclass in SP mode:
+	DEX axes only for Shugoki, two-handed battle staves only for Monk, crossbows only for Warriors and Savages, etc.;
++	Minor tweaks in Perk balance (some fine-tunings in 'Here and Now!' requirements);
++	Iron Maiden items (helms/armors/bucklers) now give basic thorns damage;
++	Added Thorns series affixes. They are generated exclusively on Iron Maiden-specific items;
++	Bloodbane is now not triple immune;
++	Knight class renamed to Templar;
++	Revised affixes again. Finally some good news! We are approaching affix stability stage. Should be there in 1-2 build release time. I really hope so;
++	Added a line of unique boots;
++	Added a line of fast crossbows for Iron Maiden (now she's ready to be played, more or less);
++	Flasks can be thrown now (for now, as arrows), allowed to be equipped;
++	Flasks no longer are allowed to be dual equipped. Now Bombardier fights in flask + shield style (single flask is still shown as animation with shield);
+
+
+	v0.5001 (23:37 25.07.2018), hotfix
+
++	Game freezes in window mode fixed (used to do that on ALT pressing);
++	Fixed lightning arrows damage text;
+
+
+	v0.5002 (17:58 27.07.2018), hotfix
+
++	Added Murky Pool and Fountain of Tears to Ironman mode exception objects;
+
+
+	v0.5003 (12:46 28.07.2018), hotfix
+
++	Added Mythical Book to object exceptions for Ironman mode (dlvl-6 quest book);
+
+
+	v0.5004 (13:07 28.07.2018), hotfix
+
++	Added all the rest of potential problem causer objects to Ironman mode exceptions. This time it's final, I certainly hope so;
+
+
+	v0.5005 (23:18 29.07.2018), hotfix
+
++	Added more base items;
++	Fixed uIDs #3 and #4;
+
+
+	v0.5011 (12:49 03.08.2018)
+
++	Working with base items;
+
+
+	v0.5014 (23:58 15.08.2018)
+
++	Executioner masks lose all armor but get advanced damage absorption;
++	Added and modified some base items;
+
+
+	v0.5015 (14:58 17.08.2018)
+
++	Added some more items to the pool;
+
+
+	v0.5016 (19:38 03.09.2018)
+
++	Added a line of Gladiator swords (Gladii);
++	Added some more base items;
++	Removed grave epitaphs for deleted backers;
+
+
+	v0.5017 (12:54 06.09.2018), hotfix
+
++	Added some dungeon objects (special books) to exception to fix getting stuck in Ironman mode (hopefully that will fix getting stuck in dlvl-12);
+
+
+	v0.5020 (17:31 21.09.2018)
+
++	Added more base items;
++	Redesigned some old base items;
+
+
+	v0.5025 (1:36 07.10.2018)
+
++	MSL rules altered (these are character total stat sum limits, see TH1 changelog if you want to know more):
+	clvl < 16: 7 * clvl +  65,
+	clvl < 21: 7 * clvl +  75,
+	clvl < 26: 8 * clvl +  85,
+	clvl < 31:  8 * clvl +  90,
+	clvl < 36:  9 * clvl + 100,
+	clvl < 41:  9 * clvl + 110,
+	clvl < 46: 10 * clvl + 120,
+	clvl > 45: unlimited;
++	Began subclass max stat segregation, unfinished though;
++	Affixes (magic and rare) of flat +life/mana regeneration are doubled in power;
++	Added 10 new unique items based on Cloth Gloves;
+
+
+	v0.5026 (2:50 08.10.2018)
+
++	Supplied new unique gloves with unique pictures;
++	Fixed item flip animations (used to show some imagery as chainmail if image wasn't assigned to a base item and was over 1472 in number);
+
+
+	v0.5027 (17:38 09.10.2018)
+
++	Added 7 unique items based on Cape (uID#182), 45 uniques total now (not including quest rewards);
++	Added 11 uniques based on Short Knife (uID#186), 56 uniques total now;
++	Added 4 uniques based on Wooden Club (uID#92), 60 uniques total now;
+
+
+	v0.5028 (22:17 12.10.2018)
+
++	Added 6 uniques on uID#83 (Small Bow);
++	Added 10 uniques on uID#57 (Hatchet);
++	Added 14 uniques on uID#19 (Light Staff);
++	Added 7 uniques on uID#191 (Scare Mask, tier 1);
+
+
+	v0.5030 (18:51 13.10.2018)
+
++	Added 4 new uniques on uID#192 (Scalped Wraps). Total of 101 uniques now;
++	Upgrades to some quest uniques;
++	Added 3 uniques on uID#193 (Arena Tunic);
++	Added 3 uniques on uID#194 (iron hat, wood mask, galeas tier 1, sage hood, steel cap, circlet);
++	Changed uID#83 items to: Horn bow, Light crossbow, hortened crossbow and Long bow;
++	Removed unique pics from uniques based on uID#83;
++	Added 6 uniques on uID#49 (Targe). Total of 113 uniques now;
+
+
+	v0.5100 (21:27 14.10.2018)
+
++	Added 6 uniques on uID#25 (great club);
++	Added 3 uniques on uID#59 (long sword);
++	Added 3 uniques on uID#64 (short sword);
++	Added 4 uniques on uID#65 (gladius tier 3);
++	Added 4 uniques on uID#63 (slim blade);
++	Added 3 uniques on uID#35 (flanged mace);
++	Added 4 uniques on uID#66 (steel hammer);
++	Added 4 uniques on uID#175 (bardiche). Total of 144 uniques now;
++	Improved rare item name generator;
+
+
+	v0.5101 (18:19 15.10.2018)
+
++	Added a line of Kensei two-handed blades;
++	Prepared to add a line of one-handed blades for Shinobi (Tanto is usable both by Kensei and Shinobi);
++	Rogue line Katana blade replace with Khopesh;
+
+
+	v0.5109 (22:21 16.10.2018)
+
++	Shinobi sword line created (10 one-handed swords, one of them being Tanto, shared with Kensei);
++	Bonewing, Firewing, Stormwing: more XP (approx. +50%);
++	Replacings and improvements of item imagery;
++	Redesigned some base items;
++	Fixed attributes and affix syntax in some uniques;
++	Added 10 new items: a line of blunts for Kensei (Kanobo clubs);
++	Other small corrections in data of monsters and items;
+
+
+	v0.5116 (0:27 18.10.2018)
+
++	Added 4 uniques on uID#86 (Kanabo tier 2). Total uniques 148 now;
++	Monk subclasses are differentiated in colour now:
+	Monk: orange,
+	Kensei: blue (improved native),
+	Shugoki: red,
+	Shinobi: black;
++	All Mage subclasses received color distinctions:
+	Mage: red (default, but I improved colors of original animation),
+	Warlock: crimson,
+	Elementalist: blue,
+	Beastmaster: beige/golden/brass,
+	Demonologist: dark orange,
+	Necromancer: grey/white/silver;
++	Added color schemes ro Archer subclasses:
+	Archer: default,
+	Trapper: blue,
+	Sharpshooter: black,
+	Scout: red;
+
+
+	v0.5117 (10:23 18.10.2018)
+
++	Fixed TRN coloring code for Monk subclasses;
++	Fixed wrong pointer for Mage in chain armor - caused freeze;
++	Cancelled Archer subclass coloring;
+
+
+	v0.5120 (15:28 23.10.2018)
+
++	Warrior subclasses received distinctive coloring:
+	Warrior: blue,
+	Inquisitor: beige,
+	Guardian: orange,
+	Templar: crimson (as before);
++	Savage class colors:
+	Savage: red+black,
+	Executioner: black+red (sounds similar, but it does look different),
+	Berserker: dark,
+	Thraex: red (as Gladiator in TH1),
+	Murmillo: deeper blue,
+	Dimachaerus: yellow/beige,
+	Secutor: default;
++	Fixed unique Light Staff attribute display (report if unique items display stats not right);
++	Rogue subclasses remain with the same color due to some technical issues;
+
+
+	v0.5129 (19:08 24.10.2018)
+
++	Added 3 new unique items based on uID#80 (Light rod, Hatred doll, Smoked sphere, Bone wand);
++	[Dragon] Fixed Rogue subclasses crashing game after having received a custom TRN recolor;
++	Bombardier and Iron Maiden TRN recolors reactivated again;
++	Assassin is given new color;
++	Bombardier flask handling changed (she'll be bugged until it's finished, have patience, it's a work in progress);
++	Fixed Curved Dagger damage (was overpowered) and Balanced Sword (same);
++	Fixed more unique items display;
++	Added 5 uniques based on uID#189 (Booklet of Black Magic);
++	Added 3 uniques based on uID#50 (Adventurer Coat). Total uniques 159 now;
+
+
+	v0.5131 (19:26 25.10.2018)
+
++	Added 4 uniques based on uID#52 (Tight bow);
++	Added 5 uniques based on uID#29 (Precision bow). Total uniques 168 now;
+
+
+	v0.5140 (13:17 28.10.2018)
+
++	Item auto-equip disabled, it also fixes secondary flask equip bug;
++	Starting character weapon damages randomized;
++	Limit of base items raised to 20000;
++	Limit of unique items raised to 20000;
++	uID number raised from 255 to 4 billion (int value);
++	More works with Bombardier mechanics;
++	Maiden crossbows got new pics now;
++	Added 5 uniques based on uID#2000 (Recurve crossbow). Total uniques 173 now;
++	Affixes of '+critical damage%, +critical chance' improved in damage;
+
+
+	v0.5200 (2:58 01.11.2018), "Life's a Bitch" (Motorhead)
+
++	All Monk subclass are recolored;
++	Added blunt weapons for Shinobi (some still need uniqe pics, it will get done in future);
++	Dex line sharps and blunts are no longer usable by Monk subclasses (Kensei/Shinobi have their own lines, Shugoki/Monk use different tools);
++	Applied a lot of class restriction to base items, to get rid of useless (or inappropriate) loot;
++	Added some base items;
++	Some unique item data fixes;
++	Various fixes here and there (too many to report);
++	All subclasses have different initial and max stats now. These can change slightly in future, but it's working already;
++	Various classes start with different sorts of weapons, depending on what they are supposed to use;
+
+
+	v0.6000 (23:37 11.11.2018), "Blackjack" (Airbourne)
+
++	Fixed Skull Breaker image;
++	Fixed lifesteal and manasteal functioning;
++	Fixed a bug when Mana Shield would allow for some damage to hit points if hit by elemental arrows from monsters;
++	Fixed perks being applied to every character in coop games;
++	Continued work on Bombardier mechanics;
++	Deleted Glowing shrine (+5 MAG, -5% XP one);
++	Some affixes now have shorter descriptions;
++	Fixed some numbers on Kensei weapons;
++	Added 5 uniques based on uID#2001 (War crossbow);
++	Post-effects added to flask explosions;
++	More base items added;
++	Adjusted max stats on all Mage subclasses;
++	Added 5 uniques based on uID#2002 (Jagged Sword). Total uniques 183 now;
++	Flask durability can now be restored with oils/shrines;
++	Fixed a bug that allowed 2H sword affixes be generated on 1H swords (can cause affix morphing on swords, sorry);
++	Fixed Shinobi blades (were 2-handed O_O );
++	Affixes are now allowed to generate on flasks. Means, they will now be magical and rare as well (and soon uniques to arrive - in next updates);
++	Bombardier mechanics are finished, more or less,
+	Note: now there are 2 types of flasks: exploding and with delayed damage (explosive and burning),
+	Note: there are 3 types of flasks: fire, lightning and acid,
+	Note: explosives give insant damage and knockback targets (acid explosive still gives damage over time);
++	Warning! There is a bug I caught a couple of times. When flask durability reaches zero, it can hang the game,
+	We couldn't fix it (it's hard to reproduce), if you come across this bug, send me the savefile, it could help,
+	To avoid this from happening, simply dont let your active flask go red on you. Apart from that, it's all good. Have fun and report bugs;
+
+
+	v0.6001 (3:26 15.11.2018)
+
++	All flasks now have reorganized names (and magic names), pics and flip animations,
+	Note: now you can tell what kind of flasks you will buy at Griswold just by reading the names,
+	Note: also, just by looking at flasks, you will know what tier it belongs to, as they now differ visually,
+	Note: same applies to flasks flying or being dropped - you can tell its type by the looks of it;
++	No base- or unique monster can now be immune both to fire, lightning and acid (to prevent impossible situations for Bombardier),
+	Note: sorry about Grossrot, Jim. We talked and he's really sorry, and promised to never do that again;
++	Added 7 new base items: Hearts. Worn only by Beastmaster as offhand (instead of shield);
++	Fixed magic item display info (some jewelry lines displayed wrong color);
++	Flasks no longer show 'equip to throw' line (should be obvious what to do with it);
++	Mana Shield works like before, previous fix cancelled until it can be re-written properly;
++	Flasks no longer crash game when durability depletes;
++	Flasks durability loss obeys common item break rules now: if currentDUR reaches 1, and maxDUR is depleted then until it reaches zero (then the item is destroyed);
++	Flasks no longer can fly over walls and obstacles (a bug is a bug);
++	Stat rerolling shrine doesnt give free 5 stats now if stat limit was reached;
++	Added random name generator for rare flasks;
+
+
+	v0.6200 (10:53 23.11.2018)
+
++	Changed some flip animations;
++	Character base damage formulae were expanded to support all 29 classes. Now base damage will be sufficient only if you use class specific weapons:
+	Mage classes: all damage is the same, low,
+	Warrior/Inquisitor/Templar: 1h-sword or 1h mace + shield = high damage, xbow = high, else = low,
+	Guardian: Axe / 2h-sharp/ 2h-blunt = high, xbow = high, else = low,
+	Archer/Scout/Sharpshooter: bow = high, else = low,
+	Trapper: low,
+	Monk: staves = high, bows - moderate, else = low,
+	Kensei: 2h-sharp / 2h-blunt / bow = high, else = low,
+	Shugoki: axe / bow = high, else = low,
+	Shinobi: 1h-sharp / 1h-blunt / bow = high, else = low,
+	Rogue: unchanged,
+	Assassin: moderate with evrything ([clvl * cSTR] / 100 ),
+	Iron Maiden: low (supposed to damage through thorned items),
+	Bombardier: low,
+	Savage: high (but bad with dual wielding),
+	Berserker: high,
+	Executioner: very high (bad with dual wielding),
+	Thraex/Murmillo/Secutor: bad with dual wielding and axe, all else = high,
+	Dimachaerus: decent with bow, excellent when dual wielding (especially if weapons are of the same type), all else = low;
++	Added 1 more unique ring;
++	Added 6 uniques on uID#2003 (Great pickaxe). Total uniques 190 now;
++	Fixed a bug where looting Slain Hero corpse would freeze the game for Shugoki class (tried to drop staff and there is none for Shugoki);
+
+
+	v0.6201 (7:58 25.11.2018)
+
++	Iron Maiden base damage formula updated:
+	Crossbow: (clvl * cSTR ) / 80,
+	Sword + Buckler: (clvl * cSTR ) / 100,
+	Flail + Buckler: (clvl * cSTR ) / 100,
+	all else: (clvl * cSTR ) / 500;
++	Rewritten Gladiator base damage rules, should be as intended now;
++	Build 0.6200 got released with Remotery tool not deactivated, it's a debugger and it started causing crashes with line 1580 error report. Now it's fixed,
+	Note: deactivated in release builds, please report all oddities in discord if this behavior persists after updating;
+
+
+	v0.6300 (22:49 27.11.2018)
+
++	Insta damage flasks damage boosted ( by approx. 14% );
++	Gothic shield and stronger: restricted to warriors;
++	Non-gladius (and sica) 1h-swords are no longer usable by executioner and gladiators (savages and berserkers are allowed to use them),
+	Note: Executioner is not supposed to wield little weapons and Gladiators have their own line(s) of sharps;
++	IM base damage set to clvl*str / 70 with xbows;
++	Fixed IM base damage with all weapon+shield combos;
++	Fixed elemental arrow (monster to player) overdose damage and their Manashield penetration (hopefully, some feed would be nice!);
++	Fixed weapon rack drops so it no longer produces nonsense drop. In multiplayer it will drop randomly sword/axe/mace/shield/staff/flask/bow,
+	Note: for SP (thanks to segregation) there are per-class rules now that give actually droppable item types and are useful;
++	Updated ReadMe file (screen mode info);
++	In window modes, smoothing is auto-applied to reduce pixelization and improve the picture (update config.ini for that);
++	Removed unused lines from config.ini;
++	Some perks were rebalanced;
+
+
+	v0.7000 (4:54 11.12.2018)
+
++	Added 6 uniques on uID#2004 (Hauberk). Total uniques 196 now;
++	Bombardier is given less aggressive TRN in light armor;
++	Fixed some crashes if moving near map edges. A try to fix "unable to write save" error;
++	Sica swords are allowed for Dimachaerus now;
++	Fixed the freeze bug on weapon switch during attacking. This also fixed the flasks durability loss freeze (because it resulted in attack animation switch);
++	Fixed a bug with flashing mouse cursor in windowed and borderless mode;
++	Remotery is forcefully excluded from default build (just to make sure);
++	Fixed a crash with monsters out of sync in coop games;
++	(X)bow accuracy by class is adjusted:
+	Sharpshooter: +60 (now she's a champion of accuracy with bows), Scout/Archer: +20 (as before),
+	Guardian: +30, Warrior / Templar / Inquisitor: +10, the rest: +0,
+	Note: Warriors are less accurate now, and Savages too, but perks and affixes are there to compensate it if there's a need;
++	Maximum blocking chance is default 75% for all classes vs arrows (from monsters),
+	Savage / Berserker / Executioner / Dimachaerus: max 20% chance now;
++	Black Marquis: +1 to drop. Lich King now drops 10 items (as in TH1);
++	Executioner mode is back. Players in MP Horror with clvl over 36 will get 4x damage,
+	Players on Purgatory MP with clvl over 49 will get 4x damage;
++	Changed weapon swing speeds for certain classes:
+	Guardian attacks on frame 9 with axe (+1 to speed);
+	Sharpshooter and Trapper loose arrows at frame 8 (-1 speed);
+	Iron Maiden and Bombardier swing swords/maces and attack at frame 9 (-1 speed);
+	Gladiators attack with axe on frame 10 (-2 speed), Executioner and Savage - on frame 9 (-1 speed),
+	Note: Berserker is the fastest with axe now: attacks with axe on frame 8, as before;
++	Templar now does +20% damage to undead in melee (not all Warrior classes, like before);
++	Monk does +20% damage to demons in melee;
++	Assassin does +20% damage to beasts in melee;
++	Stingers get less melee damage in MP : 200% -> 150% ;
++	Executioner is given +[5-10]% bonus to melee damage resistance as an innate bonus;
++	Maximum melee blocking chances adjusted per class:
+	Guardian/Bombardier/Shugoki: 40%,
+	Rogue/Assassin/Dimachaerus: 25%,
+	Savage/Berserker: 45%,
+	Executioner: 10%,
+	Others: 75%;
++	Changed life regeneration calculation order (DLVL-related modifiers now come after other modifiers);
++	Modified life regeneration speed bonuses for classes:
+	Gladiators: 0 (now basic, without +1 bonus),
+	Savage/Berserker: as before (+1),
+	Executioner: multiplied by 3, +5 (basically, that's triple life regen speed plus 5 points on top of that),
+	Guardian: +1,
+	Monk/Kensei/Shinobi: +2 (as before),
+	Shugoki: +3,
+	Others: unchanged;
++	Grand revision of stun threshold formula, by class:
+	WARRIOR/INQUISITOR: 						Rnd[(clvl/2)+7] + clvl/3 + bVIT/8 - 2,
+	GUARDIAN: 							Rnd[(clvl/2)+9] + clvl/3 + bVIT/8 - 1,
+	TEMPLAR/ARCHER/SCOUT/SHARPSHOOTER/TRAPPER:			Rnd[(clvl/2)+6] + clvl/3 + bVIT/8 - 1,
+	MAGE/ELEMENTALIST/WARLOCK/DEMONOLOGIST/NECROMANCER/BEASTMASTER:	Rnd[(clvl/2)+5] + clvl/3 + bVIT/8 - 1,
+	MONK/KENSEI:							Rnd[(clvl/2)+7] + clvl/3 + bVIT/8 - 1,
+	SHUGOKI:							Rnd[(clvl/2)+7] + clvl/3 + bVIT/7 - 2,
+	SHINOBI/ROGUE/ASSASSIN/IRON_MAIDEN/BOMBARDIER:			Rnd[(clvl/2)+7] + clvl/3 + bVIT/8 - 2,
+	SAVAGE:								Rnd[(clvl/2)+7] + clvl/3 + bVIT/8 - 2,
+	BERSERKER:							Rnd[(clvl/2)+7] + clvl/3 + bVIT/7 - 1,
+	EXECUTIONER:							Rnd[(clvl/2)+7] + clvl/5 + bVIT/5 - 1,
+	THRAEX/MURMILLO/DIMACHAERUS/SECUTOR:				Rnd[(clvl/2)+7] + clvl/3 + bVIT/8 - 2;
++	Bonus +1 to armor piercing to all Savage subclasses is removed. Thraex has +2 AP now though;
++	Base life/mana formula has been modified for all classes:
+	WARRIOR/INQUISITOR/TEMPLAR/THRAEX/DIMACHAERUS/SECUTOR: 		life: 3*bVit +2*clvl + 18,	mana: bMAG + clv - 1,
+	GUARDIAN: 							life: 3,5*bVit + 3*clvl + 5, 	mana: bMAG + clvl + 4,
+	SHUGOKI: 							life: 3,5*bVit + 3*clvl + 12, 	mana: bMAG + clvl + 4,
+	ARCHER/SCOUT/SHARPSHOOTER: 					life: 2*bVIT + 2*clvl + 8, 	mana: bMAG + 2 * clvl + 3,
+	BOMBARDIER: 							life: 1,5 * bVIT + clvl + 22, 	mana: bMAG * 1,5 + clvl - 3,
+	TRAPPER: 							life: 1,5 * bVIT + clvl + 24, 	mana: bMAG * 1,5 + clvl + 4,
+	MAGE/ELEMENTALIST/WARLOCK: 					life: bVIT + clv + 9, 		mana: 2 * bMAG + 2*clvl + 3,
+	DEMONOLOGIST/NECROMANCER: 					life: bVIT + 2*clv + 8, 	mana: 1,5 * bMAG + 2*clvl + 13,
+	BEASTMASTER: 							life: 2*bVIT + clvl/2 - 5,	mana: 1,5 * bMAG + 2*clvl + 13,
+	MONK/KENSEI/SHINOBI: 						life: 2,5*bVIT + 2*clv + 13, 	mana: 1,5 * bMAG + clvl + 2,
+	ROGUE/ASSASSIN: 						life: 2*bVIT + 2*clv + 18, 	mana: 1,5 * bMAG + 2*clvl + 3,
+	IRON_MAIDEN: 							life: 3* bVIT + clvl/5 + 25, 	mana: 1,5 * bMAG + 2*clvl + 3,
+	SAVAGE/BERSERKER/MURMILLO: 					life: 4*bVIT + 2*clv + 13, 	mana: 1,5 * bMAG + 2*clvl + 11,
+	EXECUTIONER: 							life: 5*bVIT + 3*clv - 8, 	mana: bMAG + clvl/2 ;
++	Stairs to town are not generated anymore in Nightmare mode on dungeon levels 5/9/13/17/21;
++	Killing Uber Diablo in Ironman or Nightmare mode enables SAVE & QUIT option in game menu, which now allows you to continue past Horror;
++	Kiling Uber Diablo in SP Horror NM/IM modes doesn't end the game, cinematics are not triggered (again, to allow you to continue past Horror);
++	Iron Maiden can crit with thorns or Reflect: 10% chance for +300% damage;
++	Dimachaerus now has bonus +1 to armor piercing;
++	Changed starting stats for some classes;
++	Critical hit formula tables for melee/arrows/magic/reflect expanded to support full classes;
++	Rebalanced critical hit base chance, damage multiplier and chance multiplier for all classes, for all combat types (116 formulas!);
++	Mage class now can actually score criticals with spells. Formula for crit: +100% damage at 5 + (clvl / 10)% chance;
++	Elementalist does +200% critical damage with spells. Chance is 5 + (clvl / 5)%;
++	Slow crossbows had their average damage reduced by 50%. They are still +50% in average DPS;
++	Fixed errors in some unique item data;
++	Added more names to flask name generator;
++	Fury effects are now different for all classes:
+		WARRIOR:
+			toHitPercent += charLevel / 3 + 5;
+			ACFromItems += charLevel / 4 + 2;
+			addsDamage += 2 * charLevel;
+			spellsIncreasedLevels -= 2;
+			damageFromEnemies += charLevel / 5 + 1;
+		INQUISITOR:
+			toHitPercent += charLevel / 2 - 3;
+			ACFromItems += charLevel / 3 - 1;
+			addsDamage += 2 * charLevel - 1;
+			spellsIncreasedLevels -= 2;
+			damageFromEnemies += charLevel / 4 ;
+		GUARDIAN:
+			toHitPercent += charLevel >> 1;
+			ACFromItems += charLevel / 2 - 5;
+			addsDamage += 2 * charLevel + 2;
+			spellsIncreasedLevels -= 2;
+			damageFromEnemies += charLevel / 4 - 1;
+		TEMPLAR:
+			toHitPercent += charLevel / 5 + 10;
+			ACFromItems += charLevel / 9 + 15;
+			addsDamage += 2 * charLevel + 1;
+			spellsIncreasedLevels -= charLevel / 10 - 1;
+			damageFromEnemies += charLevel / 5 + 5;
+		ARCHER:
+			addsDamage += charLevel + 5;
+			toHitPercent -= charLevel / 2 - 5;
+			ACFromItems -= charLevel / 3 - 3;
+			damageFromEnemies += 2 * charLevel / 7 + 1;
+		SCOUT:
+			addsDamage += 3 * charLevel / 2 + 3;
+			toHitPercent -= 1 * charLevel >> 1;
+			ACFromItems -= charLevel / 3 - 2;
+			damageFromEnemies += 2 * charLevel / 9 + 3;
+		SHARPSHOOTER:
+			addsDamage += 2 * charLevel - 2;
+			toHitPercent += charLevel / 3 + 7;
+			ACFromItems -= 2 * charLevel / 3;
+			damageFromEnemies += 3 * charLevel / 13 + 3;
+		TRAPPER:
+			addsDamage += 2 * charLevel / 11;
+			toHitPercent -= 2 * charLevel / 7;
+			ACFromItems += 2 * charLevel / 3;
+			damageFromEnemies -= 2 * charLevel / 9;
+		MAGE:
+			spellsIncreasedLevels += 2;
+			addsManaBy64 += charLevel << 7;
+			ACFromItems -= charLevel / 2;
+			damageFromEnemies += charLevel / 4;
+		ELEMENTALIST:
+			spellsIncreasedLevels += charLevel / 12 + 1;
+			addsManaBy64 += 128 * charLevel; 
+			ACFromItems -= charLevel / 2;
+			damageFromEnemies += charLevel / 3;
+		DEMONOLOGIST/NECROMANCER/BEASTMASTER:
+			spellsIncreasedLevels += 2;
+			addsManaBy64 += charLevel << 7;
+			ACFromItems -= charLevel << 7 >> 8;
+			damageFromEnemies += charLevel >> 2;
+		WARLOCK:
+			spellsIncreasedLevels += 2;
+			addsManaBy64 += 256 * charLevel;
+			ACFromItems -= 3 * charLevel / 4;
+			damageFromEnemies += charLevel / 5 + 3;
+		MONK:
+			addsDamage += 2 * charLevel;
+			damageFromEnemies -= charLevel >> 2;
+			magicResistPercent += charLevel >> 2;
+			fireResistPercent += charLevel >> 2;
+			lightningResistPercent += charLevel >> 2;
+			ACFromItems -= charLevel >> 1;
+			--spellsIncreasedLevels;
+		KENSEI:
+			addsDamage += 3 * charLevel / 2;
+			damageFromEnemies -= charLevel / 5;
+			magicResistPercent += charLevel >> 2;
+			fireResistPercent += charLevel >> 2;
+			lightningResistPercent += charLevel >> 2;
+			ACFromItems -= charLevel / 3;
+			--spellsIncreasedLevels;
+		SHUGOKI:
+			addsDamage += 5 * charLevel / 2;
+			damageFromEnemies -= charLevel / 5;
+			magicResistPercent += charLevel >> 2;
+			fireResistPercent += charLevel >> 2;
+			lightningResistPercent += charLevel >> 2;
+			ACFromItems -= charLevel / 3;
+			--spellsIncreasedLevels;
+		SHINOBI:
+			addsDamage += 5 * charLevel / 4;
+			damageFromEnemies -= charLevel >> 2;
+			magicResistPercent += charLevel >> 2;
+			fireResistPercent += charLevel >> 2;
+			lightningResistPercent += charLevel >> 2;
+			ACFromItems -= charLevel >> 1;
+			--spellsIncreasedLevels;
+		ROGUE:
+			ACFromItems += 3 * charLevel / 8;
+			addsDamage += 3 * (charLevel / 2);
+			damageFromEnemies += charLevel / 4;
+			magicResistPercent += charLevel >> 2;
+			fireResistPercent += charLevel >> 2;
+			lightningResistPercent += charLevel >> 2;
+		ASSASSIN:
+			ACFromItems += 5 * charLevel / 8;
+			addsDamage += 7 * (charLevel / 2);
+			damageFromEnemies += 3 * charLevel / 2;
+			magicResistPercent += charLevel >> 2;
+			fireResistPercent += charLevel >> 2;
+			lightningResistPercent += charLevel >> 2;
+		IRON_MAIDEN:
+			ACFromItems += charLevel / 2 + 1;
+			addsDamage += 3 * (charLevel / 5);
+			damageFromEnemies -= charLevel / 4 ;
+			magicResistPercent += charLevel >> 2;
+			fireResistPercent += charLevel >> 2;
+			lightningResistPercent += charLevel >> 2;
+		BOMBARDIER:
+			ACFromItems += charLevel / 2;
+			//addsDamage += charLevel >> 1);
+			damageFromEnemies += charLevel / 11 + 1;
+			magicResistPercent += charLevel / 3;
+			fireResistPercent += charLevel / 3;
+			lightningResistPercent += charLevel / 3;
+		SAVAGE:
+			spellsIncreasedLevels -= charLevel;
+			addsDamage += 4 * charLevel;
+			damageFromEnemies -= charLevel / 3;
+			toHitPercent += charLevel / 3;
+			ACFromItems -= charLevel / 3;
+		BERSERKER:
+			spellsIncreasedLevels -= charLevel / 2;
+			addsDamage += 3 * charLevel;
+			damageFromEnemies -= 2 * charLevel / 5;
+			toHitPercent += 2 * charLevel / 3;
+			ACFromItems -= 2 * charLevel / 3;
+		EXECUTIONER:
+			spellsIncreasedLevels -= charLevel;
+			addsDamage += 9 * charLevel / 2;
+			damageFromEnemies -= 3 * charLevel / 7 - 4;
+			toHitPercent += charLevel / 2;
+			ACFromItems -= charLevel;
+		THRAEX:
+			spellsIncreasedLevels -= 2;
+			addsDamage += 2 * charLevel;
+			damageFromEnemies -= 2 * charLevel / 9;
+			toHitPercent += 5 * charLevel / 4;
+			ACFromItems -= charLevel / 3;
+		MURMILLO:
+			spellsIncreasedLevels -= 4;
+			addsDamage += 7 * charLevel / 4;
+			damageFromEnemies -= 2 * charLevel / 5;
+			toHitPercent -= charLevel / 4 - 2;
+			ACFromItems += 3 * charLevel / 4;
+		DIMACHAERUS:
+			spellsIncreasedLevels -= 3;
+			addsDamage += 5 * charLevel / 3;
+			damageFromEnemies -= 2 * charLevel / 7;
+			toHitPercent += charLevel;
+			ACFromItems -= charLevel / 2;
+		SECUTOR:
+			spellsIncreasedLevels += charLevel / 10;
+			addsDamage += 2 * charLevel;
+			damageFromEnemies -= 3 * charLevel / 10 + 2;
+			toHitPercent -= charLevel  / 2;
+			ACFromItems += charLevel / 10;
++	Tripleshot is activated by Fury now only for Archer and Scout classes;
++	Spiritual shrine gives less gold now (approx. - 50% gold);
++	Added 1 more dungeon variation to Cursed Blade quest level 3;
++	Added 1 more dungeon variation to Skeleton King quest on horror difficulty;
++	Added 1 more dungeon variation to Water Supply quest on horror difficulty;
++	Added 11 uniques on uID#2005 (Sica Dagger);
++	Added 6 uniques on uID#2006 (Chokuto, Kodachi). Total uniques 213 now;
++	Increased Holy Bolt damage is now applied only to Templar class;
++	Gladiators can now use only their class specific shields. Executioner cannot wield shields at all;
++	Thraex class now gets no penalty for using swords against Undead (because their Sica swords are like this, and they know how to use them properly),
+	Note: swords won't give you the +50% dmg against Undead in this case as a blunt weapon would do, just you don't have the -50% total damage for a malus;
++	Old Ironman bug is checked: there is no bug. No objects remain unchecked. Ironman dungeon object clear counter works without bugs;
++	Executioner is given personal GET_HIT and DYING sounds;
++	Monk class: sweep damage is (37-75)% instead of standard (25-50)% ;
++	Fixed a bug with Ghouls getting +health from arrows on MP Doom (presumably on MP Purgatory  level 7 as well),
+	Note: I'm not 100% sure it's fixed, I had to re-write that code from scratch using my TH1 asm code as reference, but I hope I did well;
++	Updated some class pics in meta menu;
++	Turned off automatic flip animation adjustment for staff type items;
++	Effigies now have flip animation of teddy bear;
++	Grave Digger type of monsters now can growl or moan when they see you;
++	Greeting sound also added for boars, quasits, liches, cacodemons;
++	Added 2 more trigger sounds for regular goats and reduced chances for them;
++	Fixed (again) weapon rack crash. It will drop gold if no suitable item is found,
+	Note: it was staff or flask type of would-be drop that seemed to cause the trouble,
+	Note: staff type drops still are not limited by MAG requirement, and too powerful items are dropped, but it's better than a crash, we'll try to fix it better later,
+	Note: word is this fix can influence some other item desynch issues in a good way, including multiplayer coop item desynch;
++	Reflect now has ability to score critical hits. Only Iron Maiden provides substantial damage with it though;
++	Adria can recharge staves (or rather items) in right hand and in secondary item slot;
+
+
+	v0.7036 (2:15 21.12.2018)
+
++	Assassin Fury DFE damage is reduced to 4 * clvl / 7 (was 3 * clvl / 2);
++	Sharpshooter citical damage with bow set to +500%, +[20-30];
++	Sharpshooter bow crit formula set to: 6 + (clvl / 4) % ;
++	Ironman mode: having 0 to 5 uncleared dungeon objects will suffice to move on now,
+	Note: no more pixelhunting in caves/abyss;
++	Modified boss oil drops in NM/IM modes:
+	Horror dlvls 1-2: repair oil I,
+	Horror dlvls 3-15: repair oil II,
+	deeper down and on Purgatory & Doom: repair oil III ;
++	Character blocking sound randomized: 3 new sounds added;
++	Ghoul arrow damage resistance fixed on MP Purgatory dlvl 7 ;
++	PvM Melee MP Purgatory: Uber Diablo damage resistance upped from 1/4 to 1/6;
++	PvM Magic MP Purgatory: Uber Diablo damage resistance upped from 1/4 to 1/6;
++	PvM Missile: Savage classes used to get only half of base damage with crossbows. Now it's fixed and they get it at full,
+	Note: future balancing should address balance issues, but "Strong Arm" perk will definetely be working properly with xbows now;
++	PvM arrow damage was x2 in v0.7000 because of an error, now fixed;
++	Sharpshooter new base damage formula with bow is: ( (cSTR + cDEX) * clvl) / 90 ;
++	Fix to magic arrows: now multi magic arrows are allowed on any items, and damage is summed from them all;
++	Added support for new affixes:
+	+X% damage to spells (e.g., +8% Arcane Star damage), accounted for in spellbook,
+	+X% damage to elements (spell group by type of damage) (e.g., +X% to lightning damage), affects magic damage from weapons as well,
+	+X to Y spell damage (e.g., +13-19 Fire Bolt damage), accounted for in spellbook,
+	+X to Y element (spell group by type of damage) damage (e.g., +4-6 to arcane damage), affects magic damage from weapons as well,
+	Note: these are being prepared mostly for uniques, and maybe as a substitute on some of the currently less attractive affixes;
++	Added 6 uniques on uID#2007 (Wizard Mask). Total uniques 219 now;
++	Added 32 uniques on uID#2008 (Ring);
++	Corrections in old unique item data;
++	New armor added: Ebony Plate Mail. Best arrow damage dissipation among armors. Inquisitor only;
++	New Fury cast sound for Executioner class added;
++	Fixed a bug with wrong Nightmare/Ironman mode exit;
++	Iron Maiden speed changes (affects Bombardier as well):
+	2 swords / 2 blunts: frame 10,
+	sword+shield / blunt+shield: frame 9,
+	xbow: frame 10,
+	Note: that should fix odd speeds with her and even out swinging speeds for all weapon coombos, plus makes her a little faster with xbows,
+	Note: dualwielding will be slower for her, favoured style now is 1h weapon + shield, or xbow (against retreating ranged attackers);
++	Following quest levels now give 50% more experience, to make them more attractive:
+	KING_LEORICS_TOMB,
+	BONE_CHAMBER,
+	THE_INFESTED_CELLAR,
+	POISONED_WATER_SUPPLY,
+	ARCHBISHOP_LAZARUS_LAIR,
+	HALLS_OF_ANGUISH,
+	ANDARIELS_THRONE,
+	HORAZONS_HAVEN,
+	SUMMONING_ROOMS,
+	THE_PIT,
+	PASSAGE_OF_FIRE,
+	VALLEY_OF_DESPAIR,
+	DISUSED_RELIQUARY,
+	GLACIAL_CAVERNS,
+	FROZEN_LOCH;
++	A little less gold from super bosses;
++	Bosses would never drop Executioner headwear on Doom because this item type was checked for minimum armor of 10. Now it checks for qlvl;
++	Added flask qlvl check for minimum of 24 on Doom when deciding base item drop level from bosses;
++	Added a bunch of basic Executuiner armors (he was poorly equipped with body armors);
++	Fixed some bugs concerning inventory item morphing;
++	Fixed bugs with items in multiplayer being impossible to pick up (hopefully, it is fixed);
++	Fixed a bug with actual bow damage not working with elemental arrows (only base damage and affix addons were used for physical), now it's full-throttle;
++	Fixed a bug with Holy arrow bows not hitting non-Undead at all with missiles;
++	Base/unique item array size is auto-adjusted, makes executable smaller in size (21mb -> 5mb);
++	Stronger life regeneration penalty for Executioner in Ice levels and Andariel's levels (-cVIT/2, standard is -cVIT/4);
++	Mana regeneration class bonus taken away from Shugoki, Kensei and Shinobi;
++	Mana regeneration class bonus is +1 for Elementalist, Demonologist, Necromancer and Beastmaster, +2 for Monk and Mage, +4 for Warlock;
++	Base life and mana regeneration double affix flag now includes class bonuses;
++	Executioner basic life regen formula is changed: (cVIT / 20) * 3 + 5 -> (cVIT / 20) * 2 + 5;
++	Kensei class now has sweeping attacks with two-handed sword/mace weapon types;
++	Fixed a bug with newly created characters appearing with gold taking 2x4 slots in inventory;
++	Added 7 uniques on uID#2009 (Thick Plate Mail);
++	Added 8 uniques on uID#2010 (Heater Shield). Total uniques 266 now;
++	Spell name is added to charges info if an item has some spell charges on it;
+
+
+	v0.7100 (15:16 12.01.2019)
+
++	Executioner life regen increased: (cVIT / 20) * 2 + 5 -> (cVIT / 20) * 2,5 + 5;
++	Updated max stats for classes;
++	Added 8 uniques on uID#2011 (Pavise Shield);
++	Added 1 more unique on uID#4 (Boots). Total uniques 275 now;
++	Bombardier base life formula set to:  2,5 * bVIT + 23 (was: 1,5 * bVIT + CLVL + 22);
++	Berserker/Executioner/Savage: +25 to accuracy with crossbows. Murmillo: +20. Dimachaerus/Secutor/Thraex: +15. Iron Maiden: +30;
++	[Jared] Fixed a bug with starting new game characters, wearing medium or heavy armor, first shown as wearing light armor for one frame;
++	Shock Pincers: new picture;
++	Armor racks now show "Armor rack" instead of just "Armor";
++	Revised prices for DFE affixes;
++	Fixed a bug with holy arrows not working, and made them hit only undead (it's not ideal but better than broken);
++	Fixed camera flying off the borders of the level when Uber Diablo is killed;
++	Fixed a bug with character not being deleted when dying in Nightmare mode after transcension to Purgatory;
++	Fine-tuning oil drop balance from bosses on Nightmare and Ironman:
+	Horror: dlvl 2 and below: oil tier 1,
+	Horror: dlvl 13 and below: oil tier 2,
+	Horror: dlvl 24 and below: oil tier 3,
+	Purgatory: oil tier 4,
+	Doom: oil tier 5;
++	Fixed stash support for expanded inventory. Used to see only 40 slots, now it sees 70;
++	Arcane flasks got new pictures;
++	By default config.ini sets game fps to 60 now;
++	Provided better support for arcane flasks, but they still don't work (don't use them until i notify here they do);
++	Fixed a bug with +spell damage affixes not showing values correctly;
+		
+
+	v0.7101 (16:40 12.01.2019)
+
++	Arcane flasks are now functional;
++	Updated sound effect for arcane flasks explosion;
+
+
+	v0.7104 (17:15 13.01.2019)
+
++	Added 3 types of thorned boots for Iron Maiden;
++	Added 2 types of thorned gauntlets for Iron Maiden;
++	Nightmare Save&Exit feature got broken in v0.7100, fixed now (should be fixed, at least);
+
+
+	v0.7200 (12:07 24.01.2019)
+
++	Added new sound for Ironman mode 'level cleared' status;
++	Added 6 uniques on uID#2012 (Large Mace);
++	Added 5 uniques on uID#2013 (Brute Sword);
++	Pressing ALT key now can keep items highlighted at all time, until it's turned off by pressing it again,
+	Note: to activate this option, set 'AltHold' to OFF in config;
++	Added 5 uniques on uID#2014 (Falchion);
++	Fixed Hydra not detecting nearby targets bug;
++	Added 5 uniques on uID#2015 (Claymore);
++	Added 4 uniques on uID#2016 (Ballistic Crossbow);
++	Modified Skeleton King tomb for Purgatory and Doom, so that it no longer spawns weak monsters;
++	Fixed glitch with DOT flasks not working on tiles with broken barrels and in doorways;
++	Added restock feature to Adria (costs CLVL * 6 gold);
++	Spellcaster specific wand/staff items are no longer sellable to Griswold, Adria buys them instead;
++	Added 6 uniques on uID#2017 (Gladius V);
++	Battle texts in the upper right corner and gamemode info in the upper left corner no longer shown when inventory/spellbook/quest/char sheets are open;
++	Added 6 uniques on uID#2018 (Shadow Bow);
++	Added 6 uniques on uID#2019 (Blade Bow);
++	Stonecursed monsters are now immediately cleared of all toxic damage;
++	Added Shift Click messages to potions/relicts;
++	Sharpshooter critical damage with bow set to +400%, +[20-30];
++	Config structure definition updated;
++	Added new affix that modifies character stun threshold;
++	Some old goldfind suffixes replaced to give place for new stun threshold modifier suffixes,
+	Note: if you have a magic/rare item with a +[X to Y] type goldfind affix, this affix can change into +X to stun threshold type now;
++	Modified a lot of quest uniques;
++	Added new perk: "Haggler". It improves town prices by 10% per level. Affects buy, sell and identify prices;
++	Modified some perk requirements and description text displays;
++	Added first step of Trapper functionality: throwing traps. Right now it's work in progress. Do not play Trapper until I say she's ready;
++	Added 4 uniques on uID#2020 (Rapid Crossbow). Total uniques 322 now;
++	New perk created which gives a chance to get a random elixir from bosses;
++	Added base item restock feature to Griswold (costs CLVL * 2 gold);
+
+	Thanks for support:
+		Torsten Caninenberg, Gracelessdragon, Lucy, TexzTech
+
+
+	v0.7212 (17:17 30.01.2019)
+
++	Golem doesn't attack stonecursed monsters now;
++	Strong Arm perk now improves only melee damage. For improving ranged damage (with bows and crossbows) we added new perk "Overdraw" ;
++	Battle text overlay leftover bug in quest zones was fixed (used to show nonsense info in the upperright corner with inventory open);
++	Added new perk ("Blacksmith") that slows down item durability loss by a certain percentage;
++	Added warning about classes that are not ready (in character creation menus);
++	MvP Melee autohit chances updated:
+	Bombardier:	15%,
+	Iron Maiden:	17%,
+	Executioner:	25%,
+	Dimachaerus: 	19%;
++	Secutor class got new benefit under Fury spell:
+	on character levels 1-29 he gets faster hit recovery for the duration of Fury,
+	after getting character level 30, he gets fastest hit recovery for the duration of Fury;
++	Added 5 uniques on uID#2021 (Gladius VIII). Total uniques 327 now;
++	Fixed fullscreen behavior (was broken in 0.7200);
++	Fixed "Resistance" perk functioning (-resistance gear wouldn't allow to go below what that perk added);
++	"Sixth sense" perk support added: now it actually works;
++	Config option added for skipping end cinematics (off by default);
+
+	Thanks for support:
+		Nickamus
+
+
+	v0.8000 (22:04 10.02.2019)
+
++	Revised requirements for perks Expert Killer and Slayer (so that archers can develop them without investing in Strong Arm);
++	Assassin received full line of Claw weapons that she'll be now using as a main melee weapon;
++	Sharps and blunts previously used by all Rogue subclasses are now restricted to Rogue and Iron Maiden;
++	"Blacksmith" perk renamed to "Conservator";
++	Added support for melee elemental hits with acid / arcane / holy;
++	Acid immunity given to certain unique monsters;
++	More gold from flat +GF affixes;
++	More variations added to rare light armor name generator;
++	Added 6 uniques on uID#2022 (Khopesh);
++	Fixed +elemental spells damage affix display info (used to show +0% always);
++	Added support for affix that sets X to Y CLVL requirements for unique item separately;
++	Added 7 uniques on uID#2023 (Zweihander). Total uniques 340 now;
++	Dual wielding is limited to the following classes now: Rogue, Savage, Berserker, Dimachaerus;
++	Added basic support for Trapper's ...traps. She is now ready to be played;
++	Added support for Assassin claws. She doesn't use any ther weapons now. Goes with Claw+Shield style;
++	Added support for generating rare traps and claws;
++	Added support for spawning claws and traps on weapon racks;
++	Added support for generating magic and rare affixes for claws and traps,
+	Note: this could potentially lead to affix morphing on magics and rares - be careful;
++	Assassin attack speeds changed so that she is fast only when using Claw + Shield;
++	Fixed all broken attack animations for all classes. Adjusted attack speeds for some classes,
+	Note: some Rogue/Archer non-axe/bow animations resulted in her disappearing at the end of attack due to the lack of actual animation frames;
++	Added new coders from TH team to credits;
++	Updated some character pics;
++	The following panel buttons now produce sounds when pressed: INV, SPELLS, QUESTS, MAP, CHAR and PERKS button,
+	Note: applied to spellbook pages and levelup buttons as well;
++	Kensei now starts with Light Kanabo. Shinobi starts with Light Kanabo and Shield in offhand;
++	All gladiators use two-handed swords slowly now, same with axes. One-handed weapons without shields will still be used slowly,
+	Note: shield (or offhand weapon in case of Dimachaerus) is required for balancing attack speed now;
++	Murmillo gets to attack 1 frame slower now to compensate for his immense tankiness: attack frame 9 -> 10;
++	All gladiator specialists now start with proper equipment (weapons);
++	Adjusted attack speeds on Guardian: slower with no weapons and one-handed weapon + shield, faster with all else, including staves,
+	Note: all else means two-handed weapons (staves, axes, sharps, blunts);
++	50 patron goal was reached by February and because of that Andariel now drops 10 items;
++	Assassin class melee crit formula changed to (10 + (clvl/5))% chance for +350% + [20-30] damage. Assassin is now (more or less) ready to be played;
++	Added minimum drop requirements for claw/flask/trap items from monsters/bosses on doom;
++	Reworked damage calculation for traps and flasks;
++	PvM NonMelee: removed unwanted damage modifiers in trap formulae;
++	Damage shown in character panel for flasks and traps is now correct;
++	Affixes of '+damage' no longer affect damage of character traps (+%damage, ruin, dread - do work);
++	Updated pics for some starter items;
++	DFE starts appearing a little earlier on body armors (somewhere by the time they reach 50s in their main requirements);
++	Added support for CLVL checks on affixes for magic and rare items;
++	Added CLVL requirements to all existing magic and rare affixes;
++	Fury now shows timer countdown when active;
++	Some indestructible item behavior fix;
++	Etherealize now protects from magical attacks (used to protect against physical melee and arrows). The fix included in PvP as well, just in case;
+
+	Thanks for support:
+		Dangluh, Ivan, Dan Illingworth, Gavran!
+
+
+	v0.8016 (14:04 13.02.2019), "Forty Six & 2" (Tool)
+
++	Trapper: adjusted starting mana;
++	Less (base) damage with bows for Trapper;
++	Added CLVL requirements to some quest uniques;
++	Urdukk and Breakspine now drop 2 items;
++	Fixed broken Guardian bow animation;
++	Guardian now starts with Hatchet;
++	KB affix now cannot influence trap missiles;
++	Removed Shift+click line from elixir info;
++	Telekinesis now allows to pick up highlighted items not only by pointing at the item itself, but also by pointing at its description text;
++	Now it's possible to use hotkeys to drink potions with a spell cursor active (telekinesis, town portal, identify, etc.);
++	Objects 59, 60, 62 & 63 allow 'walking' flag. This fixes old original Diablo 1 bug with being unable to  cast certain spells from these tiles,
+	Note: that would be bookcase, bookshelf, right/left facing shrine (in Church and Crypt);
++	Provided Claw weapon durability icon support;
++	Added 3 more base items of "Claw" type. Now there are 13 tiers;
++	Distortions in item durability icon display are corrected;
++	Monk battle staves are no longer allowed to generate spell charges (both magic and rare),
+	Note: already existing battle staves will likely morph, it's inevitable;
++	Assassin: damage with claw set to (CLVL*cSTR)/65, otherwise (CLVL*cSTR)/200;
+
+	Thanks for support:
+		Latinske Preklady
+
+
+	v0.8200 (19:29 24.02.2019), "Fortunate Son" (Creedence Clearwater Revival)
+
++	Spiritual Treasure uniques are given clvl requirements;
++	Suffixes of knockback can no longer be generated on traps - this can morph suffixes on traps, sorry;
++	Fixed Guardian wrong base damage calculation with club in left hand, empty right hand and a two-handed sword in secondary weapon slot;
++	Grand revision of base damage on all classes - bringing balance to where it should be (at least, closer to it);
++	Added 5 uniques on uID#2024 (Bolt Trap II);
++	Trapper: base crit chance set to [1 + (clvl/3)]%, and damage set to +175%;
++	Positive crit chances in character sheet are shown in blue color, zero - white, negatives - red;
++	Added 6 uniques on uID#2025 (Round Shield);
++	Right clicks are disabled when perk window is open;
++	Triple shot is now handicapped for side arrows/bolts: Sharpshooter: -75% damage, others: -25%;
++	Executioner stun threshold formula set to: Rnd[(clvl/2)+7] + clvl/5 + bVIT/5 + 1;
++	Added 3 uniques on uID#2026 (Falx). Total uniques 354 now;
++	Refactored elemental damage of weapons. Changed formula to: (elemDamage x (baseDamage * 0.05) + (CLVL/2)) x ClassMultipler ,
+	Note: baseDamage is picked according to current weapon equipped,
+	Note: Executioner 0,75, Inquisitor 2.0, Sharpshooter 1.25, Templar 2.0 for Holy (otherwise 1.0);
++	Acid and Holy damage in melee and from bows/crossbows now deals 75% less damage which no longer makes it overpowered. This is a fix;
++	Dread and Ruin affixes no longer can affect weapon elemental damage;
++	Redesigned weapon availability on some classes:
+	Guardian and Savage: cannot use axes anymore, specializes in two-handed sharps and blunts,
+	Berserker and Executioner: cannot use two-handed sharps and blunts anymore, specializes in axes;
++	One-handed sharps used previously by all Warriors and Savages are now only used by Warriors;
++	One-handed blunts used previously by all Warriors and Savages are now only used by Warriors and Gladiators;
++	Updated character descriptions and some class pics;
++	Inquisitor now can crit with weapon elemental damage: 10 + (CLVL/5)% chance for +100% damage;
++	Holy arrows are now fixed: undead receive both the arrow/bolt damage and holy damage, and non-undead receive only arrow/bolt damage;
++	Damage decrease from affixes of +/-damage and +%/-% damage can no longer result in less than 1;
++	Character maxDmg can no longer get below character minDmg. Character sheet info is corrected;
++	Firewall, Lightningwall, Fire Ring, Lightning Ring now show cooldown timer on the right upper corner of the screen (just like Fury);
++	Limited character output damage to minimum 1 when interacting with barrels, etc.;
++	Added 1 more weapon slot. Now it's 3 of them;
++	Switching between weapon slots now produces sound of the weapon that is equipped in your left (main) hand,
+	Note: if left hand is empty and right hand slot has an item in it, that item's sound will be used instead,
+	Note: sometimes weapons get shuffled, they don't disappear, nothing of that, but it can happen. I hope to have it fixed ASAP;
++	Empty weapon slots are skipped when switching,
+	Note: when switching weapon slots with 'V' hotkey while inventory is open, empty slots are not skipped;
++	Multiplayer game start/join CLVL restrictions are restored;
++	Fixed the bug with shrine text display time depending on config fps setting;
++	Gladii are restricted to Murmillo/Secutor now (Dimachaerus and Thraex use only Sica swords);
++	Base life & mana formulae changed for:
+	Murmillo:	life: 3,5*bVit + 3*clvl + 2 (less),		mana: (bMAG / 2) + clvl -1 (less),
+	Trapper:	life: (1,75 * bVIT) + (1,5 * clvl) + 24 (more),	mana: (bMAG * 1,75) + (1,5 * clvl) + 4 (more),
+	Guardian:	life: 4*bVIT + 2*clv + 13 (more),		mana: 1,5 * bMAG + 2*clvl + 11 (more);
++	Updated starting items on mage classes;
++	By now The Hell 2 has almost all of the important bugs from the DSF buglist fixed, if you know of any more original Diablo bugs - tell us,
+	Note: the list is here: http://www.lurkerlounge.com/forums/thread-12422.html ;
++	Added new variations of starting weapons to equip Mage subclasses with proper tools at the start;
++	The problem with jewelry sometimes being repairable at Griswold's is fixed now (hopefully);
++	Updated spell icon design. Now the icons look more 3D and in Diablo 2 style. I also expanded spell icon database to 203 icons (was 50),
+	Note: it may seem odd at first but you get used to it quickly, as with the expanded inventory, and extra icons will be needed for new spells anyway;
+
+	Thanks for support:
+		Artem Bashev
+
+
+	v0.8207 (6:31 25.02.2019), hotfix
+
++	Fixed Savage and Guardian classes starting with wrong weapons;
++	Fixed a crash with starting Savage class, added block animations to G?S and G?M animation series - just in case;
++	Added clvl requirements to Sica swords. Changed STR requirements on Spatha and Great Sica;
++	Affix of 'Resist all' was reducing non-magic damage as well, now fixed;
++	Added 5 uniques on uID#2027 (Spatha Supina). Total uniques 359 now;
++	By accident recently added starter-only Mage weapons were findable. Made them unfindable again. These weapons can morph into something else;
+
+	Thanks for support:
+		Nocturne Prividyenie
+
+
+	v0.8318 (20:36 28.02.2019), "Goin' Out West" (Tom Waits)
+
++	Fixed Savage and Rogue class-specific animation flaw where onehander + inactive shield would show dualwield animation;
++	Added 4 uniques on uID#2028 (Tachi);
++	Rare item price formula changed from qlvl*50 to qlvl*750;
++	Adjusted some unique items;
++	Melchior the Fat receives +1 item to drops;
++	An attempt made to prevent Adria items from morphing;
++	Added 6 uniques on uID#2029 (Odachi);
++	Assassin: elemental damage of acid on weapons has damage multiplier of 2.5 now (+100% acid damage from weapons);
++	Fixed the bug with unique items being picked randomly from the line, which produced low level trash uniques too often,
+	Note: this may result in some of the existing uniques morphing into higher level variations for the given uID, beware,
+	Note: otherwise, expect more quality uniques to start dropping;
++	Multi-frame spells from monsters (Inferno, Lightningm Flash) are getting nerfed. They were broken (minimum damage limits too high),
+	New limits now:
+	Inferno:	dlvl / 4 + diff (diff = horror 0, purg 5, doom 10),
+	Lite/Flash:	dlvl / 6 + diff (diff = horror 0, purg 4, doom 8),
+	Other spells:	dlvl / 4 + diff (diff = horror 0, purg 6, doom 12),
+	Note: this means that lightning demons and mages will no longer increase difficulty spike, their damage now will be adequate;
++	Added 5 uniques on uID#2030 (Ninja-To). Total uniques 374 now;
+
+
+	v0.8329 (1:37 07.03.2019), "Pachka Sigaret" (Viktor Tsoi)
+
++	Fixed clvl requirements on Sica swords;
++	Gave clvl requirements to some uniques;
++	Mouse scrolling now goes through pre-set spells for F5 - F8 keys (it also doesn't function with perk- and shop windows open),
+	Note: the feature is optional but turned on by default in config.ini (see "gameplay options -> SwapSpellsOnScroll" line);
++	Changed inactive spell icon colors to: red background and greyed icon. We'll see if it's accepted well;
++	'Swift Learner' perk now starts with lesser numbers bug goes up to same values as before, just changed progression;
++	Some classes are allowed to block in melee combat with certain weapons:
+	Shugoki:	axe,
+	Kensei:		two-handed sword / two-handed blunt,
+	Guardian:	two-handed sword / two-handed blunt;
++	Rondache shields are now limited to Inquisitors;
++	Added 5 uniques on uID#2031 (Dao). Total uniques 379 now;
++	Added a universal check for PvM and MvM for monsters with certain immunities (SC, quest_state, etc.);
++	MvP Ranged: damage calculation is simplified to reduce ARD first, DFE - second;
++	Introduction of quest entrances in town would overwrite the global variable used for determining where to return from a quest level: fixed;
+
+
+	v0.8334 (4:02 09.03.2019), "Feral Spirit" (Paleowolf)
+
++	Grimoires now use book flip animation;
++	Yet another revision to spell icon design: inactive icons are greyed out instead of going red (I am sure now that red was a wrong color);
++	Active/inactive spell icon color now depends on config option for mana orb color. Blues orb gives blue icons, black orb - black spells;
++	Added 8 uniques on uID#2032 (Light Maul). Total uniques 387 now;
++	Improved pictures for Shinobi blunts;
++	Modified 'Steel Skin' perk description;
++	Toughness perk progression slows down to +1% after level 5;
+
+	Thanks for support:
+		kornoux
+
+
+	v0.8406 (15:19 19.03.2019), "The Queen" (James Horner)
+
++	Gharbad the Weak now has regular item drops (not 'mace' as before);
++	Ironman mode: +25% to XP gains, Nightmare mode: +50% XP gains (it's not a multiplier of total XP, it's an adder);
++	Inactive spell icons now can be made look red: added new config option 'RedInactiveSpellIcons' which allows for it;
++	Sharp combo line eradicated, some items are assigned to warriors, some to Maiden/Rogue;
++	Short Knife and Wooden Club will no longer be a common drop (Knife is allowed to Warriors, Club - to Warriors/Gladiators);
++	Added some more base items for classes that lacked in them: Kensei, Rogue, Iron Maiden;
++	Rods are now used by Warlocks, Orbs - by Mage/Elementalist only, and Beastmaster finally got his own line of weapons: ritual daggers;
++	Base damage formulae adjusted for some classes:
+	Guardian with 2-handers: clvl * curSTR / 80,
+	Kensei with 2-handers: clvl * curSTR / 75,
+	Shugoki with axe: clvl * curSTR / 70,
+	Savage with 2-handers: clvl * curSTR / 40 (damage boosted to compensate for no basic crit chance and no basic crit damage),
+	Savage with crossbows: clvl * curSTR / 70,
+	Murmillo with sharp/blunt+shield: clvl * curSTR / 70,
+	Dimachaerus with two one-handers: clvl * curSTR / 85;
++	Diablo, Defiler and Uber Diablo: acid immunity revoked;
++	Added more various base items;
++	Necromancer shields are redesigned;
++	Added a new line of Shields for Shinobi;
++	Added 5 uniques on uID#2033 (Battle Flail);
++	Lowered VIT requirements on gladiator armors;
++	Added 8 uniques on uID#177 (Great Flail);
++	Added 5 uniques on uID#2034 (Polehammer). Total uniques 405 now;
+
+
+	v0.8421 (10:14 25.03.2019), "Cordon" (Stalker OST)
+
++	Rare items now displayed in pink on automap;
++	Adjusted weapon rack item types according to class and new weapon restrictions;
++	Hephasto will now drop 10 items;
++	Added 5 uniques on uID#2035 (Heavy Maul);
++	Added 6 uniques on uID#2036 (Battle Axe);
++	Chamber of Bone spell reward changed to Fury for all classes but Mages, Bombardier and Trapper;
++	Added 6 uniques on uID#22 (Huge Axe);
++	Added 6 uniques on uID#2037 (Great Pollaxe). Adding unique axe weapons is complete now;
++	Added 6 uniques on uID#2038 (Spiked Knuckles);
++	Added 5 uniques on uID#2039 (Razor Nails);
++	Added 6 uniques on uID#2040 (Scissor Claw);
++	Diablo drops 2 more items now;
++	Added 5 uniques on uID#58 (War Staff);
++	Added 10 uniques on uID#2041 (Double-Bladed Staff). Total uniques 460 now;
++	[Duke] Fixed character attacks when shift-clicking potions to belt;
+
+	Thanks for support:
+		Markus King, Jason Pharr, Devon Cimini
+
+
+	v0.8422 (13:07 26.03.2019), hotfix
+
++	Fixed broken monster stun formula;
+
+
+	v0.8439 (15:18 29.03.2019)
+
++	Common shields are assigned to Warrior and Inquisitor and will not be accessible by all classes anymore;
++	Added a new line of shields for Shinobi + Assassin;
++	Added a new line of shields for Trapper + Bombardier;
++	Affix of unusual base damage now shows numbers;
++	Bosses have 50% damage resistance to acid flasks now;
++	Added a line of Mage + Elementalist specific offhand items: Orbs;
+
+
+	v0.9000 (14:53 29.04.2019), "Reaching the Innermost" (Shape of Despair)
+
+	Warning! Read this carefully before upgrading.
+	This update reformats perks and items completely.
+	Summoner classes are ready. But not for cooperative play. We still need work to do in that area.
+	Loading game from previous releases will most likely result in gamecrash.
+	Starting a new game session might work but it's possible you will crash while browsing through perks.
+	If not, you will still experience a lot of magic / rare item morphing.
+	The best way is to just start a new character.
+	If you don't want to upgrade because of that and want to upgrade when version 1.0000 gets released, then don't update and stay on v0.8439.
+	Also, subsequent patches will likely cause affix morphing.
+
++	Added new prefixes with acid / holy / arcane hit damage for melee weapons;
++	Expanded some affixes to allow for generation of low level affixes on some items (jewelry and staves in particular);
++	Added some low level suffixes that boost SLVL for certain spells;
++	Expanded summoner-specific suffixes making them available on all level ranges;
++	Corrected immunity for Warped One (on Horror / Purgatory). They will no longer stop Bombardier progress in Horazon's level;
++	Inactive spell icon colors updated;
++	Various works about the mod, lots of data adjustments in base items, unique items, base- and unique monsters;
++	Added affixes of 'summoning' series, to differentiate these from caster affixes and not have fighters and spellcasters suffer from having items with these anymore;
++	Improved affix segregation between caster and summoner gear (still need to segregate boots/gloves/belts properly);
++	Added 5 uniques on uID#2042 (Tetsubo tier 1);
++	Added 8 uniques on uID#2043 (Tetsubo tier 4);
++	Added 5 uniques on uID#2044 (Ararebo tier 5);
++	Added 5 uniques on uID#2045 (Ararebo tier 8);
++	Added 5 uniques on uID#2047 (Quilted Armor);
++	Added 7 uniques on uID#2048 (Lamellar Armor);
++	Added 19 uniques on uID#2049 (Amulet). Total uniques 519 now;
++	Added some more spell affixes;
++	Added 6 uniques on uID#2046 (Battle Helmet);
++	New Fury sound effect for Savages (Executioner uses his old sound), Monks;
++	Expanded on affixes of +% summon HP/accuracy/damage series;
++	Changed MvM Melee tohit formula to: monster.tohit + 35 - (defender.AC / 2). Minimum chance to hit in MvM is 20% now, maximum chance is 80%;
++	Summon (Golem) accuracy formula changed to: slvl + 2 *clvl;
++	Summon (Golem) armor formula changed to 4 * ( slvl + 10 ) - 39. Minimum 1, maximum 255;
++	Oil of Fortitude now will not upgrade item durability over 200 points;
++	Smart drop routine for bosses in SP is updated with fresh limitations to item drops from below. Items with the following types and qlvls are not allowed to drop now:
+		Purgatory:	
+			LIGHT_ARMOR:	QualityLevel < 8,
+			HELM:		QualityLevel < 8,
+			SHIELD:		QualityLevel < 6,
+			AXE:		QualityLevel < 7,
+			BOW:		QualityLevel < 11,
+			MACE:		QualityLevel < 12,
+			STAFF:		QualityLevel < 7,
+			CLAW:		QualityLevel < 11,
+			TRAP:		QualityLevel < 12,
+			FLASK:		QualityLevel < 12,
+			BELT:		QualityLevel < 7,
+			BOOTS:		QualityLevel < 9,
+			GLOVE:		QualityLevel < 9,
+			SWORD:		QualityLevel < 7,
+		Doom:
+			LIGHT_ARMOR:	(not dropped at all),
+			HELM:		QualityLevel < 12,
+			SHIELD:		QualityLevel < 12,
+			AXE:		QualityLevel < 25,
+			BOW:		QualityLevel < 20,
+			MACE:		QualityLevel < 30,
+			STAFF:		QualityLevel < 19,
+			CLAW:		QualityLevel < 25,
+			TRAP:		QualityLevel < 24,
+			FLASK:		QualityLevel < 24,
+			BELT:		QualityLevel < 26,
+			BOOTS:		QualityLevel < 23,
+			GLOVE:		QualityLevel < 28,
+			SWORD:		QualityLevel < 30;
++	Changed some base item qlvl numbers to better match the new smart drop rules;
++	Lower mana restore from potions is now limited to Shugoki, Executioner and Savage);
++	[summons_work] Bosses get 50% less damage from summons;
++	[summons_work] Fixed a bug with all monsters in MvM Ranged getting only 25% damage, Golem now gets 75% less damage (as before), summons get 50% less and regular monsters get full damage;
++	Added 9 more character shield block sound variations;
++	[summons_work] Left-clicking summons does't make master attack them;
++	[summons_work] Master can no longer damage his summons with melee & ranged blows;
++	All 7 Savages classes received different randomized Fury sounds;
++	Rogues received new Fury sound effects;
++	Added 4 uniques on uID#17 (Full Helm);
++	Added 5 uniques on uID#2050 (Hounskull Bascinet);
++	[summons_work] Added some more affixes;
++	[summons_work] Set up formulas for all 8 types of summons;
++	Added 9 uniques on uID#2051 (Plate Corselet);
++	Added 5 uniques on uID#2052 (Winged Helmet);
++	Bombardier chances for critical strike are increased to 5+(clvl/5)% chance for +85% damage;
++	Added 8 uniques on uID#2053 (Wizard Plate);
++	Bosses in SP will no longer drop 1-handed sharps or blunts to Guardian class;
++	[summons_work] Mage / Warlock / Elementalist / Necromancer don't appear with a two-handed staff when using just a one-handed weapon now;
++	[Duke] Spell charges support added for all items now (recently added unique items that give some spell charges will now work better)// it's bugged<<needs rework!//upd:Fixed!;
++	Added 4 uniques on uID#2054 (Sorcerer Mail);
++	Added some new base items, and corrected some old ones;
++	Corrected requirements on body armors for Rogues;
++	Added 6 uniques on uID#2055 (Riveted Mail);
++	Added 5 uniques on uID#2056 (Skull Mask);
++	Added 8 uniques on uID#2057 (Scalemail Gauntlets);
++	Added 6 uniques on uID#2058 (Scalemail Gloves). Total uniques 580 now;
++	Added a new line of hand armor for all Mage subclasses, generates only magic affixes;
++	All of the old glove type items now generate only battle (and thorn) types of affixes;
++	Added 3 new lines of gloves for each summoner specialist;
++	Added and adjusted summoning mechanics, now summoner classes are ready (for testing),
+	Note: this was a lot of fucking work, and not much of it was documented here in the log but it was a lot,
+	Note: summoning doesn't work in multiplayer (properly), it wasn't even tested there (yet), this will be done somewhat later (hopefully, soon);
++	Certain items are always generated with affixes (Hearts, Grimoires, Effigies, Orbs, Ritual Knives, Shrunknen Heads, ). Just like jewelrym never findable without affixes now;
++	Config.ini is updated, you have to overwrite it. Adjust it all over if you need to;
++	Beastmaster daggers now won't generate battle affixes;
++	Summons no longer will open doors;
++	Fixed some summons in Ironman mode seen as leftover monsters;
++	Fixed minion summoning sound effect to play according to minion coordinates;
++	Fixed automap turnoff on changing dungeon levels;
++	Fixed minion summoning leftover again, quickfix;
++	All Mage classes will not get non magical/non summoner glove drops from bosses anymore (wrote extra checks to exclude them as I did with 1handers for Guardian);
++	Allowed to generate  some new affixes on Beastmaster daggers (to prevent them from potential 'lacking affix to generate' scenario);
++	Wrote additional drop rules that will prevent certain classes from recieving boss drops of inappropriate item types (gloves, boots, belts);
++	Added some jewelry for summoners that can generate summoning affixes on it;
++	Finished Trapper+Bombardier shields;
++	Fixed bug that left immortal unselectable monsters after they were hit by a trap;
++	Only summoners strt with Unsummon skill now;
++	All minion types now rush into battle but don't open doors;
++	Summoner classes no longer get Mage generic headwear items from bosses (which should result in better drops for them);
++	Summons and monster shooters should  stop attacking each other from a very long distance (max 14 tiles);
++	Updated minion AI to allow them to charge monsters without distance checks, when they return though, they will not be allowed to get away further than 5 tiles from their master;
++	Summoned minions cannot open doors while retreating (used to do it even with no open doors flag);
++	Now summoned minions try to stay in their master's sight (should prevent them from getting stuck behind a wall);
++	Now summoned minions get aggroed altogether;
++	Shooters now shouldn't attack without being activated;
++	Attempt made to activate summons if attacked in melee (by zombie AI monsters);
++	Summoned minions are now immune to Stonecurse;
++	Gravedigger summon replaced with Skeletal Warrior (Digger was too slow with walking);
++	Added summoner perks that add to minion armor / damage / hitpoints. Hope it works well, needs testing;
++	Fixed a bug with gamecrash when talking to Lachdanan or Snotspill;
++	Summoned Impling AI is set to #8 (Fallen One);
++	Fixed crash on level 16 loading (was connected to 4 DUNs loaded on that level and monster overpopulation because of that);
++	Revised summoned minion stat formulas;
++	Executioner life regeneration decrease when attacking is reduced: 25% --> 75% ;
++	Demonologist / Necromancer / Beastmaster base mana formula changed to: (1,25 * bMAG) + clvl + 22;
++	Summoners lose their bonus +1 to mana regeneration;
++	Added a new line of Mage-only boots that spawn magic and summoning affixes;
++	All other boots will now have only battle affixes;
++	Mages can have now only their specific boot drops from bosses (basic Boots are an exception though);
++	Added 2 types of Necromancer-specific boots (light and chain tier);
++	Fixed 'item of mana' item names. Now these use 2nd magic name properly;
++	Fixed crash when trying to recharge items at Adria;
++	Monks were missing some endgame stage boots. Added 3 new types of base boots for them to compensate for that;
++	Perks now recieve support for full class, improved some old bad code right there;
++	Summoner perks are no longer accessible by all Mage classes and are limited only to Summoners;
++	Serenity perk now limited to Mage class;
++	Steel Skin perk limited to Murmillo and Executioner now;
++	All 15 levels of Toughness perk now give +2% to melee damage resistance each,
+	Note: levels 6 to 10 are available to Savage, Berserker, Executioner and Murmillo only,
+	Note: levels 11 to 15 are accessible by Executioner solely;
++	Summoner classes receive cooldowns (5 sec ) on attacking spells: Fire Bolt, Fire Blast, Lightning, Inferno, Elemental, Arcane Star, Flash, Charged Bolt, Ball Lightning, Holy Bolt;
++	Slayer and Expert Killer perks now available to all but Mage classes. Slayer gives more critical damage increase now ( +20% per level );
++	Unstoppable perk gives twice as much points now ( +2 );
++	Dodger now has 10 levels and goes up to +40 AC;
++	Master Caster perk now has 5 levels and goes up to +50% spell accuracy. It's available only to Mage classes, Rogue, Assassin and Bombardier now;
++	Ironclad perk gets 5 more levels that are available only to super massive Executioners. New levels improves DFE by 2 points each;
++	Overdraw perk is not available to all Mages, Assassin, Rogue and Bombardier now. They have zero reason to use it anyway;
++	Tuck Tails perk is now available to Murmillo too;
++	Strong Arm perk now not available to Archers, Mages, Iron Maiden (use your thorns!) and Bombardier;
++	Eagle Eye perk now unavailable to Mages and Bombardier;
++	Resist to acid, resist and immunity to cold added in PvM;
++	Increase or decrease to all resistance under Fury now affects all elements;
++	Resist all effect would increase damage resistance to physical spells and arrows. Now fixed, physical spell resistance removed, and arrow damage resistance wasn't even working (how ironic!);
++	Now resistance to arrow damage is supported and it actually works (ta da!): maximum resistance to arrow damage is [70-100]%,
+	Note: it's calculated after processing DFE;
++	Added summoner perk that increases minion accuracy;
++	Innate melee damage resistance base formula changed heavily. Now it's BaseVIT/50 for minimum and baseVIT/25 for maximum;
++	Melee damage resistance cap set to [70-100];
++	Removed all chracter class related improvements to innate melee damage resistance. Only Executioner gets +[5-10] resistance as base;
++	Arrow damage resistance innate bonus set to +[0-5]% for Shinobi, Rogue, Assassin and Guardian;
++	Added 3 tiers of boots for each summoner class - all have their lines of specific summoner boots now;
++	Mage boots no longer generate summoner affixes;
++	Perk 'Resistance' would get around the affix of 'lose all resistance' and not have its increment of resistance reduced by that affix, now it's fixed. This wasn't tested yet;
++	Fixed summon +%damage affix. Wasn't working;
++	Spell books now have unique image, each of them;
+
+	Thanks for support:
+		Monty Mooshabad, Alex Haynes, Robert Ruppert
+
+
+	v0.9200 (23:12 01.05.2019), "Trust Me" (Terminator 2 OST)
+
++	Cold damage on hit and cold arrows added;
++	Telekinesis should no longer work on summoned minions;
++	Fixed display of visual immunity boxes;
++	Added support for cold on melee / ranged weapons;
++	Colored cold attacks (bright white scheme);
++	Fixed Summoner class cooldown exploit;
++	Elemental and Bone Spirit spells will not target undead monsters, stone cursed monsters, summoned minions, immune monsters (quest monsters that are not activated);
++	Secondary attack in AI#27 (Bonewing) now uses cold damage instead of physical (although it looks the same). Player resistance to cold damage (from monsters) works now;
++	AI#39 now uses missile that damages everything (physical), used only by Necromancer's tank and Freezelock boss;
++	New AI#40 (a.k.a. "Habibi") now uses new animation for cold spell, used by Skullwing types now who represent cold affinity monsters;
++	Fixed Zhar the Mad activation;
++	Tormentor monsters now use new AI#42: circle around target, shoot Firebolts, engage in melee;
++	Hopefully, fixed 'wrong dungeon object' crash scenario;
+
+
+	v0.9300 (0:32 07.05.2019), "Promised Land" (Gustaf Grefberg)
+
++	Fixed 'wrong dungeon object' crash, again;
++	Perk points lost due to perk system rehaul for v0.9000 are now regained retroactively as a free spendable perk points;
++	Minor revision of Demonoogist minion stats;
++	Snow Liches now use different snow bolts that look much better;
++	Demon Scale now renamed to Great Scale Armor and is usable only by Beastmaster;
++	Dark Seraph now uses Snow attack;
++	Added 3 uniques on uID#2059 (Death Effigy). Total uniques 583 now;
++	Added some summoner body armors;
++	Removed summoning affix generation from common (caster) mage body armors because all summoners now have body armors for each tier;
++	Hitting spacebar now closes Perk window;
++	Added new stash format: visual, accessed through Gillian, works as integrated into save file, not shared, has 130 slots per tab, 100 tabs total;
++	For now, new Stash works without messing with the old, but old one will be removed in about two weeks after the public release of this version. Move what you need into the new one;
++	Stash is not accessible in Ironman / Nightmare modes;
++	Added 1 more unique on Gladius VIII. Total uniques 584 now;
++	Executioner is given a better color scheme when in plate armor;
++	Templar is using a different color scheme in mail armor (white);
++	Updated look for mail and plate tier Dimachaerus;
++	Level up progress no longer shown in character info panel. Instead, arrow damage resistance is displayed;
++	Gold, quest items, elixirs and precious stones cannot be put into the new Stash;
++	Apoc (from monsters) hits summoned minions and Golem now (they used to be immune);
+
+	Thanks for support:
+		Christian von Mellenthin, Jeffb 
+
+
+	v0.9311 (23:55 08.05.2019)
+
++	Added new belts for Necromancer, Beastmaster and Demonologist. These can generate magic and summoning affixes;
++	All other belts cannot spawn summoning affixes anymore;
++	Restoring Telekinesis as default skill to Monk classes (no idea how it got changed, which is the weirdest of things);
++	Last 5 tiers of STR line 1Handed blunt weapons are limited to Warrior & Templar now. Duplicates of these items are using different stats and are limited to Gladiators;
++	Fixed Adria morphing bug;
++	"Toughness" perk levels 6-10 are now available to Guardian class;
++	"Ironclad" perk levels 11-15 are now available to Guardian class;
++	"Ironclad" perk scales better after level 10 now;
++	Fixed the gamecrashing bug with blocking arrows (or spells, if with 0% resistance to them) in North-NorthWest direction;
++	Fixed a bug with clicking on stash window that resulted in character going off wandering (with stash open);
+
+	Thanks for support:
+		Pshemsky, Jeff Halfhide
+
+
+	v0.9319 (22:45 09.05.2019)
+
++	Removed affixes that added spell levels to Mana Shield, Hydra, Fury and some others. They weren't popular and people were complaining they are just place holders;
++	Changed affixes that added SLVL to some damaging spells into affixes that add [x - y] to damage of the spells;
++	Executioner is allowed to go higher in Steel Skin perk: added +5 perk levels for him;
++	Lots of body armors give resistance to damage from arrows now. Mostly mails and plates;
++	Fury effects for Iron Maiden changed:
+	-clvl to AC,
+	+clvl/3 to minimum melee damage resistance,
+	+clvl/2 to maximum melee damage resistance;
++	Assassin Fury effects changed: +3,5 * clvl to damage is removed, added increased chance to crit ( +(clvl/10)+5 );
+
+
+	v0.9324 (23:28 11.05.2019)
+
++	Upgraded Fury effects for many classes:
+		case PFC_GUARDIAN:
+			accueacy + charLevel / 2;
+			AC + 4 * charLevel / 5 + 5;
+			Damage - ( charLevel / 5 ) * ( charLevel / 5 );
+			slvl - 3;
+			damageFromEnemies -= charLevel / 10;
+			rangedAbsorbPercentMin + charLevel / 5;
+			rangedAbsorbPercentMax + charLevel / 3 + 4;		
+		case PFC_ASSASSIN:
+			critChance + charLevel / 10 + 10;
+			critDamageMin + 20 * charLevel - 10;
+			critDamageMax + 25 * charLevel;
+			AC + 5 * charLevel / 8;
+			resistAll + charLevel / 4;
+			rangedAbsorbPercentMin - charLevel / 2;
+			rangedAbsorbPercentMax - charLevel / 2;
+			sllv - charLevel / 10 - 2;
+		case PFC_IRON_MAIDEN:
+			meleeAbsorbPercentMin + charLevel / 3;
+			meleeAbsorbPercentMax + charLevel / 2;
+			damageFromEnemies - charLevel / 4 ;
+			resistAll - charLevel / 4;
+		case PFC_SAVAGE:
+			spellsIncreasedLevels - charLevel;
+			addsDamage + 3 * charLevel;
+			damageFromEnemies - charLevel / 3;
+			accuracy + charLevel / 3;
+			AC - charLevel / 3;
+		case PFC_BERSERKER:
+			spellsIncreasedLevels - charLevel / 5;
+			addsDamage + 4 * charLevel;
+			damageFromEnemies - 2 * charLevel / 5; // 40 %
+			meleeAbsorbPercentMin + charLevel / 2 + 10;
+			meleeAbsorbPercentMax + charLevel / 2 + 10;
+			rangedAbsorbPercentMin - charLevel / 2 + 5;
+			rangedAbsorbPercentMax - charLevel / 2 + 5;
+			accuracy + 2 * charLevel / 3;
+			AC - charLevel;
+		case PFC_EXECUTIONER:
+			spellsIncreasedLevels - charLevel;
+			addsDamage + 9 * charLevel / 2;
+			damageFromEnemies - 3 * charLevel / 7 - 4;
+			accuracy + charLevel / 2;
+			AC - 2 * charLevel / 3;
+			lifeRegen + 2 * charLevel;
++	Added 5 uniques on uID#2060 (Hooded Helm). Total uniques 589 now;
++	Added 9 uniques on uID#2061 (Gloom Helmet). Total uniques 598 now;
++	Adjusted damage on early two-handed sharps and blunts. Added some new ones;
++	Added DFE to late Necromancer shields;
+
+
+	v0.9331 (18:45 15.05.2019)
+
++	Executioner stun threshold formula changed to: Rnd( 2 * (clvl / 2) + 7) + (clvl / 5) + (bVIT / 4) + 1. Should become more resilient now;
++	Heavy revision of perks. Mostly, expanded them with new levels for specific classes;
++	Added 2 new uniques suggested by patron. One on War Sica, another on Light Maul. Total uniques 600 now;
++	Effect of Ruin (10% chance for +200% damage) changed to 20% chance for doing +100% damage;
++	Effects of +50% total damage to Undead/Demons changed to +40% damage..;
++	Effect of Dread changed from 1-260% to 80-160%;
++	Added 2 uniques on uID#2062 (Ironplate Belt). Total uniques 602 now;
++	Stash duping bug fixed;
+
+	Thanks for support:
+		charly
+
+
+	v0.9335 (11:15 17.05.2019)
+
++	Added 1 unique on uID#2063 (Full Plate Shinguards). Total uniques 603 now;
++	Added some patron suggested uniques: 1 unique on uID#2064 (Pitfiend Skull) and 1 unique on uID#2065 (Great Axe). Total uniques 604 now,
+	Note: if you don't know yet, for $50 you can design and add a unique item to the mod, and it will stay there forever, PM me and we will create it;
++	Fixed one of the reported gamecrashes (related to drawing a monster corpse);
++	Debug messages about bugged monsters when playing summoners are turned off;
+
+
+	v0.9347 (23:04 22.05.2019)
+
++	Level transaction character freeze bug fixed (hopefully);
++	Revised steel skin perk again;
++	Minor debuff of Assassin Fury effects;
++	Completed design of Shinobi+Assassin shield line;
++	Added 2 sharp weapons for Executioner class;
++	Fixed Guardian base damage checks for two-handed sword/mace. Base damage divider was 300 instead of 80 because of a faulty check;
++	Increased Guardian base damage with 2handed melee weapons by adding (CLVL-1) to it;
++	Assassin acid damage modifier reduced: 2.5 -> 2.0 ;
++	Global cold damage modifier from weapons is reduced: 0.25 -> 0.2 ;
++	Cold immunity issued to some critters;
++	Added 4 uniques on uID#2064 (Pifiend Skull). Total uniques 608 now;
++	Added 8 more uniques on uID#2065 (Great Axe). Total uniques 616 now;
+
+
+	v0.9500 (19:07 24.05.2019), "Badimo" (Juno Reactor)
+
++	In Ironman quest levels 'X monsters left' line is no longer shown twice;
++	Added 5 uniques on uID#2066 (Leather Jacket). Total uniques 621 now;
++	Added 4 uniques on uID#2067 (Field Mail). Total uniques 625 now;
++	Added 7 uniques on uID#153 (Banded Plate). Total uniques 632 now;
++	Iron Maiden will no longer get non thorn-themed body armors and helms (except for the first one in Rogue class line) from bosses;
++	All drop limitation checks used for bosses are now used for monsters as well,
+	Note: this should drastically increase loot quality;
+
+
+	v0.9510 (13:00 26.05.2019)
+
++	Added restrictions to monster drops in SP Purgatory (missed that in the previous update);
++	Added 4 uniques on uID#2068 (Leather Harness). Total uniques 636 now;
++	Fixed Imperial Shield picture;
++	Rebalanced Assassin Fury effects;
++	New picture for Nether shield;
++	Inquisitor acid damage quotient lowered to 1.0;
++	Global acid damage quotient (from weapons) lowered: 2.5 -> 2.0;
++	More damage with holy weapons for Templar: 2.0 -> 2.25;
++	Added 4 uniques on uID#114 (Mug Helmet). Total uniques 640 now;
++	Added 4 uniques on uID#6 (Scare Mask IX). Total uniques 644 now;
+
+
+	v0.9518 (21:24 26.05.2019)
+
++	Added support for acid / cold / arcane arrows on monsters;
++	Apocalypse Clan archers now deal less damage (was op) and use cold arrows instead of fire arrows;
++	Venom Clan archers now use acid arrows, and deal less damage to compensate;
++	Gloom Clan archers now use arcane arrows and do less damage (but not much, beware);
++	Grossblow renamed to Mancubus;
++	Ice Stalker now uses cold arrows instead of ice bolts;
++	Frozen Horrors now use cold arrows instead of lightning arrows;
++	Removed some stupid names from rare item name generator ("Devine", "Prick", etc.);
+
+
+	v0.9524 (0:11 29.05.2019)
+
++	Alexandrite renamed to Amethyst;
++	Added 1 more unique on War Sica. Total uniques 645 now;
++	Lustsoul casts blue star now;
++	Some bosses use different AIs now;
++	Acidbat/Firebat bosses on floors 19/20 will now use blue star attack;
++	Expanded Blood Witches to floors 17 and 18. Added 2 new bosses for them;
+
+
+	v0.9525 (15:26 29.05.2019)
+
++	Fixed a bug that prevented uniques based on uIDs #256+ from dropping. This should allow all unique items to drop now,
+	Note: that means some 500+ more uniques will suddenly get available now;
+
+
+	v0.9532 (14:42 31.05.2019)
+
++	Added 3 uniques on uID#118 (Sage Mask). Total uniques 648 now;
++	Added 1 unique on uID#2069 (Large Axe). Total uniques 649 now;
++	Added 3 uniques on uID#2070 (Lorica Segmentata). Total uniques 652 now;
++	Added 6 uniques on uID#2071 (Dimachaerus Galea VII). Total uniques 658 now;
++	Revised some uniques;
++	Fixed Gloom Clan not attacking with arcane arrows;
++	Eldritch globe is one-handed now;
+
+
+	v0.9537 (0:41 03.06.2019)
+
++	Added 4 uniques on uID#161 (Full Cuirass). Total uniques 662 now;
++	Added 1 more unique on uID#2008 (Ring). Total uniques 663 now;
++	Added 3 uniques on uID#2072 (Centurion Vambrace). Total uniques 666 now;
++	Changed flip animation for 2nd tier Arkaine's Valor;
+
+
+	v0.9600 (2019-06-10)
+
++	Sharps and blunts now show expanded info that gives clue on how to use them effectively;
++	Visual trade implemented. Old ways are still there for debug purpose. Will be removed later;
++	Certain requirements that are not meant on a given character will be shown in red when viewing item info;
++	Old stash deactivated in singleplayer mode;
+
+
+	v0.9601 (2019-06-11)
+
++	Both stash types got cut in SP in previous build, fixing;
+
+
+	v0.9606 (2019-06-12)
+
++	Thraex class will now see sharp weapon descriptions without the -50% to undead part;
++	Fixed faulty code in Executioner's life regeneration while attacking;
++	In Ironman / Nightmare modes, picking up Fungal Tome and reading it transmutes it into spectral elixir;
++	Automap is not shown if any window/dialogue is open, done to avoid unpleasant overlay;
++	Iron Maiden is given new class skill now: Item Repair;
++	Fixed a bug with exploiting new visual windows;
+
+
+	v0.9615 (2019-06-13)
+
++	New feature added: "No striptease": it is now impossible to change equipped items in battle mode (except for weapon slot items);
++	Haggler perk now affects repair, recharge, identify and restock prices;
++	Pressing middle mouse button now scrolls weapon slots forward;
++	Fixed in-game menu animations, they would stop after machine spent 49+ days without rebooting (a rare original D1 bug, but we fix them all anyways);
++	Added sounds when shift-clicking items in stash;
++	Pressing ESC in visual trade window(s) no longer opens main menu, just closes the trade;
++	Gems were allowed to be stashed unintendedly, fixed;
++	Adjusted some tooltip texts when in stash window;
++	Added 'exit' button in trade windows;
+
+
+	v0.9623 (2019-06-14)
+
++	Oils will now be used after being actually applied, not on right-clicking them as before,
+	Note: if you right-clicked accidentally or reconsidered, you can right-click again to cancel the action without losing the oil;
++	Healing potions cannot be used if player is at full health. Same with mana potions. Holy waters and even elixirs are accounted for,
+	Note: spectral elixir can be used if it can up at least one stat;
++	Casting runes on monsters now doesn't activate melee fight on a character, which means casting runes on monsters is fixed;
++	Developermod option is considered a cheat now. With it, some debug features are disabled. Getting closer to release, cleaning up, all that;
++	Amount of characters that can be created and stored in meta menu is now 100 (10x more than before);
++	Added 5 uniques on uID#2073 (Terror Plate). Total uniques 671 now;
+
+
+	v0.9626 (2019-06-15)
+
++	Removed old trade dialogues;
++	Bosses changing trn color after death: fixed;
++	Added layer of blood on dead monsters (who showed blood);
++	Fixed recent changes in undrinkable potions (spectral elixir and holy waters in particular);
+
+
+	v0.9700 (2019-06-17)
+
++	Fixed transferring full class data over net. This will fix a lot of subclass related bugs in coop;
++	Added 7 uniques on uID#2074 (Lorica Hamata). Total uniques 678 now;
+
+
+	v0.9707 (2019-06-17), hotfix pack
+	Warning: start new game with your character(s) after this update, game session needs to refresh to upgrade the changes (not new character, ok? just new game)
+
++	Fixed Haggler perk logic in visual trade;
++	Critical bugfix: DeathMonstersMap is extended to store more than 30 different corpse types per level, fixes crash on some dlvls;
++	Restock tooltip minimized to prevent obscuring of bottom line of the window where jewelry resides;
++	"No striptease" turned off in multiplayer mode;
++	Fixed game mode displayed over trade windows;
++	Hitting ESC with Perk window open now closes it instead of bringing up main menu over it;
++	Selling items to Deckard is deactivated now;
+
+
+	v0.9712 (2019-06-17)
+
++	Izual now drops 10 items;
++	Fixed some flaws in certain unique items;
++	Added 7 uniques on uID#2075 (Yoroi Mail). Total uniques 685 now;
++	Added 6 uniques on uID#2076 (Plate Harness). Total uniques 691 now;
++	Added 6 uniques on uID#2077 (Spiked Plate). Total uniques 697 now;
+
+
+	v0.9716 (2019-06-17)
+
++	'Covetous' prefix qlvl reduced: 25 -> 24;
++	Added 5 uniques on uID#2078 (Thorned Mail). Total uniques 702 now;
++	'Profit' suffix is assigned to 'IS_MAGIC' type and 'Blocking' suffix assigned to 'IS_BATTLE';
++	Trapper class doesn't get bow drops from monsters (and bosses) anymore;
+
+	Thanks for support:
+		maxjoin, RC, Nevu
+
+
+	v0.9719 (2019-06-20)
+
++	Added 3 uniques on uID#2079 (Thorned Aketon). Total uniques 705 now;
++	Fixed a critical flaw with the new item picture that could have led to gamecrash/freeze;
++	A surprise feature that I will not reveal yet, heh ;
++	Modified Skeleton King level layout for Purgatory and Doom, mainly removing stairgank at the start;
+
+
+	v0.9722 (2019-06-22)
+
++	Added 15 uniques on uID#2080 (Chainmail Boots). Total uniques 720 now;
++	Added 15 uniques on uID#2081 (Scalemail Greaves). Total uniques 735 now;
++	Added 15 uniques on uID#2082 (Mesh Boots). Total uniques 750 now;
+
+
+	v0.9725 (2019-06-23)
+
++	Added 19 uniques on uID#2083 (Scale Belt). Total uniques 769 now;
++	Added 18 uniques on uID#2084 (Chained Belt). Total uniques 787 now;
++	Added 13 more uniques on uID#194. Total uniques 800 now;
+
+
+	v0.9730 (2019-06-25)
+
++	Executioner base damage will drop to 1 if equipping a shield;
++	Fixed wrong damage display on non-weapon items. Plus, adjusted some values;
++	Modified random number generator function #2 to fix potions dropped detected as dupes, same with gold dropped by player;
++	Fixed resist all + resist [elemental] generated on the same item not displayed properly (was a cosmetic bug);
++	Cleanups in character base damage formula code;
+
+
+	v0.9733 (2019-06-25)
+
++	Edited Nightmare mode description;
++	Lighting bug fixed, hopefully (the one that would randomly lighten up area around character);
++	Randomization of base item linked to MF value. For monsters drop only;
+
+
+	v0.9740 (2019-06-27)
+
++	Revised descriptions on a ffixes of melee elemental hits on weapons, for spell damage\percent affixes and for element damage\percent affixes,
+	Note: the descriptions should be more or less accurate,
+	Note: element damage increasers affect both flask, spell and weapon elemental damage types, they affect everything;
++	Added 5 uniques on uID#2085 (Scare Mask);
++	Added 19 uniques on uID#2086 (Steel Mittens);
++	Added 19 uniques on uID#2087 (Articulated Gauntlets). Total uniques 843 now;
+
+
+	v1.0000 (2019-07-26), "Hell Awaits" (Slayer)
+
+	Attention!
+	This is the first released version. This is new to us and it might take some time before we stabilize the mod.
+	If you want absolutely stable mod, wait another month before you play.
+	The released version wipes characters, items and shared stash. Old early access / beta characters and items cannot be salvaged.
+	Also, swapping characters between SP and MP modes is no longer possible.
+	Your active testing and feedback will aid greatly in our fixing and optimizing what remains flawed in multiplayer.
+
++	Dialogues centered on the screen (used to be alighned by left upper corner for 640x480 resolution);
++	New game window alignment system introduced: centered on the screen: left and right windows together (almost);
++	New game window alighnment system added: album: game screen is split in two halves like a book and info windows is centered on each page of the book,
++	Note: modify in config: "set centeredpanels" off/on  ;
++	NPCs no longer selectable under game dialogue windows;
++	Perk window is centered on the screen by the middle;
++	Treasure map display is centered by the middle of the screen;
++	Fixed centering of player message window;
++	Various visual enhancements of GUI;
++	Adjustments to affix descriptions;
++	Added 8 uniques on uID#2088 (Leper Ironmask). Total uniques 851 now;
++	Sharpshooter elemental arrow damage factor set to 1.0 (was 1.25);
++	Scout elemental arrow damage factor set to 2.0 (was 1.0),
+	Note: there we go, she has her thing going now;
++	Scout base damage with bows set to: (cStr + cDex) * Clvl / 250;
++	Updated class descriptions for many classes (on character creation screen);
++	"No striptease" turned off in SP Hardcore, Ironman and Nightmare modes as they are not forgiving mistakes. Basically, it's activated only in SP Normal mode now;
++	Fixed weapon slot shuffling bug;
++	Fixed tooltip clearups in main menu;
++	Spectral elixir didn't have 'right-click to use' line in tooltip: added back;
++	Fixed some uniques;
++	Added 9 uniques on uID#2089 (Plate Mask). Total uniques 860 now;
++	Added 1 more map layout to Island of the Sunless Sea quest;
++	Fixed Fury effect formulae on some classes;
++	Added 2 new amulets (base item) to close the gap in qlvls of amulets where they would appear too rare. One is common level 10, another is battle affix only level 21;
++	Replaced image on old qlvl 2 amulet;
++	Replaced Initiated Robe image with a new one;
++	Cloak item gets new image;
++	Witchfire the Unholy renamed to Blood Widow;
++	Robe gets new image;
++	Preparations began for expanding set item system;
++	Added 7 uniques on uID#2090 (Ritual Helmet). Total uniques 867 now;
++	Pit Fiends are beasts now;
++	Added 5 uniques on uID#2091 (Dark Lord Helmet). Total uniques 872 now;
++	Fountain of Tears effect changed from casting Reflect spell on a player to giving +10% resist all until dungeon level is changed;
++	Trapper class doesn't get bow drops anymore form dungeon objects;
++	Fixed some errors in unique item data;
++	Monster gold drop chances reduced by difficulty: 64 - 47 - 32 ->> 43 - 28 - 13 ;
++	Added 1 more unique on uID#1 (Ring). Total uniques 873 now;
++	Summoners would resummon minions with least hit points. Now they resummon according to order of summoning, as in D2 (hello to Guza);
++	Changing items in battle mode for singleplayer normal mode is now put under option. Manipulate "AllowBattleStriptease" option in config: on / off (off by default);
++	Added 10 uniques on uID#2092 (Full Plate Greaves). Total uniques 883 now;
++	Added 1 more variation of Disused Reliquary quest map;
++	Added 1 more variation of Fleshdoom quest map level 3;
++	Added 10 uniques on uID#2093 (Lesser Orb). Total uniques 893 now;
++	Some more affix description upddates;
++	Changed some ring item base imagery;
++	Changed some more base item pics, giving it all a fresh look;
++	In Ironman mode, quest levels that are treated like dungeon level 4/8/12/16/20/24 could give "you can save & exit" message when cleared. Fixed by excluding these areas from the check;
++	Shared Stash is removed completely now;
++	Guardian class is no longer sold one-handed weapons. Trapper is not offered bows in shops anymore;
++	Changed singleplayer and multiplayer formats and made them incompatible with old beta character savefiles. Here comes the wipe;
++	It's no longer possible to interchange character files between SP and MP;
++	Added Vsync option to config file;
+
+
+	v1.0001  (2019-07-27), hotfix
+
++	Fixed 'Detsa' ring unique: flawed data caused gamecrash;
++	Deactivated "Overdraw" perks for Trapper class, as she will no longer use bows;
+
+
+
+=================================================================================================
+Support The Hell mods:	https://www.patreon.com/join/thmod?
+Support Abaddon mod:	https://www.patreon.com/join/abaddonmod?
+Paypal tip link:		https://www.paypal.me/thmod
