@@ -2063,6 +2063,55 @@ Contact email: diablothehell@gmail.com
 +	Deactivated "Overdraw" perks for Trapper class, as she will no longer use bows;
 
 
+	v1.0002 (2017-07-28)
+
++	Added some melee damage resistance to some low level body armors;
++	Revised some base damage coding. Didn't change balance, just code cleanups;
++	Auto-map now displays mana pots as grey when potion color option in config is black. If potion color is blue, then auto-map shows them in blue as well;
++	Fixed reported Clergy Ring bug (used to increase only minimal gold find value);
++	Non-summoner class characters no longer get summoner books in dungeons and in Adria shop;
++	Characters now can't have their life reduced below 1 hitpoint when in town. This should fix the problem when you can die swapping gear or from negative life regen;
++	When Trapper dies, her traps are cleared instantly to avoid exploiting 'kill in afterlife' bug;
+
+
+	v1.0003 (2017-07-28)
+
++	Fixed Eye of Scion unique;
++	Conservator perk rebalanced: arrives at 60% decrease on level 9. Further levels are accessible only by Executioner (10) and Iron Maiden (12),
+	Note: progression now goes like this: 10, 19, 27, 34, 40, 45, 50, 55, 60, 65, 70, 75;
++	Trapper no longer has access to Eagle Eye perk (traps have auto-hit anyway, it would be wasted). If your Trapper had it, the points would be given back retroactively as unspent;
++	Guardian class will not get one-handed weapons from chests anymore, same about Trapper and bows;
++	Trapper weapons now display delay time to give players more information and avoid confusion when evaluating DPS on these things;
+
+
+	v1.0004 (2019-07-29)
+
++	Swift Learner perk gets 5 new levels;
++	Slayer perk (and Expert Killer) is not accessible by Bombardier class anymore;
++	Guardian class doesn't get Tuck Tails perks now;
++	Fixed Beasthunter perk for Dimachaerus - was broken;
++	Fixed speedbook display. It gets cut on the left without going into 4th dimension there somewhere;
++	Robe (generic) redesigned into Lightened Gambeson. Different looks and stats now. Requirements are the same as before;
+
+
+	v1.0005 (2019-07-29)
+
++	Fixed "Runeguard Treads": that unique used to lead to game crash when trying to see its stats;
++	Butcher drops +1 item now;
++	Disabled running in MP mode. Running breaks synchronization;
++	More gold drops and more items drops in MP according to number of people playing (or number of people who hit the boss) is deactivated;
++	Loot in MP is now instanced. Players will see their own items dropped by monsters and dungeon objects. It's now impossible to see what other characters drop on the floor,
+	Note:	what you find is what you get now, that's the rule. This also applies to magic find mechanism, Heavy Drinker perk, and gold find (including Gold Fever perk),
+	Note 2:	many MP bugs should be fixed by now, but NOT summoner gameplay. Summoners will cause bugs, guaranteed. Better don't play them and report bugs not connected to summoners;
++	If someone else gets drops in MP and you are not on the same DLVL with them, you don't get that loot;
+
+	v1.0006 (2019-07-30)
+
++	Infravision doesn't make you see trapped objects now, you need to use Awareness perk for that;
++	Added 6 uniques on uID#76 (Eldritch Globe). Total uniques 899 now;
++	Removed [11-15] armor from Eldritch Globe;
++	Fixed 3rd variation of Cursed Blade quest level 3 (overdid sprites and ran out of them);
+
 
 =================================================================================================
 Support The Hell mods:	https://www.patreon.com/join/thmod?
