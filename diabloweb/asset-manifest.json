@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/diabloweb/static/css/main.6d8458d4.chunk.css",
-    "main.js": "/diabloweb/static/js/main.fb9da485.chunk.js",
-    "main.js.map": "/diabloweb/static/js/main.fb9da485.chunk.js.map",
+    "main.js": "/diabloweb/static/js/main.89585c51.chunk.js",
+    "main.js.map": "/diabloweb/static/js/main.89585c51.chunk.js.map",
     "runtime~main.js": "/diabloweb/static/js/runtime~main.dc41b792.js",
     "runtime~main.js.map": "/diabloweb/static/js/runtime~main.dc41b792.js.map",
     "static/js/2.116edead.chunk.js": "/diabloweb/static/js/2.116edead.chunk.js",
@@ -10,7 +10,7 @@
     "a74021d951bb99f74fbe.worker.js": "/diabloweb/a74021d951bb99f74fbe.worker.js",
     "a74021d951bb99f74fbe.worker.js.map": "/diabloweb/a74021d951bb99f74fbe.worker.js.map",
     "index.html": "/diabloweb/index.html",
-    "precache-manifest.a2b330d19d2870accd49d269f750b0b9.js": "/diabloweb/precache-manifest.a2b330d19d2870accd49d269f750b0b9.js",
+    "precache-manifest.fd68b6c0c14ad28b712ae7ca1f366e09.js": "/diabloweb/precache-manifest.fd68b6c0c14ad28b712ae7ca1f366e09.js",
     "service-worker.js": "/diabloweb/service-worker.js",
     "static/css/main.6d8458d4.chunk.css.map": "/diabloweb/static/css/main.6d8458d4.chunk.css.map",
     "static/media/Diablo.wasm": "/diabloweb/static/media/Diablo.65932b66.wasm",
