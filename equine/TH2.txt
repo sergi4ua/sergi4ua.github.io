@@ -2105,6 +2105,7 @@ Contact email: diablothehell@gmail.com
 	Note 2:	many MP bugs should be fixed by now, but NOT summoner gameplay. Summoners will cause bugs, guaranteed. Better don't play them and report bugs not connected to summoners;
 +	If someone else gets drops in MP and you are not on the same DLVL with them, you don't get that loot;
 
+
 	v1.0006 (2019-07-30)
 
 +	Infravision doesn't make you see trapped objects now, you need to use Awareness perk for that;
@@ -2112,6 +2113,32 @@ Contact email: diablothehell@gmail.com
 +	Removed [11-15] armor from Eldritch Globe;
 +	Fixed 3rd variation of Cursed Blade quest level 3 (overdid sprites and ran out of them);
 
+
+	v1.0011 (2019-08-03)
+
++	Added 3 more uniques on uID#182 (Cape). That should boost variety in early unique cape drops. People were getting too many Neophytes. Total uniques 902 now;
++	Running in multiplayer is made possible again, thanks to Jedi level skills of TH team programmers;
++	Some data fixes in base item table, nothing critical though;
++	Updated ReadMe again, added more info;
++	Fixed 3rd variation of Cursed Blade quest level 3 again;
++	Fixed recent bug with MP game crashing when you enter a dungeon where there's another player fighting monsters;
++	Added new perk for Iron Maiden;
++	Fixed some recent warnings in summoned minion data values;
++	Slain Hero now drops items according to full class, and item types are adjusted for each class;
++	Butcher made significantly easier when playing on Purgatory / Doom difficulty of Ironman / Nightmare mode;
++	Trapper, Assassin and Bombardier classes receive new unique item rewards for completing Anvil of Fury quest now;
++	Fixed Belphegor's Hell Forged cold resistance attribute;
++	Fixed mana potion display on minimap (black version). Holy waters are displayed in very bright blue (almost white) color on minimap;
++	Fixed a bug with not killing summoned minions of a non-host player when switching dungeon levels;
++	Changed some multiplayer message texts;
++	Summoned minions deal less damage to monsters according to number of players in game:
+	1:	-0%,
+	2:	-25%,
+	3:	-37%,
+	4:	-50%;
++	Reworked all Anvil of Fury rewards - all 29 classes now get items that can be used, including new unique items;
++	All multiplayer crashes and disconnection (timeout) bugs are fixed now (at least, they should be, unless some are still lurking). It should be now safe to play multiplayer;
++	Nerfed Griswold's Edge 1-handed uniques a little. New two-handed variations are buffed;
 
 =================================================================================================
 Support The Hell mods:	https://www.patreon.com/join/thmod?
