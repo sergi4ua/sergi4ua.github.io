@@ -2140,6 +2140,144 @@ Contact email: diablothehell@gmail.com
 +	All multiplayer crashes and disconnection (timeout) bugs are fixed now (at least, they should be, unless some are still lurking). It should be now safe to play multiplayer;
 +	Nerfed Griswold's Edge 1-handed uniques a little. New two-handed variations are buffed;
 
+
+	v1.0012 (2019-08-04)
+
++	Fixed Wine from Tears perk name;
++	Kensei melee block chance now can be no more than 50%;
++	Executioner melee max block chance is raised: 10% ->> 15%;
++	Greatly revised accuracy with magical damage for certain classes:
+	INQUISITOR:					+80,
+	SCOUT:						+50,
+	MAGE / ELEMENTALIST / WARLOCK:			+25,
+	DEMONOLOGIST / NECROMANCER / BEASTMASTER:	-10,
+	ROGUE / ASSASSIN / BOMBARDIER:			+60,
+	Note: other classes have it unchanged (+0%). This will increase chances to hit with elemental damage for classes that use it a lot: Rogue, Assassin, Bombardier, etc.
+
+
+	v1.0013 (2019-08-06)
+
+	Warning!
+	Start new game session after this upgrade. Loaded game will lock up or crash - likely.
+
++	Book requirements are now calculated correctly when they are in stash/trade windows;
++	Sprite limit was raised from 125 to 3000;
++	Fixed new quest uniques (they would morph into random uniques from higher slots in the table);
++	Fixed gamecrash by Warrior classes when having nothing in hands and block is required;
++	Wine from Tears perk reduced in power (-50%);
+
+
+	v1.0014 (2019-08-07)
+
++	Fixed a couple more uniques;
++	Grimspike and Fleshdoom now drop 10 items;
++	Adding new feature: "You are sooo in my way" (Best pickup line ever too^^): Summoned minions now don't block way for players. Summons can walk through players too;
++	Mage classes now get a chance to have books dropped by bosses in IM/NM modes of MP (around 33% for book instead of magic item);
+
+
+	v1.0015 (2019-08-07)
+
++	Added 2 more uniques on uID#3 (Sash). Total uniques 904 now;
++	Optimized walking through summoned minions;
++	Fixed summons cleanup on game/dungeon exit;
++	Glitched monsters (ghosts) are cleared with a new function that seeks and destroys them. Not a proper fix but an effective workaround nevertheless;
++	Summoned minions no longer block player cursor. Summons no longer show info when hovered. Pressing Alt key with mouse over them shows their stats as before;
+
+
+	v1.0016 (2019-08-08)
+
++	Added 17 uniques on uID#2100 (Plated Belt). Total uniques 921 now;
++	Added 1 more base Bardiche for Shugoki;
++	Fixed monster charge (animation). Was bugged because of incomplete sprite expansion;
++	DEMONOLOGIST / NECROMANCER / BEASTMASTER:	+10 to spell accuracy instead of old -10;
++	Some meta menu code cleanups;
+
+
+	v1.0017 (2019-08-10)
+
++	Added 7 uniques on uID#2101 (Traveller's Robe). Total uniques 928 now;
++	Starting weapon damage on Rogue and Maiden has been buffed;
++	Added 11 uniques on uID#2102 (Summoner Amulet). Total uniques 939 now;
+
+
+	v1.0018 (2019-08-12)
+
++	Speaking to Lachdanan now spawns Golden Elixir on level 14 now, this way you can give it to him and receive quest reward in IM/NM modes;
++	Now it's possible to right-click Ted to transmute him into quest reward (works this way only in IM/NM modes);
++	In IM/NM modes, right-clicking Anvil of Fury now transforms it into your class/difficulty defined quest reward;
++	Savage class now goes 5 perk points deeper into "Strong Arm" becoming undisputed champion of raw base damage;
++	Savage class loses access to the following perks: "Slayer", "Expert Killer";
+
+
+	v1.0019 (2019-08-13)
+
++	Fixed a critical bug that froze the game and crashed to desktop upon attempting to load saved game, was caused by incomplete sprite limit update;
++	Fixed negative goldfind/xpfind affix overflow values;
++	Skyrock now can be transmuted with righ click into quest reward in IM/NM modes;
+
+
+	v1.0020 (2019-08-14)
+
++	Updated some base item looks;
++	Leoric for SP IM/NM mode is nerfed (used to be a gamebreaker);
++	Using Horror dungeon layouts of Skeleton King Tomb to avoid them getting populated with OP monsters;
++	Tavern Sign now can be right-clicked in IM/NM mode to transmute it into quest reward;
++	Added new shaders that activate vignette/fog(blur) in game. Off by default, it can be activated in config, by setting "set fogvenfx" line to ON;
+
+
+	v1.0021 (2019-08-14)
+
++	Updated more base item pics;
++	Bringing up game menu in SP IM/NM mode doesn't pause the game now;
++	Pressing MURDER HERO / ABANDON GAME in IM/NM mode now doesn't kill hero instantly, now it requires confirmation,
+	Note: pressing F12 when that confirmation menu is up will kill current hero;
+
+
+	v1.0022 (2019-08-15)
+
++	Game cannot be paused in IM/NM modes of SP if player is in battle mode. This will keep the battle tension up now;
++	It's now possible to activate new shaders in config separately. Update it and read the descriptions next to FullscreenFX;
++	Added support for new shader effect: Bloom. See config video options for details;
++	New picture for Visage Mask;
+
+
+	v1.0023 (2019-08-17)
+
++	New pic for Reflex bow and Illusionist mask;
++	Active weapons slot now is show in the upper right corner of the screen. The type of damage is also shown by adjusting the text color;
++	Full revision of Warrior/Gladiator line of blunt weapon pics;
++	Scout loses physical arrow crits, totally. Gains elemental damage crits with the following formula: 1 +(CLVL / 10 )% for +50% damage;
++	Scout loses access to "Expert Killer" and "Slayer" perks;
++	Slightly decreased Demonologist's Impling damage progression with time (around 10% less damage on late levels);
++	Executioner class now can go no deeper than 5 levels into "Swift Learner" perk, and 3 levels into "Educated";
+
+
+	v1.0024 (2019-08-17), "Leto" (Kino)
+
++	Leoric in SP Hardcore mode is weakened too, same with Butcher;
++	Some updates in the readme;
+
+
+	v1.0025 (2019-08-20), hotfix
+
++	MvP Melee: max block chances changed:
+	Savage, Berserker:	 45% -> 35%,
+	Assassin: 25% -> 65%;
++	Reverted previous upgrade of Lachdanan's Golden elixir generation on level 14, now it works as before, just generated on level 14;
++	Insignificant changes to some quest unique stats;
++	Added 10 uniques on uID#2103 (Steel Jackboots). Total uniques 949 now;
++	Fixed multiplayer bugs that were introduced in v1.0024;
++	Fixed a bug with broken 15 level (and near levels) in multiplayer mode. (Sprites extension bug);
++	Fixed a bug with obsolete unique item code that, in case of presence of some unique items in save directory, caused different bugs (save loading failure, broken level architecture etc),
+	Note: Hopefully, these problems will be gone now, but testing is required. Report anything suspicious, any thing ;
+
+
+	v1.0026 (2019-08-20), hotfix
+
++	Affixes of critical percent and critical damage  don't work with spells anymore;
++	Fixed Shugoki attack animation with inactive axe (this bug would completely break the game by the way and make Ironman mode progress impossible);
+
+
 =================================================================================================
 Support The Hell mods:	https://www.patreon.com/join/thmod?
 Support Abaddon mod:	https://www.patreon.com/join/abaddonmod?
