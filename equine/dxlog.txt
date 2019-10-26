@@ -17,6 +17,7 @@ Known issues
 Error dialogs not implemented in main UI
 The game must restart after hosting multiplayer
 
+
 0.4.0:
 Fixed flickering mouse in caves
 32bit ARM build (Raspberry Pi)
