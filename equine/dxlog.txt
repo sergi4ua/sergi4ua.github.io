@@ -1,3 +1,22 @@
+0.5.0:
+Based on Devilution 0.10.0
+
+Features
+Sound is now accurate to the original
+All in-game issues fixed
+Delete hero, inline dialogs and scrollbars are now implemented
+Screenshots now have different names
+Multiple simultaneous dialogs fixed
+All builds are now 64bit (except for Windows and Raspberry Pi)
+Memory leaks and crashes fixed
+All keys are now mapped
+UI text now has correct shadows
+Much lower CPU usage
+diabdat.mpq can now be loaded with read-only access
+Known issues
+Error dialogs not implemented in main UI
+The game must restart after hosting multiplayer
+
 0.4.0:
 Fixed flickering mouse in caves
 32bit ARM build (Raspberry Pi)
