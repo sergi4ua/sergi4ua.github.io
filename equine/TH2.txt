@@ -9,8 +9,8 @@ Twitch: 		https://www.twitch.tv/mordor_th
 
 Mod development started 2017-12-22
 
-To support TH2 mod development, consider becoming a supporter:
-https://www.patreon.com/bePatron?c=956322
+Support TH2 mod development:
+https://www.patreon.com/join/thmod?
 
 Contact email: diablothehell@gmail.com
 
@@ -12931,5 +12931,155 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 +	Small fix to recent precious gem transmute patch;
 
 
+	v1.0072 (2019-10-03)
+
++	Perk order revised;
++	Adjusted perk availability for certain classes so that they don't have access to them if they can't afford them;
++	Some base item stat adjustments and code cleanups;
+
+
+	v1.0073 (2019-10-03)
+
++	Reverting perk order back to previous. This caused problems;
+
+
+	v1.0074 (2019-10-04), "In the Distance Fading" (God is an Austronaut)
+
++	Added 18 uniques on uID#2120 (Sorcery Gauntlets). Total uniques 1111 now;
+
+
+	v1.0075 (2019-10-08)
+
++	Revised Summoned minion stat formulas, reduced scaling of armor and accuracy;
++	Added 33 uniques on uID#2121. Total uniques 1144 now;
+
+
+	v1.0076 (2019-10-08)
+
++	Fixed some typos and unique item data;
++	Added a memorial to heroes of Ironman tournaments on dlvl 2 in SP IM mode;
+
+
+	v1.0077 (2019-10-08)
+
++	Reverting back Hall of Heroes: doesn't work properly;
+
+
+	v1.0078 (2019-10-09)
+
++	Sparkling shrine XP gain formula changed:
+	Horror:	1000 * dlvl + Rnd[500 * dlvl + 1],
+	Purgat:	1000 * dlvl + 20000 + Rnd[10001],
+	Doom:	2000 * dlvl + 40000 + Rnd[20001];
++	Re-applied Hall of Heroes. Should be ok now;
++	Maximum one-time experience limited at CLVL * 5000;
++	In Multiplayer, one-time experience cannot be above of 1/40 of your xp difference between your old level and the next (regarding XP table);
++	Fleshdoom XP gains reduced to +75%, +100%, +125% for the three levels accordingly (was: +100, +150, +200);
+
+
+	v1.0079 (2019-10-10)
+
++	Ranged damage absorption is now receiving passive increase from vitality (like MDR): +bVIT/50 to minimum and +bVIT/25 to maximum;
++	Berserker tier 1 helm redesigned;
++	Fixed a bug with Executioner mode that made characters who failed their block chance in melee take +300% damage, if they were above CLVL 36 on Horror or above CLVL 49 on Purgatory;
+
+
+	v1.0080 (2019-10-11)
+
++	Heavy Drinker elixir chance per level reduced: 5% -> 4%;
++	Max block chances in MvP Melee revised:
+	Guardian / Bombardier / Shugoki: 30%,
+	Assassin: 60%,
+	Savage / Berserker: 20%,
+	Kensei: 40%,
+	Executioner: 10%;
+
+
+	v1.0081 (2019-10-13)
+
++	Character level up table (XP table) was using wrong numbers, fixed,
+	Note: it will increase XP needed to gain levels starting from level 30 and forth, but now it's how it was supposed to be,
+	Note: don't freak out when you see XP neede to reach next level on your exisiting level 35+ character;
++	Revised Swift Learner again ,since XP chart is using correct numbers now;
++	Maximum one-time experience limitchanged to CLVL * 5000;
++	Sparkling shrine XP gain formula changed again:
+	Horror:	1000 * dlvl + Rnd[500 * dlvl + 1],
+	Purgat:	3000 * dlvl + 27000 + Rnd[20001],
+	Doom:	10000 * dlvl + 40000 + Rnd[50001];
+
+
+	v1.0082 (2019-10-13)
+
++	Fixed data mismatch in the last build;
+
+
+	v1.0083 (2019-10-14)
+
++	MP games of Horror difficulty are now open to characters of any level. Purgatory difficulty is open to players of level 20 and above, Doom is open to all who are level 35 and above;
++	Elixirs are now allowed to be stashed;
++	MSL caps raised (character total base stat sum):
+	for CLVL (1-15):	(CLVL*7)+70,
+	for CLVL (16-20):	(CLVL*8)+80,
+	for CLVL (21-25):	(CLVL*9)+90,
+	for CLVL (26-30):	(CLVL*10)+100,
+	for CLVL (31-35):	(CLVL*11)+110,
+	for CLVL (36-40):	(CLVL*12)+120,
+	for CLVL 41+:	unlimited;
+
+
+	v1.0084 (2019-10-14)
+
++	Maximum one-time experience limit at CLVL * 5000 removed now (deactivated), both is SP & MP, it's not needed anymore;
++	In Multiplayer, one-time experience cannot be above of 1/20 of your xp difference between your old level and the next (regarding XP table): +100% more XP allowed now;
++	Added more block sounds and adjusted them according to character class;
++	Phalanx of Immortals: new image;
+
+
+	v1.0085 (2019-10-16)
+
++	Rogue and Assassin receive +2 to native mana regeneration rate (same as Monk and Mage);
++	Monsters that had 100% lifesteal, now have 200% lifesteal in MP mode. Monsters that had 800% lifesteal, now have only 400% lifesteal in IM/NM modes (in Normal/HC - still 800%);
++	Ghoul and Zombie get 500% lifesteal in MP, and 250% lifesteal in SP;
++	Corrected sound volume on thrown acid flasks and snowball spell;
++	Removed +DFE ( was: +(CLVL / 5) + 5 ) from Templar's Fury effect;
++	Warlock doesn't get more mana under Fury, instead he gains ( + CLVL / 2 + 1 ) to mana regeneration;
++	Savage had -5 * CLVL + 5 to SLVL under Fury, this effect is replaced with (3 * CLVL / 2 )% to XP gain percent (e.g., -36% XP modifier at CLVL 24);
++	Removed +CLVL * 2 to mana under Fury from Summoners, replaced with following effects:
+	Demonologist:	+CLVL/5 to minion AC,
+	Necromancer:	+(CLVL/10 + 5 )% to minion HP,
+	Beastmaster:	+CLVL/5 to minion damage;
++	Warrior: block chance under Fury increased by (CLVL/10 +5 )%;
++	Characters now start with randomly (150 - 250) gold pieces;
++	Berserker SLVL decrease under Fury lowered: -CLVL/10;
++	PvM Melee: in IM/NM modes, maximum chance to hit CorruptPaladins (and Lord of the Order) is set to 55%;
++	PvM Ranged: in IM/NM modes, maximum chance to hit CorruptPaladins (and Lord of the Order) is set to 47%;
++	Dragon Kins are harder to hit with arrows in PvM Ranged, modified max chance to hit to:
+	SP:	Horror 76%, Purg 67%, Doom 59%,
+	MP:	Horror 57%, Purg 49%, Doom 43%;
++	Biclops and Grunt Beast monsters get damage resistance in PvM Ranged:
+	Horror:	-6 DFE and -33,33% DR (for instance, 100 damage becomes 100 - 6 = 94, then 96 * 2/3 = 64),
+	Purg:	-24 DFE and -33,33% DR,
+	Doom:	-41 DFE and -33,33% DR;
++	Apocalypse damage formula changed to: CLVL * (Rnd[CLVL] + 1) (approximately, minDmg = CLVL, maxDmg = CLVL * CLVL);
++	Assassin / Rogue base mana formula set to: (2 * bMAG) + (2 * clvl) + 18;
++	Some work with SFX;
+
+
+	v1.0086 (2019-10-18)
+
++	Monsters with life steal had their steal rating reduced by 50% (400%/800% life steals are not affected by this patch);
++	Equipoise and Scales of Affluence: new pics;
++	Sparkling shrine experience giveouts adjusted better:
+	Horr:	250 * (DungeonLevel * DungeonLevel) + 250 + Rnd[ 250 * (DungeonLevel * DungeonLevel) + 1) ], from 500 - 750 on DLVL-1 to 100k - 200k on DLVL-20,
+	Purg:	250 * ((DungeonLevel + 20) * (DungeonLevel + 20)) + Rnd[ 250 * ((20 + DungeonLevel) * (20 + DungeonLevel))) + 1)], from 110k - 220k on DLVL-1 to 400k - 800k on DLVL-20,
+	Doom:	250 * ((DungeonLevel + 40) * (DungeonLevel + 40)) + Rnd[ 250 * ((40 + DungeonLevel) * (40 + DungeonLevel))) + 1)], from 420k - 840k on DLVL-1 to 900k - 1800K on DLVL-20;
+
+
+	v1.0087 (2019-10-19)
+
++	Savage stun formula is using same as Berserker's now: Rnd[ player.CharLevel + 7 ] + (player.CharLevel / 3) + (player.BaseVitality / 7) - 1;
++	Some code cleanups;
+
 =================================================================================================
-Main site for The Hell 2 : 	https://www.patreon.com/thmod
+Support mod development:	https://www.patreon.com/join/thmod?
+For one-time donations:	https://www.paypal.me/thmod
