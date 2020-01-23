@@ -13080,6 +13080,231 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 +	Savage stun formula is using same as Berserker's now: Rnd[ player.CharLevel + 7 ] + (player.CharLevel / 3) + (player.BaseVitality / 7) - 1;
 +	Some code cleanups;
 
+
+	v1.0088 (2019-10-19)
+
++	Added 17 uniques on uID#2122. Total uniques 1161 now;
++	Added arrow damage resistance factor on some base items. A couple of items got melee damage resistance reduced and arrow damage resistance buffed. Kind of specialization;
+
+
+	v1.0089 (2019-10-22)
+
++	Item works;
++	Reactivated previously inactive shrines that were turned off: Ornate, Secluded, Enchanted, Fascinating, Sacred, Tainted, Glowing,
+	Note: the new effects are mostly boosts that work while you remain on current level:
+		+1 SLVLs,
+		+2 Light Radius (yes, it's a negative effect),
+		+5% crit chance,
+		+ (2 + (CLVL / 10)) to regeneration rate of life and mana,
+		+30% magic find,
+		+50% gold find,
+		+25% to experience;
++	Tainted Shrine effect changed. SP gives +10% light radius on current level.  In MP gives nothing to the player who activated the shrine but gives Rnd[11] roll for each stat on all other players,
+	Note:	if roll is below 5, stat is decreased, if roll is above 4 then stat is increased. There is 5/11 chance for decrease and 6/11 chance for increase. So on average it's beneficial;
++	Glowing Shrine works this way now: drops tier 1 Oils of Repair in SP, in MP it drops two Full Holy Waters if DLVL is  1-12 and mode is Horror, after that it drops 2 random single stat elixirs;
+
+
+	v1.0090 (2019-10-23)
+
++	Item works;
++	Added 11 new crypt palettes: 256 total now;
++	Added 3 uniques on uID#2123 (Beaked Helm). Total uniques 1164 now;
+
+
+	v1.0091 (2019-10-27)
+
++	Updated some shrine texts;
++	Added 4 new unique items on demand. uIDs: 2124-2127. Total uniques 1168 now;
+
+
+	v1.0092 (2019-11-12)
+
++	Added 28 new crypt palettes: 284 total now;
++	Updated stats on newly added uniques;
++	[Duke] Fixed a bug that could teleport player to Lazarus level upon entering certain tile on the level;
+
+
+	v1.0093 (2019-11-15)
+
++	Fixed "Enigma" and "Reaper of Souls" items;
++	Summoned Hellboar death animation speed delay changed: 2 -> 1;
++	Summoned Hellboar AI changed to 24 (Viper);
++	Lazarus drops 3 items now;
+
+
+	v1.0094 (2019-11-20)
+
++	Added 2 more uniques on uID#5. Total uniques 1170 now;
++	Fixed stats on some uniques;
++	Added new perk: Advanced User. Lowers stats required for equipping items;
+
+
+	v1.0095 (2019-11-26), "The Gereg" (The HU)
+
++	Dimachaerus base damage with mixed weapons is now: cSTR * CLVL / 380 + CLVL, with two identical types of weapons: cSTR * CLVL / 190 + CLVL;
++	Redear added to Ironman Hall of Heroes as the winner of Q4 ' 2019 tournament;
++	Transmuting quest uniques now uses a different function and it should no longer result in item disappear if there is not enough space in inventory for the transmuted item,
+	Note: it will drop transmuted item on the ground though;
+
+
+	v1.0096 (2019-12-02)
+
++	Changed Templar image back to old;
++	Preparing the mod for monitors with framerate over 60 Hz: adding support for framerate up to 1000 Hz (even though modern displays stop at 300 Hz and most people still use max 60 Hz displays);
++	Improved interpolation: when running, framerate speed is significantly increased (looks smoother);
++	When setting up config framerate, don't set it over what your display supports IF you are setting VSync to ON;
++	Fixed floating number speeds (used to slowdown with higher framerates);
++	New high performance timer added for framerates over 60 Hz, but it's taxing on CPU (fps will drop on older CPUs, be aware);
++	Set framerate to 1000 to benchmark what your CPU can do in TH2 (dont forget to check showFPS to see how much it is);
++	When running in non-fullscreen, it is advised to set framerate to 200 for better smoothness;
++	Also, a check is required in multiplayer, to figure out how 2 people play together if their framerates are set to 60 on one computer and to above 60 on another;
+
+
+	v1.0097 (2019-12-02)
+
++	Fixed duplicate creation on IM/NM quest item transmutation (let me know how it goes);
++	Corrections to some unique item data;
+
+
+	v1.0098 (2019-12-06)
+
++	Eerie, Abandoned, Quiet and Creepy shrines now give more stats. Still +1 in Normal and Hardcore, randomly +[1-2] in Ironman and +2 in Nightmare mode;
+
+
+	v1.0099 (2019-12-12)
+
++	Dimachaerus innate ranged damage reduction increased a bit: 28% -> 31%;
++	Added 2 new patron supported uniques, total uniques 1172 now;
++	Player Arcane Star/Nova damage formula set to: CLVL + Rnd[cMAG /2] + SLVL * 10;
+
+
+	v1.0100 (2019-12-18)
+
++	Adding new option in config: quest randomizer ("RandomizeSPQuests" line under Gameplay options). Many wanted to have this option, now it's there (see description in config.ini),
+	Note: be aware you should not load game after changing it, if you change the setting, pick new game with your existing character(s),
+	Note: initially, it was an option for Ironman / Nightmarem but it quickly became evident it should be expanded to all modes of single player;
+
+
+	v1.0101 (2020-01-07)
+
++	[DD] Fixed dead monster array overflow, this should fix some "floating" bugs and crashes, and also this should fix crashes in coop games with summoners recasting minions;
+
+
+	v1.0102 (2020-01-08)
+
++	Revised critical hit chance and damage multiplier for all classes in ranged (non-magic) combat;
++	Shinobi melee crit formula changed to CLVL / 4 + 4 % chance for +200% damage;
++	Secutor melee crit formula changed to CLVL / 7 + 3 % chance for +125% damage;
++	Guardian melee crit formula changed to CLVL / 4 + 5 % chance for +225% damage and +[20-25] damage;
++	Dimachaerus melee crit formula changed to CLVL / 15 + 4 % chance for +50% damage;
++	Increased arrow damage resistance on some body armors;
++	Fixed Stone Ward unique;
+
+
+	v1.0103 (2020-01-09)
+
++	Melee damage resistance limits lowered for classes that can block in battle. Minimum is 50%, maximum is 80%,
+	Note: classes affected: Monk, Shinobi, Assassin, Maiden, Warrior, Inquisitor, Templar, Murmillo, Thraex, Secutor, Bombardier, Trapper;
++	Added one more variation of crypt music in sp doom. You need to upgrade to music pack v8.3 to hear it;
+
+
+	v1.0104 (2020-01-10)
+
++	SP Doom Catacombs used to have no music randomize. It now can play randomly (50% chance) new track written for The Hell 2: Tomb (also needs music pack v8.3);
+
+
+	v1.0105 (2020-01-10)
+
++	Melee damage resistance limits lowered for classes that can block in battle. Minimum is 60%, maximum is 80%, for others it's now 70/95 ;
++	Secutor melee crit formula changed to CLVL / 5 + 3 % chance for +125% damage;
++	MvP Melee: Dimachaerus autohit set to 17 (was 19), Shinobi: 19 (was 18);
++	Added 3 new Demonologist uniques;
+
+
+	v1.0106 (2020-01-11)
+
++	Added 2 more Demonologist uniques (total 1177 now);
++	Gold bless shrine message updated;
++	[Duke] Dungeon objects should be able to drop summoner books in multiplayer coop sessions if at least one of the players is a summoner,
+	Note: summoner books still shouldn't be available to non-summoner players (if something goes wrong, report to me);
+
+
+	v1.0107 (2020-01-11)
+
++	Reverting changes from Summoner book drops in MP, caused crashes;
+
+
+	v1.0108 (2020-01-13)
+
++	Deleted Chastity Belts;
++	Added 21 uniques on uID#2135 (Silk Gloves). Total uniques 1196 now;
++	Shinobi base damage formula set to cSTR * CLVL / 50;
+
+
+	v1.0109 (2020-01-14)
+
++	Added 6 uniques on uID#2136 (Great Platemail). Total uniques 1202 now;
+
+
+	v1.0110 (2020-01-15)
+
++	Added 1 unique on uID#2137 (Reinforced Greaves). Total uniques 1203 now;
++	Less chests spawned in Island quest;
++	Added 7 uniques on uID#2138 (Thorned Cap). Total uniques 1210 now;
+
+
+	v1.0111 (2020-01-16)
+
++	Fullscreen switch fix implemented;
++	Some conflict resolve attempts;
++	Working with menu config;
++	Working with options;
++	Changing screen resolution on the fly works now. Fixed RenderCursor potential critical bug (feature deactivated for now, needs testing);
++	Turned on optimized code generation;
++	Working with optimization/profiling. Removing unnecessary and STL includes. Down with sluggish bullshit in game engine;
++	Cleaned some unused headers and modules. Simplified header structure,
+	Note: performance should be increased by about 50% now,
+	Note: also, if game crashes, it will create 'TH2CrashDump.tmp' file in the mod folder, send it to me - it will help in resolving the issue;
+
+
+	v1.0112 (2020-01-17)
+
++	Updated config.ini (info regarding blue mana/potions). You need to update it and check these;
++	Added 15 uniques on uID#2139 (Sorcery Greaves). Total uniques 1225 now;
+
+
+	v1.0113 (2020-01-20)
+
+	IF YOU ARE HAVING FRAMERATE ISSUES, UPGRADE YOUR CONFIG.INI AND SET FPS TO 1000 (AND WAIT FOR US TO FIX THE ISSUE IF IT DOESN'T SOLVE THE PROBLEM)
+
++	Fixed a crash that occured in coop games with summoners recasting their minions (let me know if there are problems);
+
+
+	v1.0114 (2020-01-21)
+
++	Boots of Equilibrium: fixed wrong data;
++	Added 1 unique on uID#2140 (Dawn Shield). Total uniques 1226 now;
++	Added 1 unique on uID#2141 (Bone Plate). Total uniques 1227 now;
++	Added 2 uniques on uID#2142 (Spiked Sabatons). Total uniques 1229 now;
++	Sphere of Holy Might is given a unique look;
++	Added 1 unique on uID#2143 (Anaconda Skin Belt). Total uniques 1230 now;
++	Added 1 unique on uID#2144 (Newborn Skull Belt). Total uniques 1231 now;
++	Added 3 uniques on uID#2145 (Armored Pelt). Total uniques 1234 now;
++	Added 1 unique on uID#2146 (Horned Barbute). Total uniques 1235 now;
+
+
+	v1.0115 (2020-01-22)
+
++	Added 1 unique on uID#2147 (Spiked Helm). Total uniques 1236 now;
++	Many revisions to item images: cleaning up duplicates, adjusting and fixing looks;
+
+
+	v1.0116 (2020-01-23)
+
++	Many items got new looks;
+
+=================================================================================================
+Update link: 		https://www.moddb.com/mods/diablo-the-hell-2/downloads/th2
 =================================================================================================
 Support mod development:	https://www.patreon.com/join/thmod?
 For one-time donations:	https://www.paypal.me/thmod
