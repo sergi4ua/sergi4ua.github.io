@@ -13275,7 +13275,7 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 
 	v1.0113 (2020-01-20)
 
-	IF YOU ARE HAVING FRAMERATE ISSUES, UPGRADE YOUR CONFIG.INI AND SET FPS TO 1000 (AND WAIT FOR US TO FIX THE ISSUE IF IT DOESN'T SOLVE THE PROBLEM)
+	IF YOU ARE HAVING FRAMERATE ISSUES, UPGRADE YOUR CONFIG.INI AND SET FPS TO 1000 AND VSYNC TO OFF (AND WAIT FOR US TO FIX THE ISSUE IF IT DOESN'T SOLVE THE PROBLEM)
 
 +	Fixed a crash that occured in coop games with summoners recasting their minions (let me know if there are problems);
 
@@ -13302,6 +13302,75 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 	v1.0116 (2020-01-23)
 
 +	Many items got new looks;
+
+
+	v1.0117 (2020-01-25)
+
++	Added 1 unique on uID#2148 (War Scepter). Total uniques 1237 now;
++	Bolt Trap IV now shoots 3 times as slow and damage is tripled;
++	Inquisitor now does 200% with elemental attacks of fire, cold, electricity and arcane. Holy and acid are 100% now;
++	Added 9 uniques on uID#2149 (all tier 2 flasks). Total uniques 1246 now;
++	Removed penalties to life regeneration on DLVLs 22 - 24;
+
+
+	v1.0118 (2020-01-26)
+
++	Fortitude and Focus progression is made more attractive in the beginning: gains are +2 after perk level 2;
++	Fortitude perk is now 25 levels deep for Executioner. Focus is 25 levels deep for Warlock;
++	Code cleanups (removing old TH1 references and validation checks);
++	Various performance optimizations (including undoing damage done by advanced user perk);
+
+
+	v1.0119 (2020-01-28)
+
++	Guardian class will no longer get one-handed weapons from racks (let me know if there are problems);
++	Added new base item: Iron Hammer;
++	Added 7 uniques on uID#2150 (Mesh Gloves). Total uniques 1253 now;
+
+
+	v1.0120 (2020-01-30)
+
++	Stat adjustments on some base items;
++	Updated looks for some relicts;
++	Various other minor adjustments;
++	Preps made to fix the mp saveslot bug;
+
+
+	v1.0121 (2020-01-31)
+
++	Added 13 uniques on uID#2151 (Light Wood Shield). Total uniques 1266 now;
++	Changed duplicate Cloth Gloves uID to prevent unwanted obsolete uniques from dropping;
+
+
+	v1.0122 (2020-02-01)
+
++	Smaller attribute penalty on the Cry of Seven Fathers uniques;
++	More variety in relict imagery;
++	Iron Maiden melee damage resistance caps increased to (75-85)% as she is supposed to get hit and withstand it;
+
+
+	v1.0123 (2020-02-01)
+
++	Added new Monk class body armor (base);
++	Added error message for outdated item data file "Please update TH2data.mor file, item %i not found", instead of crashing randomly on game loading;
++	Fixed out of array crash on extended save number in mpq crypt functions - this should fix remaining crashes in multiplayer when playing characters saved in slots over 9;
+
+
+	v1.0124 (2020-02-03), "What is Fight Club?" (The Dust Brothers)
+
++	Fixed potential character animation freezes that could occur while changing items and not standing/walking,
+	Note: start new gaming session to avoid bugs, don't load your old SP games;
+
+
+	v1.0125 (2020-02-05)
+
++	Added 1 more unique on uID#2147. Total uniques 1267 now;
++	Added 1 unique on uID#2152. Total uniques 1268 now;
++	Better looks given to some base items;
++	Added Ravenholm .DUN and .PAL files to data;
++	Fixed a bug with relict/spell casts in town that was introduced after the animation bugfix;
+
+
 
 =================================================================================================
 Update link: 		https://www.moddb.com/mods/diablo-the-hell-2/downloads/th2
