@@ -2939,7 +2939,7 @@ Contact email: diablothehell@gmail.com
 +	Arcane Shield no longer has damage rebound on monsters. It used to give problems sometimes (monsters gave 2 or more drops and didn't die);
 +	Holy Bolt damage formula set to: minDmg = baseMAG+5, maxDmg = baseMAG+10;
 +	Some of undead monsters are given quadra immunity (because of modified Holy Bolt);
-+	Fiery Blast (real) damage formula set to: Rec(slvl, 2·(Rnd[20]+Rnd[20]+clvl) + 10). Spell book damage is also more or less accurate;
++	Fiery Blast (real) damage formula set to: Rec(slvl, 2Â·(Rnd[20]+Rnd[20]+clvl) + 10). Spell book damage is also more or less accurate;
 +	Increased damage from Thorns still gave problems (occasionally) of duped drop from monsters upon death. Damage reduced to Rnd[1-25];
 +	Golem's ToHit formula set to: 32 + (2*CLVL) + (4*SLVL). This will make Golems with high ToHit available only to high level Mage players and also prevent Golem's ToHit overflow;
 +	Golem's AC set to 80 (used to be 250);
@@ -2969,7 +2969,7 @@ Contact email: diablothehell@gmail.com
 
 	v1.59p
 
-+	'Flash' spell was fixed and now it does better damage. The formula for damage is: [3•Rec(slvl, Itt(clvl, Rnd[40] + 1))/2]/64. Spellbook damage displayed is also very accurate;
++	'Flash' spell was fixed and now it does better damage. The formula for damage is: [3â€¢Rec(slvl, Itt(clvl, Rnd[40] + 1))/2]/64. Spellbook damage displayed is also very accurate;
 
 
 	v1.59q
@@ -3059,7 +3059,7 @@ Contact email: diablothehell@gmail.com
 +	Automap radius set to 90%;
 +	Arcane Shield damage absorption now works differently: absorb (10 + Rnd[50])% melee damage left after DFE modification, average absorption is 35%. It's more random now;
 +	Monsters now stunned if final damage is greater than (monsterAC*4). Weakest Horror mode monsters will be stunned with 4 or 8 damage, hardest Doom mode monsters - at damage of 1000 or more;
-+	Elemental now does physical damage, uses magic casting animation and costs more mana. Damage formula: Rec(slvl, 2·(Rnd[10]+Rnd[10]+clvl) + 4)/2;
++	Elemental now does physical damage, uses magic casting animation and costs more mana. Damage formula: Rec(slvl, 2Â·(Rnd[10]+Rnd[10]+clvl) + 4)/2;
 
 
 	v1.60g
@@ -4095,7 +4095,7 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 	v1.67t RC2
 
 +	PvM Melee: FTHmelee = 30 + curDEX + ToHit_items + CLVL + bonus_player - AC_monster - penalty_half_damage;
-+	PvM Missile: FTHarrow = 30 + curDEX + ToHit_items + CLVL + bonus_player - distance·distance/2 - AC_monster;
++	PvM Missile: FTHarrow = 30 + curDEX + ToHit_items + CLVL + bonus_player - distanceÂ·distance/2 - AC_monster;
 
 
 	v1.68
@@ -4477,7 +4477,7 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 
 	v1.69c RC10
 
-+	Fire Blast damage increased. Formula is: Rec(slvl, 4·(Rnd[50]+Rnd[50]+clvl) + 50), (was: Rec(slvl, 4·(Rnd[50]+Rnd[50]+clvl) + 30));
++	Fire Blast damage increased. Formula is: Rec(slvl, 4Â·(Rnd[50]+Rnd[50]+clvl) + 50), (was: Rec(slvl, 4Â·(Rnd[50]+Rnd[50]+clvl) + 30));
 
 
 	v1.69d
@@ -4525,12 +4525,12 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 +	Vortex Rogue: HP increased a bit;
 +	Hidden: HP decreased a bit;
 +	Greater Demon: HP decreased decently (by 15%);
-+	Fire Blast improved a bit. New formula: Rec(slvl, 4·(Rnd[50]+Rnd[50]+CLVL) + 90), recursive 17/16;
++	Fire Blast improved a bit. New formula: Rec(slvl, 4Â·(Rnd[50]+Rnd[50]+CLVL) + 90), recursive 17/16;
 +	Lightning Ball improved slightly. New formula: Rec(slvl, Rnd[100]+Rnd[32*CLVL]+CLVL+100), recursive 17/16;
 +	Fire Blast and Lightning Ball spells display correct damage in spellbook now;
 +	Some unique monsters used to take 4x damage from magical damage. Now fixed;
 +	Deleting characters is now called 'Murder', that should make those characters a bit more realistic)) ;
-+	Elemental improved. New formula: Rec(slvl, 2·(Rnd[40]+Rnd[40]+CLVL) + 70)/2, recursive 17/16;
++	Elemental improved. New formula: Rec(slvl, 2Â·(Rnd[40]+Rnd[40]+CLVL) + 70)/2, recursive 17/16;
 +	Elemental spellbook damage formula rewritten, now its damage display is correct;
 +	Setesh used to take 4x damage from fire. Now fixed;
 +	Hidden can now appear on levels 10 through 20;
@@ -5329,9 +5329,9 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 +	Battle Mail: picture revised;
 +	Goats are more likely to approach directly instead of doing circle walk first. Chance increased by ~150%;
 +	Goat Mace AI: walk pausing revised:
-	Horr: if standtime > 1,2 seconds, and R < 2·Intf + 20, walk towards last seen position of target,
-	Purg: if standtime > 0,5 seconds, and R < 2·Intf + 40, walk towards last seen position of target,
-	Doom: if standtime > 0,05 second, and R < 2·Intf + 60, walk towards last seen position of target;
+	Horr: if standtime > 1,2 seconds, and R < 2Â·Intf + 20, walk towards last seen position of target,
+	Purg: if standtime > 0,5 seconds, and R < 2Â·Intf + 40, walk towards last seen position of target,
+	Doom: if standtime > 0,05 second, and R < 2Â·Intf + 60, walk towards last seen position of target;
 +	Goat Mace AI: walk interrupts adjusted for difficulty modes:
 	Horr: if last action was walking and standtime is 0 and R < Intf + 70, keep walking,
 	Purg: if last action was walking and standtime is 0 and R < Intf + 80, keep walking,
@@ -5372,9 +5372,9 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 	Purg: (50-77)%,
 	Doom: (80-98)%;
 +	Horny AI walk delays adjusted for difficulty modes now:
-	H: if last action was walking and standtime is 0 and R < 2·Intf + 32, walk towards last seen position of target, result = (32-50),
-	P: if last action was walking and standtime is 0 and R < 2·Intf + 56, walk towards last seen position of target, result = (56-74),
-	D: if last action was walking and standtime is 0 and R < 2·Intf + 80, walk towards last seen position of target, result = (80-98);
+	H: if last action was walking and standtime is 0 and R < 2Â·Intf + 32, walk towards last seen position of target, result = (32-50),
+	P: if last action was walking and standtime is 0 and R < 2Â·Intf + 56, walk towards last seen position of target, result = (56-74),
+	D: if last action was walking and standtime is 0 and R < 2Â·Intf + 80, walk towards last seen position of target, result = (80-98);
 +	Balrog AI delay durations adjusted:
 	Horr: (Rnd[(-1*DLVL)+30]+2)/20 seconds,
 	Purg: (Rnd[6])/20 seconds,
@@ -5947,9 +5947,9 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 +	Imp Rogues now can appear on dlvls [11-13];
 +	Imp Rogue stats revised;
 +	Insired by Makantal's report >> Overlord AI Stand delays adjusted for IntF and difficulty mode:
-	Horror: if standtime is greater than 24 turns and R < 4·Intf + 15, walk towards target,
-	Purgatory: if standtime is greater than 16 turns and R < 4·Intf + 39, walk towards target,
-	Doom: if standtime is greater than 8 turns and R < 4·Intf + 63, walk towards target,
+	Horror: if standtime is greater than 24 turns and R < 4Â·Intf + 15, walk towards target,
+	Purgatory: if standtime is greater than 16 turns and R < 4Â·Intf + 39, walk towards target,
+	Doom: if standtime is greater than 8 turns and R < 4Â·Intf + 63, walk towards target,
 	Note: Overlord IntF varies from 3 to 9 in TH;
 +	Introducing new feature in PvM: knockback resistance. Currently, there are 3 types: 25% (medium sized monsters), 50% (large, slow), 75% (largest),
 	Note: this only applies to melee or combo-style monsters;
@@ -12644,7 +12644,7 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 
 +	Corrected Thraex description;
 +	Adjusted mlvl on following bosses (used to be 4 levels higher than intended): Horror Butcher, SP Horror Leoric, Mordessa, Wielder of Shadowfang, Hephasto, Lich King;
-+	Flash (spell) formula changed from [3·Rec(slvl, Itt(clvl, Rnd[40] + 1))/2]/64  to:
++	Flash (spell) formula changed from [3Â·Rec(slvl, Itt(clvl, Rnd[40] + 1))/2]/64  to:
 	min:	CurMagic + (CLVL * 10) * SLVL,
 	max:	(CurMagic + (CLVL * 10) * SLVL) * 1,5;
 +	Inferno (spell) formula changed to:
@@ -13371,9 +13371,357 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 +	Fixed a bug with relict/spell casts in town that was introduced after the animation bugfix;
 
 
+	v1.0126 (2020-02-06)
 
-=================================================================================================
-Update link: 		https://www.moddb.com/mods/diablo-the-hell-2/downloads/th2
++	Magic Find value shown in charaacter sheet is 100% less now. Don't worry, it's the same, just a visual update;
++	Magic Find minimum limit is -100% now, everything below -100% is pointless (still no uniques);
++	Added 17 uniques on uID#2153 (Shoes). Total uniques 1285 now;
++	Updated Readme;
+
+
+	v1.0127 (2020-02-07)
+
++	Relicts of Identify now disappear only after a successful identification and not just on cast;
+
+
+	v1.0128 (2020-02-10)
+
++	Spell damage modifier is: ( base_damage * % spell_damage_modifier + spell_damage_modifier ) * % element_damage_modifier + element_damage_modifier;
++	Dlvl 5 ghouls in sp purg & doom had 75% resist instead of 50%, fixed;
++	Holy element damage modifiers used to NOT work with spell damage: fixed;
++	Holy element damage modifiers are accounted for in spellbook now;
+
+
+	v1.0129 (2020-02-12)
+
++	Added 1 more unique on uID#2124. Total uniques 1286 now;
++	Fixed minor image flaws on some inventory items;
++	Some unique items are given new unique pics;
++	Completely revised rare item affix table;
+
+
+	v1.0130 (2020-02-14), "Black Star" (Lustmord)
+
++	Fixed old bug with savegame that could result in some items disappearing after loading game again;
++	Some updates in item looks again, keep polishing items;
+
+
+	v1.0131 (2020-02-15)
+
++	Upgraded Felltwin, Illusion Weaver and Invisible One colors to two-toned (including their bosses);
++	Improving colors on some monsters;
++	New pics for some uniques;
++	Total revision of Trapper weapon delays and damage;
+
+
+	v1.0132 (2020-02-16), "Dismantling Devotion" (Daylight Dies)
+
++	Added support for set items;
++	Uber Diablo will be able to drop items on death if killed on SP Horror NM or IM mode;
++	Books can be read under spell cooldown now;
++	Added new set (0): Midas' Finery;
++	Added new set (1): Bhaltavir's Battle Steel;
+
+
+	v1.0133 (2020-02-17)
+
++	Added 1 more unique on uID#2111. Total uniques 1287 now;
++	Added new set (2): Civerb's Tools;
++	Added new lategame Inquisitor class set (3): Immortal King. Total uniques 1294 now;
++	Added new set (4): Tal-Rasha's Path of Torment;
+
+
+	v1.0134 (2020-02-18)
+
++	Added new lategame Dimachaerus class set (7): Tigris of Gaul. Total uniques 1296 now;
++	Trapper crit chance formula set to: CLVL/7 +5 % chance for +100% damage (was 1 + CLVL/3% chance for +175% damage);
++	Added new midgame set for Kensei class (8): Sazabi's Grand Tribute. Total uniques 1298 now;
++	Fixed lightning and fire walls casting target point to ground under cursor;
++	Diagonal fire and lightning walls will now stop monsters from approaching: it will work like the edges on fire/lite rings where tiles are placed in zigzag;
++	Fixed original bug from Hellfire multiplayer when players 1, 2 and 3 did more damage than player 0, now damage of every player is equal;
+
+
+	v1.0135 (2020-02-28)
+
++	Upgrade of picture for Advocate Plate;
++	Maximum inventory picture limit raised to 9000;
++	Added new endgame Thraex class set (6): Celestial Arsenal. Total uniques: 1301;
++	Added new endgame Rogue set (5): Renegade's Outfit;
++	Charged Bolt spell is allowed in Island of the Sunless Sea now;
++	Mage and Elementalist classes no longer get +mana under Fury, instead they get weaker penalty to DFE and stronger SLVL boost;
++	Knockback no longer pushes monsters in the direction opposite they're facing, instead, it will push them away from player;
++	Added new early game Savage set (9): Arctic Gear. Total uniques 1303 now;
++	Added new end game Necromancer set (10): Rathma's Armory. Total uniques 1309 now;
++	Added new mid game Guardian set (11): Sigon's Steel. Total uniques 1311 now;
++	Shugoki base damage formula set to (cSTR * CLVL / 180) + (CLVL / 2);
++	Global +damage effect strength decreased by 25% for affixes, rare affixes and uniques;
++	Less charges generated (and price is higher) on items with identify / mana/ magi affixes;
++	Added new mid game Murmillo set (12): Poseidon's GIfts. Total uniques 1313 now;
++	NPCs now will show exclamation mark above their head if they have something special to say;
+
+
+	v1.0136 (2020-03-01)
+
++	Added new midgame Templar set (13): Heavenly Brethren. Total uniques 1317 now;
++	Base damage for side arrows is set to 40% (Sharpshooter still 25%);
++	Archer class gets new perk that increases side arrow damage;
++	Flash (spell) formula changed to: (CurMagic + (CLVL * 5) * SLVL) * 1,5;
++	Lightning (spell) damage formula (for one segment hit) set to: ( (CLVL / 5) + Rnd[ (CLVL / 2) + 1 ] + 1 + (curMAG / 10 ) );
++	All Lightning demon types now use small lightning animation;
++	Cerberus' Inferno now does 200% damage;
++	Inferno (spell) formula changed to: Rnd [ clvl * clvl ] + ((clvl * cMAG) / 2);
++	Monk loses basic 2x sweep damage in melee;
++	Monk gets new perk that increases sweep damage;
+
+
+	v1.0137 (2020-03-01)
+
++	Upgraded pics for many items;
++	Certain types of bulky armors will now reduce character damage slightly, as opposed to raising it (what they did before);
++	Fixed and upgraded some unique items;
+
+
+	v1.0138 (2020-03-02)
+
++	Golem has somewhat less HP now;
++	Lots of updates in item looks;
++	New flip animation for weakest clubs and Demonologist heads;
++	Some new base items added;
+
+
+	v1.0139 (2020-03-03)
+
++	Working with item images continues;
+
+
+	v1.0140 (2020-03-04)
+
++	More item works;
++	Fire/Lightning Nova damage (from player) formula is set to: Rnd[CLVL * 2,5] + (SLVL * 50) + (cMAG * 5),
+	Note: this should fix nova damage going too high on high spell levels and at the same time make their damage stronger on lower spell levels, making them overall more useful;
++	Player Firebolt damage formula upgraded to: (cMAG / 3) + SLVL + Rnd[10+CLVL];
++	Player Arcane Star damage formula reverted to: CLVL + Rnd[ (cMAG / 3 ) ] + ( SLVL * 8 );
++	Fixed Elemental (spell) damage formula by removing +1/16 damage per SLVL cycling - should be dealing exactly 50% less than Fireblast now:
+	Note: formula is CLVL/2 + Rnd[ (cMAG / 4 ) ] + ( SLVL * 5 );
++	Elemental (spell) damage formula set to: CLVL/2 + Rnd[ (cMAG / 5 ) ] + ( SLVL * 4 );
+
+
+	v1.0141 (2020-03-04)
+
++	Character parameters recalculated after new shrine buffs, this should also fix Light Shrine takeover to new dlvl bug;
+
+
+	v1.0142 (2020-03-04)
+
++	Fire/Lightning Nova damage (from player) formula is set to: Rnd[CLVL * 1,5] + (SLVL * 30) + (cMAG * 3). Previous formula was overkill;
++	More item works. Supplied more base- and unique items with better pics;
+
+
+	v1.0143 (2020-03-05)
+
++	More variety in spell sounds given;
++	Changed some core sounds;
++	Even more item works + picture updates;
++	Credits formatting updated;
+
+	Thanks for support:
+		Christo Mihalos
+
+
+	v1.0144 (2020-03-06)
+
++	All summons and Golem are rebalanced;
++	More item works;
+
+
+	v1.0145 (2020-03-09)
+
++	Fixed Cervelliere flip animation;
++	Flat damage increase in melee against certain monster types was not working properly, now fixed;
++	Great revision of damage on melee 2-handed sharp and blunt weapons;
++	Lots of sound effects revised for casting and applying spell effects;
+
+	Thanks for support:
+		Pavel Babiy
+
+
+	v1.0146 (2020-03-10)
+
++	Some base item pics improved;
++	Elemental (spell) damage formula upgraded to: CLVL * 4 / 5 + Rnd[cMAG * 2 / 5 + 1] + SLVL * 8;
++	Player Fiery Blast spell damage formula set to CLVL + Rnd[cMAG / 2 + 1] + SLVL * 8,
+	Note: it hits adjacent targets as well, so the effective damage is actually double on target;
++	Ball Lightning spell damage formula has been upgraded to: CLVL + Rnd[cMAG / 2 + 1] + SLVL * 13;
++	Player Fiery Blast / Ball Lightning missile speed set to: SLVL / 3 + 20 + Rnd[SLVL / 3 + 1];
++	Player Arcane Star spell damage set to: CLVL + SLVL * 10 + Rnd[cMAG / 3 + 1];
+
+
+	v1.0147 (2020-03-10)
+
++	Changed some more spell cast sounds;
++	Fixed quest items disappearing from inventory (hopefully fixed, let me know if problems persist);
++	Adjusted base damage on some late 1-handed warrior swords;
++	Player Arcane Star spell damage set to: CLVL + SLVL * 10 + Rnd[cMAG * 45% + 1];
+
+
+	v1.0148 (2020-03-10)
+
++	Fixed Fiery Blast spellbook damage display: was wrong due to a bug. Real spell damage has not changed;
++	Player spell Lightning damage set to: 2 + CLVL / 4 + cMAG / 10 + Rnd[CLVL / 2 + 1];
++	More spell SFX adjustments;
++	More uniques receive new images;
+
+
+	v1.0149 (2020-03-11)
+
++	More item works;
++	Pressing Shift and potion hotkeys (1-8) with non-US keyboard layout wasn't working properly before when in battle, now it's fixed;
+
+
+	v1.0150 (2020-03-12)
+
++	Improving on item imagery;
++	Cleaning up some sfx, adjusting volumes;
+
+
+	v1.0151 (2020-03-13)
+
++	Applying oils on items now gives a sound effect;
++	Recharging items now gives a sound effect;
++	Fixed a bug when character light radius is recalculated only on dungeon level change: now it's modified each time you change any of the items equipped;
++	Fixed a bug with active hotkeys for spells and UI elements with an open chat panel (in MP);
++	More item works;
+
+
+	v1.0152 (2020-03-14)
+
++	Trapper gets a new perk that gives her bolt trap more piercing power that tears through target DFE;
++	Trap bolt IV shoots faster now but packs less damage;
+
+	Thanks for support:
+		Garnithron
+
+
+	v1.0153 (2020-03-15)
+
++	More item works;
++	Berserker gets Fury reworked;
++	Berserker gets 4 new perks that improve his fighting skills under Fury;
+
+
+	v1.0154 (2020-03-15)
+
++	One more perk added for Berserker;
++	Changed up some class pictures in meta;
++	Added new perk that allows to improve character autohit. Available to few classes though;
++	Modified character autohit on certain classes to compensate and improve balancing on some classes that had too low or too strong autohit;
+
+
+	v1.0155 (2020-03-16)
+
++	Inquisitor and Scout elemental damage modifier reduced to 1.0;
++	Inquisitor and Scout get new perks that increase elemental damage from weapons (Inquisitor doesn't get perks that improve acid and holy damage);
++	Monster chain activation radius changed by class: Assassin: 2, Rogue / Trapper / Scout / Archer / Sharpshooter: 3, others: 4. In MP every class has radius 4;
++	Bombardier and Trapper autohit (in melee) set to: 22%;
++	Bombardier's acid flasks will now do less damage to bosses: -20% as before and for special bosses it will do even less damage, up to -50% to Uber Diablo;
+
+
+	v1.0156 (2020-03-17)
+
++	Added new perk that reduces Mana Shield excessive damage. Available mostly to Mage classes;
++	Mana Shield damage reduction formula changed from (damage + (damage/slvl)) to damage + damage * (100 - (slvl + "mind over matter" perk value) ) / 100,
+	Note: for the purposes of calculations, slvl cannot be more than 50 in this formula, and minimum damage is limited at 0 (as before);
+
+
+	v1.0157 (2020-03-18)
+
++	Warrior class gets new perk that won't allow monsters to steal mana from them;
++	Warrior class gets new perk that allows to stun monsters easier (with less damage);
++	Ball Lightning spell gets new (more fitting) icon;
++	Elementalist class can upgrade Lightning spell now turning it into Chain Lightning. More perk levels give more chains (up to maximum of 1 + perk levels);
++	When Lightning spell becomes Chain Lightning, it changes its icon now;
++	Chain Lightning spell no longer tries to target monsters that are out of reach;
++	Chain Lightning now will not target monsters immune to lightning;
++	Some fixes to perks that will result in them working properly in multiplayer;
++	Numpad 1-8 keys will now allow drinking potions (works with NumLock ON only);
+
+
+	v1.0158 (2020-03-18)
+
++	Mana Shield damage modifier formula goes through 2nd revision. New formula: 200% - (clvl/2) - slvl (max=50) - value from "mind over matter" perk;
++	Mind Over Matter perk: altered values to compensate for new formula;
++	Spellbook now shows correct damage percentage recieved under Mana Shield;
++	Arcane Star cast sound reduced in volume by 25%;
+
+
+	v1.0159 (2020-03-19)
+
++	Assassin class elemental damage coefficient for acid reduced to 1.0;
++	Assassin class gets Toxicity perk that will increase Acid damage coefficient up to 2.0 (0.5 more than before);
++	Changed some class avatar pics;
++	Removed old limitations for firewall and lightning wall segment duration formula (from slvl 2 to slvl 7);
++	New formula for Firewall / Fire Ring / Lightning Wall / Lightning Ring durations is 25 seconds + SLVL seconds;
+
+
+	v1.0160 (2020-03-21)
+
++	Added new perk that increases duration of walls/rings of fire/lightning;
++	Characters lose bonus to melee/arrow resistance from vitality;
++	Bonus damage resistance to arrows and melee for Executioner is lost too;
++	Maximum arrow damage resistance to arrows is now 70-90;
++	Dimachaerus gets a new perk that increases both current and maximum arrow damage resistance;
++	Maximum melee damage resistance for Archer, Sharpshooter, Scout, all Mage classes is set to 60-75;
+
+
+	v1.0161 (2020-03-21)
+
++	Firewall damage from non-player (trap or shrine) damage formula set to: 16 * ((DungeonLevel / 2 + 1 ) + ( 12 * Difficulty)), where difficulty is 0/1/2 (horror/purg/doom),
+	Note: duration is set to 5 seconds;
++	Insulation perk gave 20 times less duration to walls, now fixed;
++	Skull Cracking perk gave crash when player was attacked by charging monsters, now fixed.  Same fix rectifies problems caused by summons charging monsters;
+
+
+	v1.0162 (2020-03-21)
+
++	DamageMonsterByPlayer checks for active perk before modifying stun threshold;
++	Fixed check for perks to avoid crashes because of faulty player pointers;
++	Firewall/Lightwall damage from non-player (trap or shrine) damage formula set to: 10 * ((DungeonLevel / 3 + 1 ) + ( 8 * Difficulty));
+
+
+	v1.0163 (2020-03-21)
+
++	Passive reduction of maximum chances to hit with magic in MvP is removed. Used to be 95 - (bDEX / 10). Now it's 95% and called Automiss;
++	Same reduction is removed for MvP for arrows - here's AC coming into play;
++	Autohit and automiss calculations for MvP arrow and magic battle types are separated and tuned individually now;
++	Acrobatics perk no longer affects spell dodging but lowers automiss too;
++	Basic spell automiss set to 14%, basic spell automiss set to 95%;
++	Spell autohit set to 12% for Rogue and Assassin, and 22% for Executioner;
++	Arrow autohit set to 12% for Monk, Rogue and Assassin, 13% for Dimachaerus and 22% for Executioner;
++	Added new perk that helps some classes to improve spell evasion;
+
+
+	v1.0164 (2020-03-21)
+
++	Evasion perk rebalanced;
+
+
+	v1.0165 (2020-03-22)
+
++	Iron Maiden no longer adds damage from '+damage' affix to each armor piece worn (was broken);
++	Iron Maiden gets a new perk that adds flat damage to thorns per each armor piece worn (that has thorns on it);
++	Fixed monster knockback orientation that used to result in monsters getting KB'ed unto unwalkable tiles (walls, etc.);
+
+
+	v1.0166 (2020-03-22)
+
++	Fixed wrong character pointer for elemental walls and rings, and duration is now calculated properly;
+
+
+	v1.0167 (2020-03-22)
+
++	Fixed monsters not hitting player in melee;
+
+
 =================================================================================================
 Support mod development:	https://www.patreon.com/join/thmod?
 For one-time donations:	https://www.paypal.me/thmod
