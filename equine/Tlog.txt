@@ -1,3 +1,11 @@
+#Tchernobog 0.1.6d
+- MOVED SAVES FROM C:\Users\yourusername\Documents\Diablo 1 Tchernobog TO GAME FOLDER! 
+RELOCATE THEM IF YOU WANT TO KEEP USING THEM! NO WIPE YET! JUST CHANGED SAVE LOCATION!
+- Fixed the "ZeroTier detected" message - now it should only appear when it detects ZeroTier, not ALWAYS like before.
+- Added support for "patch_rt.mpq" - you can add japanese voice pack or other memes
+- Animated mana/heath orbs - settings for them in config.txt
+- Updated game libraries to the latest version
+
 #Tchernobog 0.1.6c
 - Disabled trading - it could cause crashes or even corrupt character!
 - Added keeping all backups of characters - if something goes wrong, you always have a copy!
