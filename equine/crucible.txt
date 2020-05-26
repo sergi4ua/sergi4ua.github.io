@@ -1,0 +1,349 @@
+Characters:
+*Overall
+	-Maximum block chance reduced to 90%
+
+*Warrior
+	-30% blocking bonus removed
+	-No speed bonus on fired arrows
+	-Attributes (Type - starting/maximum)
+
+		Strength  - 30/125
+		Magic     - 10/50
+		Dexterity - 20/60
+		Vitality  - 25/100
+
+*Rogue
+	-Disarm Trap skill replaced with Touch skill
+	-20% blocking bonus removed
+	-Spellcasting 2 frames faster
+	-Attributes (Type - starting/maximum)
+
+		Strength  - 25/70
+		Magic     - 20/95
+		Dexterity - 25/110
+		Vitality  - 15/60
+
+*Sorcerer
+	-10% blocking bonus removed
+	-Block recovery 1 frame faster
+	-Hit recovery 1 frame faster
+	-May block while spellcasting
+	-Begin with -5 Str
+	-Begin with -5 Dex
+	-10% blocking bonus removed
+	-Attributes (Type - starting/maximum)
+
+		Strength  - 10/65
+		Magic     - 45/135
+		Dexterity - 10/75
+		Vitality  - 20/60
+
+
+Monsters:
+*Every monster has been made more difficult through a combination of adjusted stats and/or altered behaviour
+
+*Monster sub-types spawn in a smaller range of levels, decreasing the chance of difficulty spikes or lulls
+
+*Most dungeon levels have increased monster diversity
+
+*Several boss monsters have been adjusted for greater challenge
+
+*Non-boss monster types are always vulnerable to one type of magic as below:
+
+Type:		Vulnerability:
+Demon		Fire
+Animal		Lightning
+Undead		Magic & Holy
+Hidden		Magic
+
+*Non-boss monster types except for Hidden cannot have magical immunities
+
+*Added one mid-game demon monster type
+
+*Added one mid-late game undead monster type
+
+*Added one very late game undead monster type
+
+*Added one very late game beast monster type
+
+*Familiars are now beast monster type
+
+*All gargoyle sub-types are now undead monster type
+
+*All zombie sub-types are now immune to arrows shot by the Sorcerer or Warrior
+
+
+Items:
+*Item values have been adjusted greatly
+
+*The amount of gold dropped/spawned in the game has been adjusted
+
+*Increased the drop rate of all Healing and Mana potions
+
+*Some findable unique items have been altered in type and power
+
+*Some findable unique items have been added
+
+*Some findable unique items have been removed
+
+*Added one new item suffix - Infravision
+
+*Added one new item suffix - Prevent monster heal
+
+*Added some new item prefixes - Armor Class
+
+*Removed all cursed items
+
+*Adjusted level on Master's and Champion's prefix to appear earlier in the game
+
+*Reduced +%to-hit bonuses on high level +%to-hit magical item prefixes
+
+*Reduced +%to-hit bonuses on high level +%to-hit, +%damage magical item prefixes
+
+*Quest rewards have been adjusted to more often be viable gear options for the level they are found
+
+*Some item art has been changed
+
+*One-handed weapons have been adjusted
+
+*Some one-handed weapons have been added
+
+*One-handed weapons are split into five classes:
+	*Wide damage range blunts
+	*Narrow damage range blunts
+	*Wide damage range blades
+	*Narrow damage range blades
+	*Low damage no attribute requirement blades
+
+*Bow weapon types are split into two classes:
+	*High dex requirement with wide damage range
+	*High str requirement with narrow damage range
+
+*Bow weapon type durability has been lowered
+
+*Shields have -20% AC
+
+*Armors have AC increased in proportion to shield AC reduction of the corresponding item level
+
+*Added one early game two-handed mace type weapon (War Club, 7 - 13 Dmg)
+
+*Added one late game two-handed mace type weapon (Great Maul, 13 - 26 Dmg)
+
+*Added one early game two-handed sword type (Battle Sword, 7 - 13 Dmg)
+
+*Two-Handed Sword weapon damage changed to 11 - 21 Dmg
+
+*Great Sword weapon damage changed to 13 - 26 Dmg
+
+*Maul weapon damage changed to 8 - 17 Dmg
+
+*Two-handed weapons have all been given armor class scores greater than a shield matching their item level as listed below
+	-The armor scores vary on item creation just like shields, though the number is hidden until the weapon is equipped
+
+	*Small Axe - 1-8
+	*Axe - 4-9
+	*Large Axe - 5-10
+	*Broad Axe - 6-11
+	*War Club - 6-11
+	*Battle Sword - 6-11
+	*Battle Axe - 8-13
+	*Maul - 8-13
+	*Great Axe - 9-16
+	*Two-Handed Sword - 10-19
+	*Great Maul - 13-21
+	*Great Sword - 13-21
+
+	*Short Staff - 1-5
+	*Long Staff - 3-7
+	*Composite Staff - 4-8
+	*Quarter Staff - 5-10
+	*War Staff - 7-13
+
+*Two-handed weapons grant faster hit recovery as listed below
+
+	*Small Axe - None	
+	*Axe - None
+	*Large Axe - None
+	*Broad Axe - Fast
+	*War Club - Fast
+	*Battle Sword - Fast
+	*Battle Axe - Fast
+	*Maul - Faster
+	*Great Axe - Faster
+	*Two-Handed Sword - Faster
+	*Great Maul - Fastest
+	*Great Sword - Fastest
+
+	*Short Staff - None
+	*Long Staff - None
+	*Composite Staff - None
+	*Quarter Staff - Fast
+	*War Staff - Faster
+
+Archery:
+
+*Arrows shot by players no longer damage or alert enemies after travelling for a certain time
+
+
+
+Magic:
+
+*Magic has been adjusted to make a greater variety of spells useful throughout the game
+
+*Projectiles from learnable spells cast by players no longer damage or alert enemies after travelling for a certain time
+
+*More powerful offensive spells now only appear on staves
+
+*Some spells now cost more mana to cast as they are leveled up
+
+*Spells no longer cost less mana to cast as they are leveled up
+
+*Scroll variety has been changed, especially at lower levels
+
+*Some spells hae been renamed:
+
+Original Name:		New Name:
+Telekinesis		Touch
+Phasing			Jaunt
+Holybolt		Smite
+Teleport		Blink
+
+
+*Spells available to the player are listed below:
+
+Name:		Book/Staff:
+Firebolt	Yes/Yes
+Charged Bolt	Yes/Yes
+Holy Bolt	Yes/Yes
+Blood Star	Yes/Yes
+
+Healing		Yes/Yes
+Jaunt		Yes/Yes
+Telekinesis	Yes/Yes
+Identify	Yes/Yes
+Infravision	Yes/Yes
+
+Inferno		No/Yes
+Lightning	No/Yes
+Flame Wave	No/Yes
+Elemental	No/Yes
+Fire Wall	No/Yes
+Chain Lightning	No/Yes
+Fireball	No/Yes
+Storm		No/Yes
+Apocalypse	No/No
+
+Teleport	No/Yes
+Golem		No/No
+
+Heal Other	Yes/Yes (MP Only)
+Resurrect	No/Yes (MP Only)
+
+
+
+Spell Changes:
+
+Charged Bolt:
+-Projectile speed doubled
+-Damage formula for players changed to:
+
+Min: 2
+Max: 2+(Magic/2)
+
+
+Smite:
+-Projectile speed no longer increases with spell levels for Rogue or Warrior
+
+
+Firebolt:
+-Projectile speed no longer increases with spell levels for Rogue or Warrior
+
+
+Touch:
+-Knockback effect removed
+
+
+
+
+
+
+
+Shrines & Fountains:
+
+*Blood Fountain is now single-use, grants full healing & 3x Potion of Full Healing
+*Purifying Spring is now single-use, grants full mana & 3x Potion of Full Mana
+*The Fountain of Tears now grants 0-3 points of Vit
+*Detrimental shrines have been removed
+*Thaumaturgic shrines have been removed
+*Charged Bolt/Firebolt spell level shrines have been removed
+*Mana Shield shrines have been removed
+*Gloomy shrines no longer reduce weapon max damage
+
+
+Miscellaneous:
+
+*Pepin the Healer no longer offers free healing
+*Exploding barrels have been removed
+*A sound will play when a dungeon level is cleared of monsters
+
+Bugfixes:
+
+*Players with a shield can now block magical projectiles that they have a resistance to
+*Players can now be stunned by magical projectiles that they have a resistance to
+*Players can now be hit by projectiles while walking west or east
+*Monsters can now be hit by projectiles while walking west or east
+*Players can now be hit by melee attacks while walking southwest, south or southeast
+*Players will now snap to the correct tile when stunned while walking southwest, south or southeast
+*Boss monster packs no longer get stuck (minions now no longer stay near the boss)
+*The Sharp prefix can now appear in shops (used to be treated as cursed)
+*Elemental damage on bows has been removed (bugged damage)
+*Haste and Speed items are now equal in price and read as 'faster attack' (they have the same effect)
+
+====================== RULES ============================
+
+Crucible is designed around the assumption that the player obeys certain rules of play:
+
+
+*Single Player:
+-While playable in multi player, Crucible has been designed and balanced around the single player game
+
+
+*Hardcore:
+-If the player character dies at any time they must be deleted and cannot reload any prior saved games
+	*Re-loading from a prior save is allowed if a death or crash occurs due to a bug or glitch in the game
+	*Re-loading from a prior save is allowed if a bug or glitch makes progress through the game impossible
+	*Should a player accidentally re-load from a prior save they may play on from that save
+
+-You may not start a new game with an old character
+	*This is to prevent repeating content
+
+
+*Full Clears:
+-Every quest on a dungeon level must be completed before progressing to the next
+	*Any quest that does not require monsters to be killed does not have to be completed (e.g. Black Mushroom)
+
+-Every monster on a dungeon level must be killed before progressing to the next
+	*A sound will play when every monster on the current level is killed
+	*Loot and loot containers may remain untouched
+		*Sarcophagi and barrels must be opened if skeletons of any type are present on the level
+	*The final chamber opened on level 16 does not need to be fully cleared before killing Diablo
+		*This cannot be exploited to kill Diablo with holybolt while he is trapped by his minions
+	*The player must be alive when Diablo dies and the final cinematic plays
+
+
+*No Abuse:
+-Abusing bugs or glitches at any point in the game is disallowed
+	*This includes getting monsters stuck in staircases
+	*This includes intentionally parking monsters where their attacks can never hit you while you can attack them with impunity
+		*This does not include trapping monsters behind doors who are unable to open doors
+		*This does not include luring monsters one-by-one and other manipulation of monster aggression
+	*This includes getting King Leoric stuck on the grated wall in the middle of his tomb
+	*This includes entering and leaving the dungeon solely/repeatedly to restock Adria/Griswold/Wirt
+	*This does not include the extra spells cast at no mana cost when spamming right-click in combat
+		*This exception does not apply to deliberate exploitation of this bug
+
+
+*The Golden Rules:
+-The spirit of the rules is more important than the letter
+-If it feels like it might be wrong then you're probably right
+-These rules are a guideline on how to get the most fun and challenge from the mod: there is no obligation to abide by them
