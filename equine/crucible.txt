@@ -1,3 +1,6 @@
+v1.27b
+-A sound will no longer play when a dungeon level is cleared of monsters
+
 v1.27a
 -Fixed a bug with mana cost on the Identify spell
 -Fixed a bug that caused projectiles to vanish or float in place at unusual times
