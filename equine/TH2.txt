@@ -1,4 +1,4 @@
-Changes log for Diablo: The Hell 2 mod
+﻿Changes log for Diablo: The Hell 2 mod
 ..updated downwards (newest changes down below)..
 
 This log is best viewed in fullscreen, with resolutions of 1600x900 or higher (I use 1920x1080 when writing this)
@@ -10432,17 +10432,17 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 +	Life and mana orbs have text values on them if left clicked, adjustable in config;
 +	Damage done to monsters now shown in new bloodgold color (set showFloatingDamage on/off);
 +	Some visual UI improvements;
-+	Inventory size is noe 7x10 (was 4x10);
++	Inventory size is now 7x10 (was 4x10);
 +	Updated and rearranged config file, added descriptions to options;
 +	Inroducing Nightmare mode. Non-stop action until you die. Features:
-	Note: basically, it's caved in Ironman in one go. Can't use stash, go up in levels, only have one go,
-	Note: game can't be saved and characterfile is instantly deleted when you leave game. This is purely automatic,
-	Note: when you die, you can only choose ABANDON GAME option, which deletes your character,
-	Note: activate by naming your character NM_#your name# (for ex., NM_myrogue),
-	Note: TP relicts/books/shrines - don't work (TP shrine gives two random elixirs instead! No, it won't drop spectral ;D ),
-	Note: but to sweeten the deal, magic find is  set to +100% at the start, bosses always frop 2 ID relix,
-	Note: bosses drop repair oil, which gets better as you go deeper (tier 1 til dlvl-5, tier 2 til dlvl-9, 3 til 17, and 4 after),
-	Note: also, firearrow trap damage is reduced by 75%;
+		basically, it's caved in Ironman in one go. Can't use stash, go up in levels, only have one go,
+		game can't be saved and characterfile is instantly deleted when you leave game. This is purely automatic,
+		when you die, you can only choose ABANDON GAME option, which deletes your character,
+		activate by naming your character NM_#your name# (for ex., NM_myrogue),
+		TP relicts/books/shrines - don't work (TP shrine gives two random elixirs instead! No, it won't drop spectral ;D ),
+		but to sweeten the deal, magic find is  set to +100% at the start, bosses always frop 2 ID relix,
+		bosses drop repair oil, which gets better as you go deeper (tier 1 til dlvl-5, tier 2 til dlvl-9, 3 til 17, and 4 after),
+		also, firearrow trap damage is reduced by 75%;
 +	Meta menu post image freezes fixed where possible;
 +	Added feature to highlight Golem always, made optional, see config visual features;
 +	Introducing Ironman mode. Mode is played according to these rules: http://freshmeat85.bplaced.net/Files/IronMan.htm ,
@@ -10515,9 +10515,8 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 +	Emergency fix: throwing potions made unequippable because they caused game crashes and all sorts of trouble;
 
 
-	v0.3000 (8:25 11.06.2018), "Ring of Fire"
+	v0.3000 (8:25 11.06.2018), "Ring of Fire" (Johny Cash)
 
-+	This one's after Johny Cash's song;
 +	In IM and NM modes oils now drop from bosses according to these new rules:
 	dlvl 1: tier 1,
 	dlvls 2-3: tier 2,
@@ -10567,9 +10566,8 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 +	Fixed white items showing red text;
 
 
-	v0.4000 (19:26 24.06.2018), "It's so easy"
+	v0.4000 (19:26 24.06.2018), "It's so easy" (Willy DeVille)
 
-+	This one's after Willy DeVille (suggested songs didn't beat this one, closest was Alleria and his "Dead Can Dance - Opium");
 +	Affix segregation introduced: afixes are now of battle/magic/combo type. Same with base items. This will create a better affix distribution. This applies to rare items as well;
 +	Regeneration of life and mana rules were modified. Now it's +1 per each 20 current points of MAG/VIT, and randomizers are turned off,
 	Note: this means there will be no more jumping values in character sheet;
@@ -10617,9 +10615,8 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 +	Fleshdoom quest level 3 was modified to get rid of entry point cheese (as in TH1);
 
 
-	v0.5000 (21:37 24.07.2018), "Switch Twitch"
+	v0.5000 (21:37 24.07.2018), "Switch Twitch" (Fluke)
 
-+	Named after Fluke;
 +	Loot segregation taken one step further: players will now find less item types they cannot use (or can't use effectively);
 +	Greatly revised item availability by subclass in SP mode:
 	DEX axes only for Shugoki, two-handed battle staves only for Monk, crossbows only for Warriors and Savages, etc.;
@@ -13720,6 +13717,720 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 	v1.0167 (2020-03-22)
 
 +	Fixed monsters not hitting player in melee;
+
+
+	v1.0168 (2020-03-23)
+
++	Added new perk for Dimachaerus class that allows blocking;
+
+
+	v1.0169 (2020-03-24)
+
++	Griswold will no longer offer items of "helmet" and "body armor" type to Iron Maiden class if they have no thorns (e.g. Rogue line items);
++	Added config option that lets show\hide exclamation marks above NPCs;
++	Maiden thorns no longer use "+%damage" affix to enhance damage;
++	Iron Maiden autohit chance in MvP Melee set to 25%;
++	Heavily revised thorn damage on Maiden's base items to compensate for the loss of damage from weapon affixes;
+
+
+	v1.0170 (2020-03-24)
+
++	Maiden stun formula set to: Rnd[(7 * player.CharLevel / 5) + 8] + (3 * player.CharLevel / 8) + (player.BaseVitality / 8) + 1,
+	Note: now she is ready to be tested;
++	Affixes that increase MAG or VIT now give +1 per stat to all classes. Base MAG and VIT stats (white) give as much as before. This will make difference for affixes that give life and mana;
+
+
+	v1.0171 (2020-03-25)
+
++	Fixed a bug with stash where potions would disappear if placing them into a full tab (of potions);
++	Added new perk for Rogue that allows to decrease monster chain activation radius (works only in singleplayer mode right now, but i hope to have the mechanics stretched to multi too);
++	MP chain activation radius is 4 now if there is more than one player in a game. Otherwise, class-specific chain activation radius is used;
++	Chain activation radius set to 5 for the following classes: all Mage types, Executioner, Savage, Berserker;
++	Fix attempt made to prevent item disappearance from inventory when it shares guid with another (being used): added base item check in addition to guid. Hopefully, it will fix that;
+
+
+	v1.0172 (2020-03-26)
+
++	Secutor class gets a new perk that improves hit recovery speed;
++	Warrior fury increases damage by 7 * CLVL / 4, and DFE penalty reduced to +CLVL / 9;
++	Made a crossbred AI: melee + arcanestar for ranged. Used by Fearshredder now (solely);
++	Chance for magical traps to hit player set to 100% (was 90%);
++	Added new perk that decreases trap accuracy against player;
++	Added new perk that will help Murmillo's speed attack in melee;
+
+
+	v1.0173 (2020-03-27)
+
++	King Leoric's tomb entrance used to have a walkable tile beyond the entrance tile, fixed now;
++	Numpad '+' and '-' keys work now;
++	Targetting another player in multiplayer and casting spells on them caused the casting player to face wrong direction, now fixed;
++	Added new perk that reduces monster spell accuracy against player;
++	Fixed MvP melee southwalk exploit (knockback tile fix should be done in next updates, not working properly yet);
++	Added new perk for Warlock that improves damage done to monsters;
++	Bone Spirit (spell) basic damage changed to 1/9th of target's current HP (still needs spellbook info adjustment);
+
+
+	v1.0174 (2020-03-28)
+
++	Finished fixing southwalk bug: stunning character places them back to the escaping tile (used to land on targetting tile);
++	Added new perk that increases Monk's accuracy with sweep attacks;
++	Guardian melee crit power reduced from +225% to +175%;
++	Guardian melee crit chance reduced from 5 + CLVL/4% to 5 + CLVL/5%;
++	Added new perk for Guardian that allows to tear through unique monster armor with melee weapon;
++	Dimachaerus stun formula set to: Rnd[CLVL + 7] + (CLVL / 3) + (bVIT / 8) - 1;
++	Max limits to 1%/2% life/mana steal changed from 1/16 and 1/8 to 1/20 and 1/10;
++	Added new perks that increase lifesteal and manasteal;
+
+	Thanks for support:
+		Mathieu Marillon, Naz
+
+
+	v1.0175 (2020-03-28)
+
++	Fixed flat elemental/spell damage affixes, now they work properly  (the flaw was they added only 25% in power to magic/fire/lightning spells/elements), this is actually a +300% boost in damage,
+	Note: this fix will make flat damage spell boosters more effective as well as elemental flat damage boosters on weapons (it was only one quarter in damage too);
+
+
+	v1.0176 (2020-03-29), hotfix
+
++	Unidentified items no longer show elemental damage type (if there is one) in the upper right corner of the game screen;
++	Fixed Chain Lightning's potential ability to cause gamecrash;
+
+
+	v1.0200 (2020-03-30)
+
++	Introducing new game mode: EASY (variation of Normal),
+		player gets 20% less damage,
+		player can leave dungeon at any time (through portal and stairs),
+		battle lockdown is never activated,
+		quest levels don't lock down players either,
+		fire arrow trap damage is reduced by 75%,
+		save game is available at all times regardless of what level players are visiting or whether they are in battle or not,
+		certain challenging enemies are easier to deal with (like Lord of the Order, etc.),
+		everything else is standard Normal mode;
++	Introducing new game mode: HARD (variation of Normal),
+		player gets 20% more damage from monsters and traps,
+		certain challenging enemies are harder to deal with (beware!),
+		monster AI is more aggressive,
+		all else is as in standard Normal mode;
++	Introducing new game mode: SOFT IRON (variation of Ironman),
+		saving is allowed after clearing each dungeon level (not in town) and it's not Save & Exit - it's just Save,
+		no permadeath (delete your character manually if you want to),
+		load game available always,
+		quit menu available always,
+		pause in battle is allowed,
+		magic find is +50%,
+		everything about it is standard Ironman stuff;
++	Perk code optimized globally to fix problems with performance hindering;
+
+
+	v1.0201 (2020-03-30)
+
++	Hard mode monster AI improvements made. Now they show more aggression indeed. I believe, this is a more elegant solution: changing not their stats but actually their behavior and tricks;
+
+
+	v1.0202 (2020-03-30)
+
++	Perk optimization improved further;
++	Fixed Easy mode quest limitation removals not working;
+
+
+	v1.0204 (2020-03-30)
+
++	Fixed some new code insertions for Hard mode. This should fix some monsters not attacking;
+
+
+	v1.0205 (2020-03-31)
+
++	Adjusted Bone Spirit damage display according to Atrophy perk modification;
++	Griswold's unique weapon rewards had their damage reduced by 20%;
++	Some items have different looks now;
+
+
+	v1.0206 (2020-04-01)
+
++	Assassin block chance maximum set to 45% in MvP melee (was 60%);
++	MvP Ranged: maximum block chance set to 45% for Assassin, 75% for Warrior, and 70% - all others (if they can block and get to raise high enough stats);
++	Some base- and unique items get new pics;
++	Secutor gets a new perk that decreases stun recovery duration by 1 frame and allows him to reach the fastest stun recovery among all classes: 2 frames,
+	Note: all fighters with fastest hit recovery have a speed of 3,
+	Note: for your information, this was achievable only in original Diablo if you stacked all 3 types of hit recovery affixes at once on your character,
+	Note: but this was not tested, let me know if there are problems;
+
+
+	v1.0207 (2020-04-01), hotfix
+
++	Fixed gold giving shrine: minimum gold is now 1 piece;
+
+
+	v1.0208 (2020-04-04)
+
++	Cosmetical works (mostly inventory);
++	Muscle Cuirass is wearable only by Dimachaerus now;
++	Added 1 more unique on uID#2176. Total uniques 1318 now;
+
+
+	v1.0209 (2020-04-05), "Too Late (Instrumental)" (Timecop1983)
+
++	Changed Horazon level loading screens;
++	Some unique items get new pictures;
+
+
+	v1.0210 (2020-04-07)
+
++	Fixed wrong flip animation on one of the sabres;
++	Added more unique pictures for items;
++	Some player spell code optimization;
++	Added support for cold and acid spells for player character;
++	Elementalist class gets a new line of cold spells;
++	Warlock class gets a new line of acid spells;
++	Spellbook page 6 added - these spells currently reside there (might be changed soon);
+
+
+	v1.0211 (2020-04-07)
+
++	Revised class restrictions on many base helmets for warriors/savages;
++	Upgraded looks for some items;
+
+
+	v1.0212 (2020-04-08)
+
++	Added a couple more base items;
++	Appearance upgraded for some base helmets;
+
+
+	v1.0213 (2020-04-09)
+
++	Fixed cooldown on new nova spells;
++	Character class check is fixed for new class specific spell charges on items;
++	Broken manacost fixed for some spells;
+
+
+	v1.0214 (2020-04-10)
+
++	Option to deactivate cinematics on game start is added to configuration file;
++	Faceplate Aventail was assigned to Savage class by mistake, returned it to Warrior;
++	Updated some class descriptions in character create menu;
++	Some data adjustments in base items;
++	Added another base helmet for Templar class to close the big gap in early game;
++	Wine from Tears perk gives less life with higher levels, was still too powerful;
+
+
+	v1.0215 (2020-04-10)
+
++	Rancid Bolt / Ice Bolt damage formula set to: SLVL + cMAG / 5 + Rnd[10 + CLVL / 2];
++	Toxic Ball / Freezing Ball damage formula set to: CLVL + SLVL * 10 + Rnd[cMAG] (these spells work like Ball Lightning - no splash damage to nearby targets);
++	Frost Nova / Acid Nova damage formula set to: CLVL * 5 + SLVL * 10 + Rnd[cMAG * 2];
++	Hard mode starting XP bonus is -25%;
++	Mage class gets a new perk;
++	Gold Fever perk is reworked, now it improves flat goldfind, not percentage. This should make it more attractive early on and less op later;
++	Added perks that increase current attributes;
+
+
+	v1.0216 (2020-04-10)
+
++	Warlock's starting spell of Fire Bolt replaced with Rancid Bolt;
++	Elementalist starts with Ice Bolt instead of Fire Bolt;
++	Summoners start without offensive spells;
++	 Adjusted resistances on some base and unique monsters to allow Elementalist and Warlock to plough through levels without getting stuck;
+
+
+	v1.0217 (2020-04-11)
+
++	Rancid Bolt damage formula set to: SLVL + cMAG / 3 + Rnd[15 + CLVL];
++	Ice Bolt damage formula set to: SLVL + cMAG / 3 + Rnd[10 + CLVL / 2];
++	Added new perk for Thraex class;
++	Character is centered on the screen better when playing in non-16:9 resolutions;
+
+
+	v1.0218 (2020-04-11)
+
++	Acid from player spells and flasks kills monsters faster on DLVLs 1 and 2. Monster maxHP divider for monsters set to 6 (was 8) and for bosses to 14 (was 20);
++	Added new perk for Executioner;
++	MP game modes of Easy, Ironman and Soft Iron do not limit experience to no more than 5% of level progress per kill;
++	Experience is always shared in multiplayer modes of Ironman, Soft Iron and Easy. Otherwise chance for shared experience is (CLVL + 10)% ;
+
+
+	v1.0219 (2020-04-11)
+
++	Fixed a bug with "Give them nothing" perk not working;
+
+
+	v1.0220 (2020-04-12)
+
++	Reaper type monsters now have energy shield that additionally gives them DFE-like protection against spell damage (from player). It gets stronger with difficulties and it's double on Hard mode,
+	Note: this means that multi-hit spells with lower damage will be less likely to get through their new defense. Casters, Scouts and Bombardiers should be more careful here;
++	Vignette shader effect fixed and improved. Now it doesn't affect UI;
++	New perk added for Sharpshooter;
++	Sharpshooter built-in accuracy boost reduced: +60  ->>  +40;
++	FXAA shader effect improvedL old one did not really work. New one mixes bloom, vignette and highlighting characters / items;
+
+
+	v1.0221 (2020-04-14)
+
++	'Gain Stat' perks now process item requirements properly;
+
+
+	v1.0222 (2020-04-16)
+
++	Fire/Lightning Rune damage formula set to: 20 + (CLVL * CLVL / 20) + Rnd[CLVL];
++	Fire/Lightning Nova spell damage (from player) formula set to: Rnd[CLVL * 5] + (SLVL * 10) + (cMAG * 3 / 2);
++	Arcane Nova spell damage (from player) formula set to: Rnd[CLVL * 4] + (SLVL * 7) + cMAG;
++	Rancid Bolt damage formula set to: 1 + SLVL + cMAG / 3 + Rnd[15 + CLVL];
++	Ice Bolt damage formula set to: 1 + SLVL + cMAG / 3 + Rnd[10 + CLVL / 2];
++	Acid Nova spell damage (from player) formula set to: Rnd[CLVL * 6] + (SLVL * 12) + (cMAG * 5 / 3);
++	Frost Nova spell damage (from player) formula set to: Rnd[CLVL * 4] + (SLVL * 9) + cMAG;
++	Toxic Ball spell damage formula set to: (CLVL * 2) + (SLVL * 15) + Rnd[(cMAG * 3 / 2)];
++	Freezing Ball spell damage formula set to: CLVL + (SLVL * 10) + Rnd[cMAG];
+
+
+	v1.0300 (2020-04-21)
+
++	Added a couple of new uniques;
++	Introducing system of Traits: during character creation you can select up to 2 traits from the list available to your chosen class,
+	Note: Traits have benefits and penalties, altering gameplay but not changing average balance;
+
+
+	v1.0301 (2020-04-21)
+
++	Fixed "Adventurer" trait penalty;
++	Fixed "Thick Skinned" trait benefit;
+
+
+	v1.0302 (2020-04-22)
+
++	Identify cast sound changed (was identical to Ironman level clear effect by coincidence);
++	Barbarism penalty changed to -(CLVL/5) to mana regeneration;
++	Added new trait for Executioner;
++	Improved settings for FXAA shaders;
++	Added new trait for Rogue;
+
+
+	v1.0303 (2020-04-22)
+
++	Iron Maiden, Bombardier and Shinobi lose built-in AC increaser because they have shields to compensate (this was originally designed to help TH1's Rogue and Monk classes who did not);
++	Adventurer trait penalties set to -40%s;
++	Fixed critical bug with Kamikaze trait, which effectively nullified player's armor class;
+
+
+	v1.0304 (2020-04-23)
+
++	Fixed a bug with traits staying in chosen slots and being available for other characters;
+
+
+	v1.0305 (2020-05-23)
+
++	Added 2 more new traits;
+
+
+	v1.0306 (2020-04-23)
+
++	Fixed Barbarism trait: wasn't really setting max resistance caps to 90;
++	Added 2 more new traits;
+
+
+	v1.0307 (2020-04-23)
+
++	Added another trait;
+
+
+	v1.0308 (2020-04-24)
+
++	Added new trait for Maiden;
++	Added new trait for Bombardier;
+
+
+	v1.0309 (2020-04-25)
+
++	Character knockback resist formula changed to: (bSTR/10) + 45 % ,
+	Note: now it will be possible to achieve 100% with 250 Strength and 3 levels in Stonewall perk;
++	Base cold resistance is now increased by 1% with each 10 poins in base Vitality;
++	Force Wave and Bone Spirit spells are included in spell list that has cooldown for summoner classes;
++	Nova type spells have increased cooldown for summoners now: 30sec in SP, 60sec in MP;
++	Reflect spell now has 120 second cooldown. You can't use spells that start cooldown before its timer reaches 0;
++	Reflect spell now has fewer protection layers. It will absorb a certain amount of hits from monsters (only melee attacks) and these attacks will hit but deal 0 damage to player,
+	Note: new formula for number of layers is 1 + (CLVL / 12) + (SLVL / 10),
+	Note: damage reflection to monsters is still there;
++	Added new trait for summoner classes;
+
+
+	v1.0310 (2020-04-26)
+
++	Added new trait (now you can actually sell your soul in this mod);
++	Trait system expanded to exclude certain pairs / groups of traits (that are not really compatible);
++	Traits "Skilled" and "Grim Deal" are mutually exclusive now;
+
+
+	v1.0311 (2020-04-26)
+
++	Added new trait for Templar;
+
+
+	v1.0312 (2020-04-27)
+
++	Added new trait for Scout. Gives upgraded multishot with manual control;
++	Life- and mana leech affixes show that they work only in melee now;
++	Scout class used to have baselife and baselife max mismatch in the beginning. Added autocheck to correct this on the fly. This should also prevent cheating through hitpoints;
++	Fury spell now activates 90 second cooldown;
+
+
+	v1.0313 (2020-04-27)
+
++	Ice Stalker damage reduced: [9-14] -> [8-10];
++	New trait added for Sharpshooter;
++	Wild Sorcery improves damage better: +20% -> +30%;
++	Added new trait for Savage;
++	Added new multi-class trait;
++	Cooldowns are separated in different groups: nova, offensive (spell), fury, reflect. They can co-exist but casting spells from the same group is not allowed until cooldown goes off;
+
+
+	v1.0314 (2020-04-27)
+
++	Chromatic Skin trait code check could cause game crashes when player is hit with charging monsters, it should be fixed now;
+
+
+	v1.0315 (2020-04-28)
+
++	Traits 'Survivor' and 'Chromatic Skin' are mutually exclusive now;
++	Formula for number of layers of Reflect changed to: 2 + CLVL/15 + SLVL/15;
++	Holy Aura damage formula changed to: 1 + CLVL * cMAG / 100 per second;
++	Savage totally loses ability to score critical hits. Items will not with that now;
++	Added new trait for Inquisitor (incompatible with 'Finesse');
+
+
+	v1.0316 (2020-04-28)
+
+	Warning!!!
+	Before you upgrade or start playing, backup your character save folder(s), just to be sure.
+	This is a big update and it changes things in character structure.
+	It will be impossible to load old singleplayer games, you will have to start new gaming session (not new character, new game).
+
++	Created (restored) unpublished Diablo 1 quest that is given by Ogden. Regardless of quest randomization, it will be there always, just like Chamber of Bone quest,
+	Note: it is available to characters who visited dlvl-6 and returned to town. Only for Singleplayer. Easy-Normal-Hard-Hardcore modes (other modes won't get it),
+	Note: it's new, and when there is something new, it can have bugs. The quest was tested extensively but if you notice anythin strange, report that and we will fix it,
+	Note: this is not a restored quest, they didn't create it. Only thing that was there is Ogden's speeches about it, the rest is TH team's work;
+
+
+	v1.0317 (2020-04-28)
+
++	Fixed 'Ratel Hide' image;
++	Chamber of Bone will now play different music. Same with King's Tomb. And Island;
++	Music Pack v9.0 is released. Update or you will not hear new music in quests mentioned above;
+
+
+	v1.0318 (2020-04-29)
+
++	Traps couldn't hit players anymore (including Fire/Lite Walls, that are treated as traps): fixed;
++	Reflect layer amount formula changed to: 1 + BaseVIT / 50;
+
+
+	v1.0319 (2020-04-29)
+
++	Added new trait for Berserker (incompatible with 'Heavy Handed');
++	Music Pack updated to v9.1;
++	Flask acid damage deplete on superbosses is slowed (-50%). Let me know how she feels against them,
+	Note: this concerns Ironman mode primarily abd is done before the next tournament as a preparation, if you are not playing it, don't bother with this;
+
+
+	v1.0320 (2020-04-29)
+
++	Added new trait for Dimachaerus;
+
+
+	v1.0321 (2020-04-30)
+
++	Fixed a critical bug with current Life calculation on character;
+
+
+	v1.0322 (2020-04-30)
+
++	Another fix, for starting characters and saved characters. Current life is restored correctly;
+
+
+	v1.0323 (2020-04-30)
+
++	Fury ending sound is changed to local;
++	All negative effects from Fury are removed for all classes, only benefits are left;
++	Affix that increases Fury duration changed to +100% (was +150%);
++	Fury cooldown increased to 180 seconds;
++	Berserker gets a new perk that allows to manipulate Fury cooldown;
+
+
+	v1.0324 (2020-04-30)
+
++	Added new trait for Secutor;
++	SMD-fix: dlvl transitions no longer clear cooldown timers;
++	Fixed a bug where character's life could drop to 0 in Tristram with life degeneration (got broken after adding last quest);
++	Reduced cauldron sound effect volume by 23%;
++	Added new trait for Shinobi;
+
+
+	v1.0325 (2020-05-01)
+
++	Fixed a bug when sometimes game engine would perceive clicking inside Perk window as clicking on the ground, sending your character there with the window open;
++	Fixed flask acid code (there was a flaw in it): now it will deal less DOT to certain big bosses (adjusted manually per each boss). I believe, Bombardier's acid is now balanced well;
++	Added 2 unique items. Total uniques 1319 now;
++	Game application now cannot be run in more than one instance;
+
+
+	v1.0326 (2020-05-02)
+
++	Fixed Gifted trait penalty;
++	Improved optimization of code: game performance will slightly rise;
+
+
+	v1.0327 (2020-05-02)
+
++	Grim Deal trait did not reduce AC: fixed;
+
+
+	v1.0328 (2020-05-02)
+
++	Boss drops modified:
+	Melchior: -1,
+	Hazeshifter: +1,
+	Skeleton King: +1;
++	Added new trait for Warlock;
+
+
+	v1.0330 (2020-05-04)
+
++	PvM Ranged: Uber Diablo general resistance to magical damage in SP set to:
+	Nightmare, Ironman, Soft Iron: 56%,
+	MP Normal, Easy, Harcore, Hard: 77% / 82% / 86% (for difficulty modes Horror / Purgatory / Doom),
+	SP Easy: 63%,
+	SP Normal: 68%,
+	SP Hard: 73%;
++	New code written for acid damage mechanic from flasks:
+	monsters under flask acid are no longer highlighted as if under infravision,
+	damage flows freely (not once every second),
+	chance of stun check for monsters under such damage is randomly 1 out of 120 (otherwise there will be stunlock for some monsters without high stun threshold, especially warpers),
+	overall damage from acid flasks is reduced: -75%, but damage divider is still kept and adjusted individually for some bosses and monster (divided into Dlvl categories - early level monsters lose HP faster),
+	Uber Diablo and Ceromorth no longer resist acid damage from flasks: compensating damage and improving odds here,
+	damage for acid flasks is applied by hit or puddles and time over which it is spplied is determined by new parameter: over time (you can see it in base item description);
+
+
+	v1.0331 (2020-05-04)
+
++	Burning and electrocuting flasks no longer show fire ring/lightning ring timer in upper right corner of the screen;
++	Acid spells no longer highlight toxified monsters with red (as if under Seeing);
++	Bombardier base life formula set to: CLVL + 150% x bVIT + 22;
++	Adjustments on some uniques;
+
+
+	v1.0332 (2020-05-04)
+
++	Code for previous fix with wall/ring info is improved;
++	Expanded code for flask acid damage dividers for monster and boss. Now CLVL progress will actually help in letting kill monsters easier/faster;
+
+
+	v1.0333 (2020-05-04)
+
++	New trait for Bombardier;
+
+
+	v1.0334 (2020-05-05)
+
++	Changed base damage formula on some classes (for melee weapon):
+	Shugoki:		cSTR * CLVL / 380 + CLVL,
+	Shinobi:		cSTR * CLVL / 75 + CLVL,
+	Savage:		cSTR * CLVL / 62 + CLVL - 1,
+	Berserker:	cSTR * CLVL / 250 + CLVL,
+	Executioner with 1-handed:	cSTR * CLVL / 50 + (CLVL * 2),
+	Executioner with axe:	cSTR * CLVL / 111 + CLVL,
+	Secutor:		cSTR * CLVL / 90 + CLVL,
+	Kensei:		cSTR * CLVL / 340 + (CLVL / 2),
+	Monk (staff):	cSTR * CLVL / 120 + CLVL;
++	Fixed the most broken unique items;
+
+
+	v1.0335 (2020-05-07)
+
++	Sharpshooter base damage (with bow) updated: cSTR * CLVL / 43 + CLVL - 1;
++	Scout/Archer base damage with bow set to: cSTR * CLVL / 120 + CLVL;
++	Added 2 more variations of PWS maps (Horror mode map pack);
++	Cadavers now steal mana on hit;
+
+
+	v1.0337 (2020-05-08)
+
++	All Anvil of Fury uniques got updated;
++	Added new trait for Shugoki class;
++	Holy Aura damage formula upgraded: 1 + CLVL * cMAG / 40 per sec;
+
+
+	v1.0338 (2020-05-08)
+
++	Fixed a nasty bug in Piercing Shot code;
+
+
+	v1.0339 (2020-05-09)
+
++	Bouncer trait buffed: +35% damage now;
++	Added new Warrior specific trait;
++	Monsters will not drop body armors for characters that have chosen 'Old Fashioned' trait;
++	Monsters will not drop shield for characters who have chosen 'Fechtmeister' trait;
++	Trait 'Sandman' made incompatible with 'Fechtmeister';
++	Warrior with 'Fechtmeister' trait now starts without shield;
+
+
+	v1.0340 (2020-05-10), "Into Your Heart" (Trevor Something)
+
++	Added new trait for Iron Maiden;
++	Cadavers steal life on hit now:
+	100% on Easy mode,
+	150% on Hardcore and Normal mode,
+	200% on Hard mode;
+
+
+	v1.0341 (2020-09-10)
+
++	Fixed monster lifesteal bug with current life being able to go over max life: inserted safety check that limits stolen life to not go over max life;
+
+
+	v1.0342 (2020-05-10)
+
++	Added new trait for Iron Maiden;
+
+
+	v1.0343 (2020-05-11)
+
++	Gold Threads renamed to MIdas' Threads and made part of Midas' set (set also expanded to maximum of 6 bonus effects);
++	Melee autohit increased by 5 more percent for 'Two Towers';
++	Monster Apocalypse damage formula changed:
+	EASY Horror: 90  + Rnd[21], 	EASY Purg: 180 +Rnd[41], 		EASY Doom: 240 + Rnd[41], 	EASY Doom DLVL-24: 270 + Rnd[41],
+	HARD Horror: 130  + Rnd[21], 	HARD Purg: 220 +Rnd[41], 		HARD Doom: 320 + Rnd[41], 	HARD Doom DLVL-24: 350 + Rnd[41],
+	OTHER Horror: 110  + Rnd[21], 	OTHER Purg: 200 +Rnd[41], 	OTHER Doom: 280 + Rnd[41], 	OTHER Doom DLVL-24: 310 + Rnd[41];
+
+
+	v1.0344 (2020-05-11)
+
++	Added new trait for Assassin;
+
+
+	v1.0345 (2020-05-12)
+
++	Elementalist's Hydra spell is changed into Ice version;
+
+
+	v1.0346 (2020-05-12)
+
++	Arcane Star expolsion animation was gone: fixed;
++	Added new trait for Murmillo class;
++	Added new trait for Thraex class;
+
+
+	v1.0347 (2020-05-14)
+
++	Modified town area new Adria's shack and entrance to Caves;
++	Added new trait for Rogue class;
+
+
+	v1.0348 (2020-05-14)
+
++	Reflect now shows number of hits absorbed in spellbook;
++	Ratel Hide bonus to DFE nerfed to CLVL / 10;
++	Some updates in unique item stats;
++	Added new trait for Guardian;
++	Old Habit trait DFE penalty reduced to CLVL / 8;
+
+
+	v1.0349 (2020-05-16)
+
++	Adventurer trait penalty reduced to -35% to life/mana;
++	Nerfed penalty for Best Defense trait: -(25 + CLVL/5 )% HP;
++	Some upgrades and data fixes in unique item table;
++	Added new perk that improves Fury duration;
+
+
+	v1.0350 (2020-05-17)
+
++	Holy Aura should no longer damage Necromancer's minions;
+
+
+	v1.0351 (2020-05-17)
+
++	Big revision of base flask damage;
++	Destroyer trait ups damage not as much now (+20%);
++	White items can no longer be identified (ID relix wasted on them..);
+
+
+	v1.0352 (2020-05-18)
+
++	Added support for spell damage masteries;
++	Added perks that increase spell damage by element type (except physical and holy);
++	Perk 'Ranger' renamed to 'Farsight';
++	Adjusted spell damage formulae for nova spells to compensate for newly added spell damage booster perks (some novas needed nerf anyway, and some got boosted);
+
+
+	v1.0353 (2020-05-18)
+
++	More spell damage fine tuning;
++	Added perks that improve damage from flasks, by element;
+
+
+	v1.0354 (2020-05-19)
+
++	Greeting sound effects for monsters were fixed and for bosses - fixed and activated (only Butcher, Leoric and Uber Diablo gabe them before);
+
+
+	v1.0355 (2020-05-25)
+
++	Fixed Leoric's greeting speech (was using Lachndanan's);
++	Crit sound no longer interrupts boss speeches;
++	Removed two bugged chests from Lazarus level (in SP mode);
++	Default FPS cap set to 200 (in config) to lighten the load on CPU;
+
+
+	v1.0356 (2020-05-27)
+
++	Staff Recharge skill renamed to "Item Recharge";
++	Affixes that give +85% to a resistance no longer show "85% MAX";
++	Added a new Kensei trait;
+
+
+	v1.0357 (2020-05-28)
+
++	Autohit in melee and ranged combat adjusted for Executioner (33% -> 30% and 22% -> 20% accordingly);
++	Added a new trait for Mage class;
+
+
+	v1.0358 (2020-05-29)
+
++	Added 1 more unique on uID#1. It's a test. Should make 2 items on one base, both using level 6. Total uniques 1320 now,
+	Note: previously obtained Nosferatu Brooch rings should morph into this new ring in 50% of cases;
++	Added new Monk trait;
+
+
+	v1.0359 (2020-05-30)
+
++	Adjusted stats on some low tier uniques;
++	Music selection code rewritten;
++	Music selection rules changed. SP and MP music packs are united. Quest music is updated for Disused Reliquary and Andariel's Throne levels;
+
+
+	v1.0360 (2020-05-31)
+
++	New trait added for Trapper;
+
+
+	v1.0361 (2020-06-02)
+
++	Axe base damage values revised. Melee base damage for Executioner/ Shugoki and Berserker is adapted to it;
++	Some Archer class tunings;
+
+
+	v1.0362 (2020-06-02)
+
++	Music did not play in Halls of Anguish because of a typo: fixed;
++	Ice Hydra gets pumped with Cold Mastery (was considered fire element for spellbook display purposes);
++	Fixed some typos in various data;
+
+
+	v1.0363 (2020-06-03)
+
++	Recently reported Phasing bug fixed: now failed attempts phase caster where he stands (0 tile displacement),
+	Note: it would make 500 attempts to phase you some 5 tiles away in one of the directions and if failed it would send you to 0, 0 coordinates, which is.. outside the map;
 
 
 =================================================================================================
