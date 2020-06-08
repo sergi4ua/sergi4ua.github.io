@@ -1,3 +1,12 @@
+v1.28b
+-Fixed a bug that caused the game to fail to give the player experience for killing certain boss monsters
+
+v1.28a
+-Adjusted ddraw_settings.ini to lower default resolution to avoid potential game crash
+
+v1.28
+-Added one contributor name to the game (kappaklausisreal - name may be adjusted to be more lore-friendly)
+
 v1.27b
 -A sound will no longer play when a dungeon level is cleared of monsters
 
@@ -204,7 +213,7 @@ Magic:
 
 *Some spells now cost more mana to cast as they are leveled up
 
-*Spells no longer cost less mana to cast as they are leveled up
+*Many spells no longer cost less mana to cast as they are leveled up
 
 *Scroll variety has been changed, especially at lower levels
 
@@ -292,7 +301,13 @@ Miscellaneous:
 
 *Pepin the Healer no longer offers free healing
 *Exploding barrels have been removed
-*A sound will play when a dungeon level is cleared of monsters
+
+
+ddraw.dll and ddraw_settings.ini changes (thanks to Qndel):
+
+-A sound will play when a dungeon level is cleared of monsters
+-Added experience bar in the bottom of the user interface
+
 
 Bugfixes:
 
@@ -306,52 +321,3 @@ Bugfixes:
 *The Sharp prefix can now appear in shops (used to be treated as cursed)
 *Elemental damage on bows has been removed (bugged damage)
 *Haste and Speed items are now equal in price and read as 'faster attack' (they have the same effect)
-
-====================== RULES ============================
-
-Crucible is designed around the assumption that the player obeys certain rules of play:
-
-
-*Single Player:
--While playable in multi player, Crucible has been designed and balanced around the single player game
-
-
-*Hardcore:
--If the player character dies at any time they must be deleted and cannot reload any prior saved games
-	*Re-loading from a prior save is allowed if a death or crash occurs due to a bug or glitch in the game
-	*Re-loading from a prior save is allowed if a bug or glitch makes progress through the game impossible
-	*Should a player accidentally re-load from a prior save they may play on from that save
-
--You may not start a new game with an old character
-	*This is to prevent repeating content
-
-
-*Full Clears:
--Every quest on a dungeon level must be completed before progressing to the next
-	*Any quest that does not require monsters to be killed does not have to be completed (e.g. Black Mushroom)
-
--Every monster on a dungeon level must be killed before progressing to the next
-	*A sound will play when every monster on the current level is killed
-	*Loot and loot containers may remain untouched
-		*Sarcophagi and barrels must be opened if skeletons of any type are present on the level
-	*The final chamber opened on level 16 does not need to be fully cleared before killing Diablo
-		*This cannot be exploited to kill Diablo with holybolt while he is trapped by his minions
-	*The player must be alive when Diablo dies and the final cinematic plays
-
-
-*No Abuse:
--Abusing bugs or glitches at any point in the game is disallowed
-	*This includes getting monsters stuck in staircases
-	*This includes intentionally parking monsters where their attacks can never hit you while you can attack them with impunity
-		*This does not include trapping monsters behind doors who are unable to open doors
-		*This does not include luring monsters one-by-one and other manipulation of monster aggression
-	*This includes getting King Leoric stuck on the grated wall in the middle of his tomb
-	*This includes entering and leaving the dungeon solely/repeatedly to restock Adria/Griswold/Wirt
-	*This does not include the extra spells cast at no mana cost when spamming right-click in combat
-		*This exception does not apply to deliberate exploitation of this bug
-
-
-*The Golden Rules:
--The spirit of the rules is more important than the letter
--If it feels like it might be wrong then you're probably right
--These rules are a guideline on how to get the most fun and challenge from the mod: there is no obligation to abide by them
