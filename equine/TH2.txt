@@ -14433,6 +14433,231 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 	Note: it would make 500 attempts to phase you some 5 tiles away in one of the directions and if failed it would send you to 0, 0 coordinates, which is.. outside the map;
 
 
+	v1.0364 (2020-06-05)
+
++	Added 4 new crypt palettes (288 now);
++	Added unique images to some unique items;
++	Fixed Ice Hydra crashing game, was a typo in code;
++	Added a new trait for Necromancer class;
+
+
+	v1.0365 (2020-06-05)
+
++	Added new trait;
+
+
+	v1.0366 (2020-06-05)
+
++	Treasure Hunter trait penalty reduced to (20+CLVL)% and XPgain penalty replaced with MagicFind penalty instead;
+
+
+	v1.0367 (2020-06-06)
+
++	Fixed music in PWS;
++	More pictures for unique items added;
+
+
+	v1.0368 (2020-06-06)
+
++	Added 1 more map variation to PWS quest (Horror);
++	Added 1 more map variation for Skeleton King quest;
+
+
+	v1.0369 (2020-06-07)
+
++	Various work with items;
+
+
+	v1.0370 (2020-06-07)
+
++	Executioner of Death now drops 2 items;
++	Treasure Hunter trait penalty upscaled to (CLVL + 40)%;
++	Optimized boss drop code and removed obsolete chunks from it (watch out for bugs, Theo drop was handled in that code too);
+
+
+	v1.0371 (2020-06-08)
+
++	Added new pictures for some uniques;
++	Added 5 new uniques on uID#2. Total uniques 1325 now;
++	Nosferatu is now transformed into unique item set 'Nocturnal Creatures';
+
+
+	v1.0372 (2020-06-08)
+
++	Iron Maiden thorns pierce approximately 95% of monster melee DFE factor (knights will be less of a stopping power now);
++	Thorns are improved on base items for Maiden;
+
+
+	v1.0373  (2020-06-09)
+
++	Various improvements in item visuals;
++	Base item price randomization fixed now, was broken since original;
+
+
+	v1.0374 (2020-06-10)
+
++	Added some more uniques. Tigris' set expanded with 3rd item;
++	Guardian / Savage melee weapon damage revised. Base damage formulae updated for compensation (Guard cSTR * CLVL / 83 + CLVL - 1, Savage cSTR * CLVL / 44 + CLVL - 1);
++	Kensei class: damage with blades vs beasts is +30% now, damage with blunts vs undead: +30%. But base item damage and base damage formula unchanged;
+
+
+	v1.0375 (2020-06-10)
+
++	Guardian base crit formula set to: [2 + (CLVL / 6)%] chance for [+140% and +(10-15) additionally] damage;
++	DFE vs magical damage reduced for Reaper monsters on game modes: SOFT IRON, NIGHTMARE, EASY and IRONMAN (twice as low than it is for normal);
+
+
+	v1.0400 (2020-06-12)
+
+	WARNING!!!
+	After this update do not load your single player game. You will have to start new game session (not new character, new game).
+	This is to ensure the safety of your character and equipment.
+
++	Base items now support individual effects. Some of them;
++	Nosferatu set expanded with 3rd itm, renamed and bonus effects are re-adjusted (actually, buffed a little);
+
+
+	v1.0401 (2020-06-12)
+
++	Quickfix to some newly added base item effects;
+
+
+	v1.0402 (2020-06-12)
+
++	Spheres and Orbs get different base effects;
+
+
+	v1.0403 (2020-06-13)
+
++	Raised durability on Maidens tier 1&2 shields;
++	In Ironman & Nightmare modes, bosses don't drop ID relicts for Assassin, Bombardier and Rogue classes (cause they have ID skill anyway);
++	Bosses don't drop extra gold now if player is using Executioner with trait 'Leper';
++	Bosses don't drop potions on death if player is using traits 'Wild Sorcery' or 'Rabid';
++	Fixed the code of boss drops (of Full Healing potion) on Purgatory;
++	When using trait 'Two Towers', player will get shields from weapon racks instead of melee weapons;
++	Players with 'Fechtmeister' trait will get swords from weapon racks instead of shields;
++	Players with 'Old Fashioned' trait will get helmets from armor racks instead of body armors;
+
+
+	v1.0404 (2020-06-13)
+
++	Improved handling of spell charges, durability, level and stat requirements on basic/magic/unique/rare/set tiems;
+
+
+	v1.0405 (2020-06-13)
+
++	All monsters with retreat behaviour will now try to run away even when cornered in melee. On EASY mode it will still be possible to corner them;
+
+
+	v1.0406 (2020-06-13)
+
++	Weapon racks could cause crash on rare occasions in MP: fixed this bug;
++	Dungeon objects (corpses, chests, barrels) don't drop restricted item types now (trait restrictions supported);
+
+
+	v1.0415 (2020-06-14)
+
++	Items banned by traits are no longer sold in shops;
++	All Hidden monsters are now invulnerable in retreat state on Hard mode;
++	Added new trait for Demonologist;
++	Potion drop restrictions fixed for traits 'Wild Sorcery' and 'Rabid';
++	Monster that dig corpses and heal themselves, will do it with a different speed now, depending on game mode (previous value was 1/16th):
+	HARD: 1/10th HP restored,
+	IRONMAN and NIGHTMARE: 1/30th HP restored,
+	EASY: 1/60th,
+	other modes: 1/20th;
++	Digging corpses would add leftovers to maximum monster life after the last dig, this is fixed now by limiting current hitpoints with maximum hitpoints;
++	Default mana regeneration speed is changed for Assassin and Rogue: +1 regeneration per 12 points in currentMagic;
++	Added new trait for Beastmaster;
+	
+
+	v1.0416 (2020-06-14)
+
++	Deactivated chat log in MP that is activated with '0';
++	Changed soundset for Demonologist tier 1 summons (many were complaining they had disgusting high pitched attack sounds);
+
+
+	v1.0419 (2020-06-16)
+
++	Q2'2020 Ironman Tournament winner's name is etched on the pedestal in the Hall of Heroes;
++	Shuffled some game mode icons in main menu, be careful in choosing your mode;
++	Added new game mode: Speedrun. It's in very early stages. I expect it will be molding for some time. Suggestions, bugreports and feedback is welcome;
+
+
+	v1.0420 (2020-06-16)
+
++	Fixed 'cannot go up' message for Speedrun mode, was using message from Nightmare;
++	MF/XP boosts for Speedrun mode set to +150%;
+
+
+	v1.0421 (2020-06-17)
+
++	Added some uniques. Arctic set is expanded with 3rd item. Jarulf's Kaleidoscope will not be that much of an eyesore now but if you have it, it can morph;
++	Adria will sell items with quality level that depends on player level now (instead of last dungeon level visited) on game modes SOFT, SPEED, IRONMAN and NIGHTMARE,
+	Note: actual formula is 2 + CLVL / 2. Minimum = 6, maximum = 16;
+
+
+	v1.0422 (2020-06-17)
+
++	Mages on HARD mode will retreat if HP is below 75%;
++	Some Skeleton AI code rewrites (walk delays);
++	Scutum shields now give arrow damage resistance instead of melee;
+
+
+	v1.0423 (2020-06-18)
+
++	Speedrun mode now shows several timers in a row, for different areas: town, each location type;
++	Timer stop now implemented. Stops with Uber Diablo's death. Or with player's death;
++	Killing Malantor in SP mode gave Diablo death sound, fixed;
+
+
+	v1.0424 (2020-06-18)
+
++	Etherealize duration set to 20 seconds;
++	Shinobi class gets a new perk;
++	Demonologist class didn't receive minion accuracy from effigies: fixed;
++	Weapons for all Mage classes (except Beastmaster) don't have damage factor anymore;
+
+
+	v1.0425 (2020-06-18)
+
++	Some boss sounds were broken, some - misplaced: fixed;
+
+
+	v1.0426 (2020-06-19)
+
++	Treasure Hunter penalty set to (70 + CLVL/2)%;
++	Speedrun MF/XP boosts raised to +200%;
++	Fixed some flaws in boss greet sound function;
++	Added new and replaced some old boss greets;
+
+	Thanks for support:
+		Pablo Ferrero, 
+		Darren Wong, 
+		Ardyan Yohan, 
+		Zhuo Min Lim, 
+		Akzodude, 
+		Andrea Alex Colombo, 
+		Pawel, 
+		Oleg Devyaterikov
+
+
+	v1.0427 (2020-06-20)
+
++	More fixes in monster and boss sound greet functions;
++	Another performance optimization. This ought to fix that old problem with performance slowly degrading over time to values of about 20 fps or below;
+
+
+	v1.0428 (2020-06-21)
+
++	Fixed the glitch caused by previous patch, could cause crash when highlighting items with Alt;
+
+
+	v1.0429 (2020-06-21)
+
++	Crowded variation of Passage of Fire excluded from game modes IRONMAN, NIGHTAMRE and SPEEDRUN;
+
+
 =================================================================================================
 Support mod development:	https://www.patreon.com/join/thmod?
-For one-time donations:	https://www.paypal.me/thmod
+Buy me a coffee:  		https://ko-fi.com/mordor
