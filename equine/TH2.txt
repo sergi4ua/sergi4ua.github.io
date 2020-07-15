@@ -14656,6 +14656,194 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 	v1.0429 (2020-06-21)
 
 +	Crowded variation of Passage of Fire excluded from game modes IRONMAN, NIGHTAMRE and SPEEDRUN;
++	Teleport and Phasing spells are forbidden in Passage of Fire now;
+
+
+	v1.0430 (2020-06-22)
+
++	Added greet sounds for Horned Beast and Magma Demon type of monsters;
++	Reduced overall chances for initiating greet sounds for all monster groups  to about (12-15)% average;
+
+
+	v1.0431 (2020-06-22)
+
++	Added monster greet sounds for Zombie type of monsters (more variations);
++	Monster greet sounds are now played locally;
+
+
+	v1.0450 (2020-06-23)
+
++	Spellbook is re-worked. It's bigger, shows information in a different way now, spell order is revised. Spellbook window visual updated too;
+
+
+	v1.0451 (2020-06-23)
+
++	Fixed spellbook information display;
+
+
+	v1.0452 (2020-06-24)
+
++	Quest window upgraded;
++	Added 28 uniques on uID#2184;
+
+
+	v1.0453 (2020-06-24)
+
++	Apocalypse gets a (very) long cooldown (even longer for summoners);
++	Apocalypse damage formula upgraded to: CLVL * cMAG / 4;
++	Fixed quest window positioning;
++	Hovering red crosses next to character attributes now shows current stat values in a tooltip;
+
+
+	v1.0454 (2020-06-25)
+
++	Added new weapon for Executioner class;
++	Supplied unique imagery for newly added uniques;
++	Attempt made to prevent 0 gold piles from generating on the floor in dungeon rooms. Minimum goldpile set to 1 GP in these rooms;
++	Soft Iron mode in multiplayer was probably broken, now fixed. Shoud only have SETUP menu active now (always), and SAVE & QUIT - if levels is cleared;
+
+
+	v1.0456 (2020-06-26)
+
++	Fixed Starsower image;
++	Added new unique set for Beastmaster: Trang-Oul's Powers;
+
+
+	v1.0457 (2020-06-26)
+
++	Added new set for Archer classes: Vidala's Rig;
+
+
+	v1.0460 (2020-06-26)
+
++	Monster ranged attacker behavior adjusted for different modes. More aggressive delays on HARD and less aggressive on EASY. Other modes were not touched;
++	Uber Diablo now drops 6 items (10 on Doom), except when his death starts cinematic (in that case, no drop);
+
+
+	v1.0461 (2020-06-27)
+
++	Monsters with Viper AI can now charge from a further distance on HARD mode: distance of 2-5 tiles is considered ok for that trick;
++	Viper AI monsters now have +24% to chance of charging in SP HARD mode (MP HARD has the same chance as before);
++	Bat AI monsters (with the exception of Quasits on DLVL-3) will have now more aggressive chase and charge delays on HARD mode;
++	Fixed a glitch where Skeleton King did not ressurect skeletons on EASY and HARD modes;
++	Certain spells show damage per second in spellbook;
++	Firewall / lightning wall damage (from player) was reduced by 50%,
+	Note: new damage formula is 62% CLVL per frame (one second is 20 game frames);
++	Fallen AI rewritten from scratch. Obsolete monsters removed from retreat on adjacent monster kills. Fixed original Diablo bug with wrong retreat direction;
++	Fallen AI: on HARD mode they are brave now and don't flee;
+
+
+	v1.0462 (2020-06-27)
+
++	Boss drops function fully rewritten;
++	On HARD mode bosses no longer drop 2 potions;
++	Defiler drops +1 item (I kept my promise, see?);
+
+
+	v1.0463 (2020-06-28)
+
++	Fixed Skeleton Archer AI on HARD mode: they never really retreated after starting attacking;
++	Hunger trait reduces 50% less damage against monsters in ranged combat now: +((Difficulty * 24 - DLVL) / 2) to DFE (should be easier to fight with bows now);
+
+
+	v1.0464 (2020-06-30)
+
++	Amulets of 'battle' type no longer drop from monsters & bosses for the following classes: all Mage types, Bombardier, Trapper; 
++	Hidden AI: delays made more aggressive for HARD mode;
++	Zombie AI revised: added checks for custom delays on EASY and HARD modes,
+	Note: behavior now should be quite different depending on difficulty, monster intelligence and game mode;
++	Overlord AI attack chances and attack types now differ for monster IntF, difficulty and game mode;
+
+
+	v1.0465 (2020-06-30)
+
++	First 3 tiers of oils of repair are given new images to make them differ visually. Not sure about this but decided to give it a try;
+
+
+	v1.0466 (2020-07-01)
+
++	Adjusted retreat chances for monsters with primary ranged attack;
++	Sazabi's set expanded with 3rd piece;
++	Bhaltavir's set expanded with 3rd piece;
++	Entrance description to Halls of Anguish is corrected;
+
+
+	v1.0467 (2020-07-03)
+
++	12 uniques created on Immolation Dagger;
++	Sigon's set expanded with 3rd item;
+
+
+	v1.0468 (2020-07-03)
+
++	Barrels and chests are highlighted with light grey color on automap for Caves & Abyss levels;
++	Walls of fire / lightning don't stop monsters on HARD mode now;
+
+
+	v1.0469 (2020-07-05)
+
++	Added 2 more uniques on Field Mail: Skullder's Ire was getting a little too common;
++	Added some 10+ uniques on Quasit Heart;
+
+
+	v1.0470 (2020-07-05)
+
++	Highlighting dungeon objects on automap is done only in SOFT IRON and IRONMAN modes, and it's done on all levels now;
+
+
+	v1.0471 (2020-07-05)
+
++	Fixed a bug with Glimmering shrine that could sometimes erase traits on character (let's hope it works, if not - let me know);
+
+
+	v1.0472 (2020-07-06)
+
++	Added 7 uniques on Talon Gloves;
++	Trang-Oul's set expanded with 3rd item;
+
+
+	v1.0473 (2020-07-07)
+
++	Trang-Oul's set expanded with helmet, harness and greaves (6 pieces total now);
++	Added uniques on small shield base;
+
+
+	v1.0474 (2020-07-08)
+
++	Added new set for Thraex: Sunset Armory;
++	New pictures assigned to recently added unique items;
+
+
+	v1.0475 (2020-07-09)
+
++	New config option added: ShowObjectsOnMiniMap. It expands chest/barrel highlights on map to other game modes if activated;
++	New pictures assigned to later tier Parma shields;
+
+
+	v1.0476 (2020-07-09)
+
++	Random value support was not added for starting (undroppable) items: fixed now;
+
+
+	v1.0477 (2020-07-13)
+
++	Fixed a bug with unique monsters losing their target when it disappears from sight;
++	Some fixes in uniqie item data;
+
+
+	v1.0480 (2020-07-15)
+
++	MF was visually limited at -100% from below (in character window): removed the limit;
++	Revised balance for many perks (values);
++	Dimachaerus stun threshold buffed to: RNG[CharLevel + 7] + [CharLevel / 3] + [BaseVitality / 7] - 1;
++	Changed base life fornulae for some classes: Kensei more, Executioner + Savage + Guardian: less;
+
+
+	v1.0481 (2020-07-15)
+
++	Adventurer trait penalties returned to -40% to life and mana;
++	Some more adjustments in base life for player classes;
++	Ratel Hide trait DFE boost formula changed to: -CLVL / 9;
 
 
 =================================================================================================
