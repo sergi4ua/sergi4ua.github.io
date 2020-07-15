@@ -1,44 +1,3 @@
-v1.30
--Adjusted attack speed and behaviour of Blood Knight monster sub-types
--Adjusted attack speed of Axe Skeleton monster sub-types
--Adjusted attack speed of Unburied monster sub-types
-
--Adjusted move speed of Fallen monster sub-types
--Adjusted move speed of Winged Fiend monster sub-types
--Adjusted move speed of Viper monster sub-types
-
--Adjusted hit recovery speed of Gargoyle monster sub-types
--Adjusted hit recovery speed of Magma Demon monster sub-types
-
--Adjusted warping speed of Phantasm monster type
-
-
-DirectDraw.dll Changes:
--Hotkey for Direct Draw menu is '0' key rather than '~' key
--Minimap can now be zoomed in and out using the '+' and '-' keys
-
-
-v1.29
--Items, objects and shrines that remain on a level without roaming monsters remaining will now be highlighted and marked on the minimap (thanks to Qndel)
--Added one contributor name to the game (qndel - name may be adjusted to be more lore-friendly)
-
-v1.28b
--Fixed a bug that caused the game to fail to give the player experience for killing certain boss monsters
-
-v1.28a
--Adjusted ddraw_settings.ini to lower default resolution to avoid potential game crash
-
-v1.28
--Added one contributor name to the game (kappaklausisreal - name may be adjusted to be more lore-friendly)
-
-v1.27b
--A sound will no longer play when a dungeon level is cleared of monsters
-
-v1.27a
--Fixed a bug with mana cost on the Identify spell
--Fixed a bug that caused projectiles to vanish or float in place at unusual times
--Adjusted Identify spell to cost 15 mana at spell level 1, 10 mana at spell level 2 and 10 mana for all subsequent spell levels
-
 Characters:
 *Overall
 	-Maximum block chance reduced to 90%
@@ -99,6 +58,14 @@ Hidden		Magic
 
 *Non-boss monster types except for Hidden cannot have magical immunities
 
+*Removed monster minimum melee to-hit bonuses in dungeon levels 14-16
+
+*Removed monster minimum ranged to-hit bonuses in dungeon levels 14-16
+
+*Monster minimum melee to-hit bonus is now 5%
+
+*Monster minimum ranged to-hit bonus is now 5%
+
 *Added one mid-game demon monster type
 
 *Added one mid-late game undead monster type
@@ -144,6 +111,8 @@ Items:
 *Quest rewards have been adjusted to more often be viable gear options for the level they are found
 
 *Some item art has been changed
+
+*Bows have been adjusted
 
 *One-handed weapons have been adjusted
 
@@ -314,6 +283,7 @@ Shrines & Fountains:
 *Blood Fountain is now single-use, grants full healing & 3x Potion of Full Healing
 *Purifying Spring is now single-use, grants full mana & 3x Potion of Full Mana
 *The Fountain of Tears now grants 0-3 points of Vit
+*All shrines renamed and given effect descriptions
 *Detrimental shrines have been removed
 *Thaumaturgic shrines have been removed
 *Charged Bolt/Firebolt spell level shrines have been removed
@@ -325,6 +295,7 @@ Miscellaneous:
 
 *Pepin the Healer no longer offers free healing
 *Exploding barrels have been removed
+*Player death animations now display correct armor sprites
 
 
 ddraw.dll and ddraw_settings.ini changes (thanks to Qndel):
@@ -333,6 +304,7 @@ ddraw.dll and ddraw_settings.ini changes (thanks to Qndel):
 -Added experience bar in the bottom of the user interface
 -Items, objects and shrines that remain on a level without roaming monsters remaining will now be highlighted and marked on the minimap
 -Minimap can be zoomed in and out using the '+' and '-' keys
+-Improved pseudorandom number generator for all random numbers in the game
 
 
 Bugfixes:
