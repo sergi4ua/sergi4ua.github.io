@@ -14846,6 +14846,246 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 +	Ratel Hide trait DFE boost formula changed to: -CLVL / 9;
 
 
+	v1.0482 (2020-07-18)
+
++	Adjusted and added some unique items;
+
+
+	v1.0483 (2020-07-20)
+
++	Here and Now perk revised: it will become available later and will require much deeper development of Swift Learner (levels 10, 15, 20, 25, 30);
++	Added more unique item on various items (where diversity was lacking);
++	Fixed opened sarcophagi displayed as non-activated objects on automap;
+
+
+	v1.0484 (2020-07-20)
+
++	Swift Learner progression changed (increased gradually) but levels 26-30 are removed;
++	Here and Now perk requirements for Swift Learner changed (5, 10, 15, 20, 25);
+
+
+	v1.0485 (2020-07-22)
+
++	Decapitated bodies added to objects highlighted on map;
++	Added greet sounds for Overlord type monsters;
++	Fixed values in Half-swording perk;
++	Monsters on HARD mode can now attack and break barrels if they need more space or path to get to player(s);
+
+
+	v1.0486 (2020-07-22)
+
++	Fixed "big chest" object. Could become unselectable;
+
+
+	v1.0487 (2020-07-23)
+
++	Bodkin Points perk revised;
++	Cleaned up (removed noise) and replaced a lot of monster, inventory and flip sound effects;
++	Greet sfx added for acid hounds;
+
+
+	v1.0488 (2020-07-24)
+
++	Config option added to make town portal blue. Set BlueTownPortal to "ON" for that. It's in visual options list;
+
+
+	v1.0500 (2020-07-25)
+
++	Perk level access corrected for all classes (this is revised with all basic attribute changing Traits in mind);
++	Some unique items got new (better) images;
++	Wine from Tears perk gives a little less life on later levels;
+
+
+	v1.0501 (2020-07-26)
+
++	Better pics added for some of the unique items;
++	Wine from Tears perk balance revised again;
++	Iron Maiden base damage with crossbows reduced to: (CLVL * cSTR / 106) + (CLVL / 2);
++	Maximum melee damage resistances for Maiden nerfed to 65% min, 80% max;
++	Maiden's base mana formula changed to: bMAG + (CLVL / 2);
++	Maiden base damage with non-ranged weapons set to CLVL * cSTR / 160. With Two Towers trait, CLVL is added to the formula (for early game compensation);
++	Maiden base helmet thorns factor reduced by ~33% (affects later items mostly);
++	Maiden shield thorns factor reduced for later tiers;
+
+
+	v1.0502 (2020-07-27)
+
++	Restored old repair oil pictures;
++	Bosspacks can get deactivated after boss death (this was done unintentionally);
++	Updated a lot of unique item pics;
+
+
+	v1.0503 (2020-07-28)
+
++	Relict of Stone Curse changed into Lightning Wall. Relict of Telekinesis changed into Fire Wall;
+
+
+	v1.0504 (2020-07-28)
+
++	Fixed previously changed relict pics and flip animations;
+
+
+	v1.0505 (2020-07-29)
+
++	Added new monster (#223), with new looks and sfx, dwells in abyss, uses melee + magic attack;
++	Andariel is now based on monster #223: shoots stars faster (beware);
++	Blood Witches are no longer extended beyond DLVL -16;
++	Added 4 new bosses based on new monster #223;
+
+
+	v1.0506 (2020-07-29)
+
++	Fixed a little glitch in new animation;
++	NPCsign option in config got broken recently, fixed now;
++	MP level display in upper left corner no longer obscured by game mode display (game and level infos are written in one line now);
+
+
+	v1.0507 (2020-07-29)
+
++	Fixed monster lifesteal;
+
+
+	v1.0508 (2020-07-31)
+
++	Izual does 20% less damage on Ironman mode in melee;
++	Improved TRN handling for monsters;
++	Added another monster to Abyss: a Behemoth beast;
+
+
+	v1.0509 (2020-07-31)
+
++	Added another new monster type;
+
+
+	v1.0511 (2020-08-01)
+
++	Monster multiattack function rewritten;
++	Fixed some data in uniques- and set item sections;
++	Added new monster;
+
+
+	v1.0512 (2020-08-01)
+
++	Added another monster type;
+
+
+	v1.0513 (2020-08-01)
+
++	Forgot to randomize new monster appearance on levels previously, fixed now;
+
+
+	v1.0514 (2020-08-02)
+
++	Mage spell mastery perks nerfed;
++	Templar holy damage from weapons nerfed;
++	Bone Spirit default multiplier raised from 1/9 to 1/10;
++	Treasure Hunter trait penalty changed to (8 * CLVL)% ;
+
+
+	v1.0515 (2020-08-03)
+
++	Gauntlets 'Crucible': changed 'lose all regeneration' effect to static negatives to life and mana regen;
++	Changed restock price formula at Adria and Griswold (premiums) to CLVL * CLVL + 9. For the following modes: IM, Soft Iron, Nightmare, Speedrun;
++	Treasure Hunter trait penalty changed to (4 * CLVL)% ;
+
+
+	v1.0516 (2020-08-03)
+
++	Added another new monster;
+
+
+	v1.0520 (2020-08-04)
+
++	Added new AI (#52): uses circlewalk, melee attacks and icebolts from distance;
++	Added new monster type to Crypt and Abyss;
+
+
+	v1.0521 (2020-08-04)
+
++	Fixed monster randomize (this is becoming my favourite bug...);
+
+
+	v1.0530 (2020-08-04)
+
++	Alternative hotkey system introduced. It's optional. Off by default, for now (if it's accepted well, I will make it on by default),
+	Note: when config option 'set NewShortcuts' (Gameplay Options) is ON, the following system of scrolling hotkeys is activated instead of the old one,
+	Note: here is your visual explanation: http://thehellmod.ucoz.ru/Pix/_newshortcuts.png ;
+
+
+	v1.0531 (2020-08-04)
+
++	Blood Knight renamed to Blood Lord;
++	Fixed bugs associated with the 'NewShortcuts' option;
+
+
+	v1.0532 (2020-08-04)
+
++	Fixed effect on Dreamweaver (-%MAG -> -MAG);
++	Fixed Putrid Defiler's stun animation: was missing for East direction;
++	Fine-tuning some of the other new animations;
+
+
+	v1.0533 (2020-08-04)
+
++	Corpse Eater was supposed to have double melee attack, now it's there (at frames 9 and 10), second attack has +15% to accuracy and +(2-5) to damage;
+
+
+	v1.0534 (2020-08-06)
+
++	Fixed Putrid Defiler greeting sound effects (got mixed with Regurgitator sounds by accident);
++	Newly added monsters don't retreat if damaged while using Hidden AI;
++	Added yet another monster;
++	Blood Lords and Steel Lords have less DFE but more damage resistance now. Overall it's the same, just the absolute damage soak got nerfed (they are not knights after all),
+	Note: for Ironman / Soft Iron, Easy and Nightmare modes magic damage DFE is significantly lower, but in Hard mode it's higher;
++	Relicts of Identify: requirements are randomized now (8-10);
++	Readme file updated;
+
+
+	v1.0536 (2020-08-07)
+
++	Uber Bosses of MP (Pinky, Uber Butcher, Abatan): Bone Spirit damage against them is divided by [number of players in game + 2];
++	Bone Spirit cooldown (5 sec) now will work for all classes (10 sec for summoners);
++	Dregbez, Uber Butcher, Pinky, Ceromorth, Abatan, Uber Xorene: drops set to 4;
++	Added new monster;
++	Recolored Gold Golems and their bosses;
++	Night Demon: stun threshold increased by 50% (compensating for their long hit recovery animation (10 frames));
+
+
+	v1.0538 (2020-08-07)
+
++	Mage subclass spell crit formulae changed to:
+	Mage:		(10+CLVL/9)% chance for +100% damage,
+	Elementalist:	(7+CLVL/9)% for +125%,
+	Warlock:		(12+CLVL/8)% for +75%;
++	Affix 'of ruin" changed to 30% chance for +60% damage;
++	Bone Spirit cooldowns are reduced to 6 seconds for summoners and to 3 seconds for the rest in Multiplayer. In Singleplayer Summoners get 3 sec cooldown;
++	Monsters can walk around barrels more effectively now (on Hard mode they still ignore it and break them instead);
+
+
+	v1.0539 (2020-08-07)
+
++	Elementalist spell damage crit formula set to 20% chance for +150% damage;
++	Bone Spirit damage will no longer be modified by effects of Ruin or Dread, nor will it be boosted by spell crits;
++	Bone Spirit base damage formula changed to: 1/8 of monster current HP;
+
+
+	v1.0541 (2020-08-08)
+
++	Added new monster;
++	Fixed negative life/mana leech when using Hunger trait;
+
+
+	v1.0542 (2020-08-08)
+
++	Treasure Hunter trait penalty set to: -(50 + CLVL * 4) ;
++	Entry sound effect was bugged on DLVL-18, cancelled;
+
+
+	v1.0543 (2020-08-09)
+
++	Gold Golem boss color fixed on DLVL-21 in Multiplayer mode, the lack of his color translation file was causing gamecrash in multiplayer;
+
+
 =================================================================================================
 Support mod development:	https://www.patreon.com/join/thmod?
-Buy me a coffee:  		https://ko-fi.com/mordor
+One-time donations:	https://www.paypal.me/thmod
