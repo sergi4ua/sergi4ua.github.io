@@ -2,15 +2,18 @@
 ..updated downwards (newest changes down below)..
 
 This log is best viewed in fullscreen, with resolutions of 1600x900 or higher (I use 1920x1080 when writing this)
-Latest version of the mod available only on the main website: 	www.patreon.com/thmod
-Youtube: 	https://www.youtube.com/user/MordorTheModmaker
-Facebook: 	https://www.facebook.com/diablothehell/
-Twitch: 		https://www.twitch.tv/mordor_th
+
+Latest version of the mod available only on the main website: 	
+www.patreon.com/thmod
+
+Youtube: 	
+https://www.youtube.com/user/MordorTheModmaker
+
+Twitch: 		
+https://www.twitch.tv/mordor_th
+
 
 Mod development started 2017-12-22
-
-Support TH2 mod development:
-https://www.patreon.com/join/thmod?
 
 Contact email: diablothehell@gmail.com
 
@@ -19,7 +22,7 @@ Contact email: diablothehell@gmail.com
 
 	The log:
 
-	Changes up to that point were lost because of poor dicumentation.
+	Changes up to that point were lost because of poor documentation.
 
 	v1.46c RC6
 
@@ -15086,6 +15089,61 @@ Note:	All three spells now require extensive fieldtests and reports. I think the
 +	Gold Golem boss color fixed on DLVL-21 in Multiplayer mode, the lack of his color translation file was causing gamecrash in multiplayer;
 
 
+	v1.0544 (2020-08-09)
+
++	Changed inventory and flip sounds for potions. Unlinked flask throw sounds from potions (throwing flasks uses old original sound);
++	Added another new monster;
+
+
+	v1.0550 (2020-08-11), "Mammagamma (Extended)" (The Alan Parsons Project)
+
+	WARNING: you need to replace your config.ini with the one from this update
+
++	Colors corrected for some base- and unique monsters;
++	Using potions produces a different sound than moving them around inventory now;
++	New hotkey configuration and customize system is ready. Use 'MoreManualHotkeys' option in config.ini:
+	open up spedbook, hover your mouse pointer over a spell and press one of the supported hotkeys: QWERT, ASDFG, AX, F5-F8,
+	this will hokey the spell and show HK overlay. Pretty much, it's the original D1 hotkey system, but extended to more hotkeys;
++	Another option 'NewShortcuts' is upgraded: it now sets spells hotkeyed in accordance to spell hotkey table in config.ini,
+	Note: you can read details and how to change hotkeys with it in the config.ini,
+	Note: both hotkey systems work independently. If both are off, then previous TH2 hotkey system is used;
+
+
+	v1.0551 (2020-08-12)
+
++	Grim Deal penalties were calculated incorrectly. New penalty list:  AC, %life, %mana, DFE, HP regen & stun threshold are weakened by (CLVL/2);
++	Izual is given new animation and sounds;
++	Spell hokey system 'NewShortuts' now includes F1-F4 keys. Upgrade your config.ini file for these changes to take effect;
+
+
+	v1.0560 (2020-08-14)
+
++	Stinger Lord got 50% more damage resistance to magic, melee and arrows;
++	Flying monsters (except Gargoyles) can now cross blood lakes in Abyss and lava in Caves;
++	Monsters that can both fly and spawn monsters, do not spawn minions while over blood/lava;
++	Added 2 more monsters but they are deactivated for now;
+
+
+	v1.0570 (2020-08-15)
+
++	Greater Hulk and Blood Hulk are undead now;
++	Demonologist's Imps can now traverse lava/blood;
++	Treasure Hunter malus was mistakenly set to 5 * CLVL + 50, reverted to 4 * CLVL + 50;
++	Putrid Defiler renamed to Contaminator;
++	Hidden can actually hide in barrels now on levels 10-16 (an old bug is fixed);
++	Contaminators will now be able to spawn minions on all dungeon levels where they are present;
++	Redesigned Chamber of Bone to give it a proper flavor (yes yes, I am not spoiling anything);
+
+
+	v1.0571 (2020-08-16)
+
++	Added some new bosses;
++	Expanded Tormentors as deep as DLVL-12;
++	Improved some boss colors;
++	Gave some bosses new freet sfx;
++	Excluded imps from barrel spawns in Caves. Excluded Hidden from barrel spawns (completely);
+
+
 =================================================================================================
-Support mod development:	https://www.patreon.com/join/thmod?
-One-time donations:	https://www.paypal.me/thmod
+Latest versions available only on official site:
+https://www.patreon.com/thmod
