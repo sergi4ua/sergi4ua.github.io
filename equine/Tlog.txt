@@ -1,16 +1,29 @@
+#Tchernobog 0.1.6e
+- Added a timestamp to crash memory dumps
+- Allowed accessing player level/character class and info if item is identified or not to loot filters (replace your lootFilter/global.lua with new one)
+- Added "/respec" command - YES! Stat respec! But it's not free, resets ALL spells to level 0 too.
+- Assassin's damage bonus for having one hand free increases from 25% to 125%
+- Golem doesn't open doors anymore
+- Fully restore hp/mana after restarting in town
+- Buffed hoarder's loot a bit
+	- if books are the loot (25% chance), then there's 10% chance to drop a recipe instead of a book - applies to multiple books!
+	- qlvl of other items dropped by hoarders is increased by 3
+
 #Tchernobog 0.1.6d
 - MOVED SAVES FROM C:\Users\yourusername\Documents\Diablo 1 Tchernobog TO GAME FOLDER! 
 RELOCATE THEM IF YOU WANT TO KEEP USING THEM! NO WIPE YET! JUST CHANGED SAVE LOCATION!
 - Fixed the "ZeroTier detected" message - now it should only appear when it detects ZeroTier, not ALWAYS like before.
 - Added support for "patch_rt.mpq" - you can add japanese voice pack or other memes
 - Animated mana/heath orbs - settings for them in config.txt
+Orb animation created by https://www.instagram.com/nikolaypopovz/
+Thanks!
 - Updated game libraries to the latest version
 
 #Tchernobog 0.1.6c
 - Disabled trading - it could cause crashes or even corrupt character!
 - Added keeping all backups of characters - if something goes wrong, you always have a copy!
 - Added displaying a timer on online list - now you know when the list is going to refresh.
-- Added displaying "*EMPTY*" if the list is empty. Yes, it works, it's just empty
+- Added displaying "*EMPTY*" if the list is empty. Yes, it works, it's just empty.
 
 #Tchernobog 0.1.6b
 - Internal code cleanups - memory leaks
@@ -155,8 +168,8 @@ RELOCATE THEM IF YOU WANT TO KEEP USING THEM! NO WIPE YET! JUST CHANGED SAVE LOC
 - Fixed MF on player list - it only displays MF of the players on the same level
 - Fixed lightning enchanted monsters spawning charged bolts in 8 directions but player seeing only south wave.
 - Added displaying monster level above health bar - it indicates the max possible loot qlvl.
-- To check qlvl of items, check https://mod.diablo.noktis.pl and unique/set items (However I can't guarantee that they are up to date with Tchernobog)
-- OR use Technoborg bot on discord - his qlvls are 100% accurate.
+- To check qlvl of items, check https://mod.diablo.noktis.pl and unique/set items (There might be slight differences between the website and Tchernobog)
+- OR use Technoborg bot on discord - his data is always up to date.
 - New Boss modifier - greedy - monster drops additional 3 items and all items are dropped with magic find increased by 1000.
 - It also increases monster's armor and health like behemoth modifier.
 - Tweaked minimap zooming in/out (+/- on numeric keypad, use arrows to move it) - The map can be made smaller than before.
@@ -187,8 +200,8 @@ RELOCATE THEM IF YOU WANT TO KEEP USING THEM! NO WIPE YET! JUST CHANGED SAVE LOC
 - Displaying min/max values next to set/unique item stats while holding shift.
 Max values are colored green and min values red.
 If stat is equal to maximum value, the whole line will be colored green, if minimum, red.
-#Tchernobog version 0.1.2f
 
+#Tchernobog version 0.1.2f
 - 0.1.2e fixed staves but broke telekinesis/heal other spells. Now everything works as intended
 
 #Tchernobog version 0.1.2e
