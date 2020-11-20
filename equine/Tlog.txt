@@ -1,3 +1,23 @@
+#Tchernobog 0.1.6f
+- disable casting lvl 0 spells
+- show map's qlvl in top right corner - map qlvl is used for generating items from chests/racks
+- reset hotkeys on respec
+- reset hotkey if a spell reaches lvl 0
+- add showing qlvl to set/unique items while holding shift
+- explanation to item generation qlvl formula:
+	- the input to the formula is map qlvl for chests/racks or monster qlvl for monsters
+	- min value is (qlvl / 3) - 10; - the division is rounded down
+	- min value is forced to be in 1-25 range
+	- max value is qlvl 
+	- max value is forced to be above or equal to 6
+	- the qlvl of the final item is a random value between min and max
+		- an example for lvl 133 monster
+		- min = (133 / 3) - 10 = 44.33 - 10 = 34.33 - rounded down = 34
+		- 34 exceeds the min qlvl range (1-25) so it gets reduced to 25
+		- max qlvl is 133
+		- items can have qlvl in 25-133 range
+	That way you can figure out what's the min monster lvl that can drop the unique/set item you want
+
 #Tchernobog 0.1.6e
 - Added a timestamp to crash memory dumps
 - Allowed accessing player level/character class and info if item is identified or not to loot filters (replace your lootFilter/global.lua with new one)
