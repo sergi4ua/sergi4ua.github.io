@@ -1,25 +1,153 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Welcome to Sergi4UA's Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serhii Shmaida — Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #09090b;
+            --surface: rgba(255,255,255,.04);
+            --border: rgba(255,255,255,.08);
+            --text: #fafafa;
+            --text-2: #a1a1aa;
+            --text-3: #52525b;
+            --accent: #7dd3fc;
+            --accent-dim: rgba(125,211,252,.12);
+            --gradient: linear-gradient(135deg, #a78bfa, #7dd3fc);
+        }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        .ambient-bg {
+            position: fixed; inset: 0; z-index: 0; pointer-events: none;
+            background: #060608;
+        }
+        .ambient-blob {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 70vw; height: 70vw;
+            background: radial-gradient(circle, rgba(125,211,252,0.06) 0%, rgba(167,139,250,0.04) 40%, transparent 70%);
+            border-radius: 50%; filter: blur(130px);
+        }
+        .wrapper {
+            position: relative; z-index: 1;
+            max-width: 640px; margin: 0 auto; padding: 60px 24px;
+            min-height: 100vh;
+            display: flex; flex-direction: column; justify-content: center;
+        }
+        .card {
+            background: rgba(18,18,22,0.75);
+            backdrop-filter: saturate(220%) blur(50px);
+            -webkit-backdrop-filter: saturate(220%) blur(50px);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 48px 40px;
+            box-shadow: inset 0 1px 1px rgba(255,255,255,0.06), 0 8px 40px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        .photo-frame {
+            width: 130px; height: 130px; border-radius: 50%;
+            overflow: hidden; margin: 0 auto 28px;
+            border: 3px solid rgba(255,255,255,0.12);
+            box-shadow: 0 0 40px rgba(125,211,252,0.12);
+        }
+        .photo-frame img {
+            width: 100%; height: 100%; object-fit: cover;
+        }
+        .name {
+            font-size: 28px; font-weight: 700; margin-bottom: 4px;
+            letter-spacing: -0.01em;
+        }
+        .divider {
+            width: 48px; height: 3px; border-radius: 999px;
+            background: var(--gradient); margin: 28px auto;
+        }
+        .contact-list {
+            display: grid; gap: 16px; text-align: left;
+            max-width: 400px; margin: 0 auto;
+        }
+        .contact-item {
+            display: flex; align-items: center; gap: 16px;
+            padding: 14px 18px; border-radius: 14px;
+            background: var(--surface); border: 1px solid var(--border);
+            transition: border-color 0.2s;
+        }
+        .contact-item:hover { border-color: rgba(255,255,255,0.15); }
+        .contact-icon {
+            width: 40px; height: 40px; border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+            font-size: 18px;
+        }
+        .contact-icon.email { background: rgba(125,211,252,0.15); }
+        .contact-icon.phone { background: rgba(167,139,250,0.15); }
+        .contact-info { flex: 1; min-width: 0; }
+        .contact-label {
+            font-size: 11px; font-weight: 600; letter-spacing: 0.06em;
+            color: var(--text-3); text-transform: uppercase; margin-bottom: 2px;
+        }
+        .contact-value {
+            font-size: 15px; font-weight: 500; color: var(--text);
+            text-decoration: none; word-break: break-all;
+        }
+        a.contact-value { color: var(--accent); }
+        a.contact-value:hover { text-decoration: underline; }
+        .footer-text {
+            text-align: center; font-size: 12px; color: var(--text-3);
+            margin-top: 32px;
+        }
+        @media (max-width: 480px) {
+            .wrapper { padding: 32px 12px; }
+            .card { padding: 36px 20px; border-radius: 22px; }
+            .name { font-size: 24px; }
+            .photo-frame { width: 110px; height: 110px; }
+        }
+    </style>
 </head>
-
 <body>
-	<h3>Welcome!</h3>
-	<p>Currently this site is under reconstruction. If you're looking for something, please use the following links:</p>
-	<h3>Links:</h3>
-	<a href="./tools.html">Modding Tools for Games</a><br>
-	<a href="./mods/infernity">Infernity Mod Version Archive</a><br>
-	<a href="./games/sax">Syobon Action X</a><br>
-	<a href="https://www.tapatalk.com/groups/sergi4ua/">My Forum</a><br>
-	<a href="https://github.com/sergi4ua">My GitHub</a><br>
-	<a href="./equine">EQUINE, the Diablo 1 Mod Manager</a><br>
-	<a href="./contact.html">Contact Page</a><br>
-	<a href="./diabloweb">DiabloWeb mirror (old version)</a><br>
-	<a href="./apps/umxplayer">UMX Player 1.1</a>
-	<p>My Discord: Sergi4UA#0551</p>
-	<p>Stay tuned for more :)</p>
-	<h6>2019 - Sergi4UA</h6>
+    <div class="ambient-bg">
+        <div class="ambient-blob"></div>
+    </div>
+    <div class="wrapper">
+        <div class="card">
+            <div class="photo-frame">
+                <img src="61230457_319436688951382_316324967270610595_n.jpg" alt="Serhii Shmaida">
+            </div>
+            <div class="name">Serhii Shmaida</div>
+            <div class="divider"></div>
+            <div class="contact-list">
+                <div class="contact-item">
+                    <div class="contact-icon email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-label">Email</div>
+                        <a href="mailto:sergiy4ua@gmail.com" class="contact-value">sergiy4ua@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon phone">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-label">Phone</div>
+                        <a href="tel:+380984290224" class="contact-value">+380 98 429 0224</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-text">
+            &copy; 2026 Serhii Shmaida
+        </div>
+    </div>
 </body>
-
 </html>
